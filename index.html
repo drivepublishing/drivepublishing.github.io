@@ -1,33 +1,403 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
 <head>
-	<meta charset="UTF-8">
-	<title>Drive Publishing</title>
-	<link rel="stylesheet" href="assets/css/lib/bootstrap-theme.css">
-	<link rel="stylesheet" href="assets/css/lib/bootstrap.css">
-	<link rel="stylesheet" href="assets/css/style.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Drive Publishing</title>
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+    <!-- Core CSS -->
+    <link href="assets/css/lib/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/lib/extralayers.css" rel="stylesheet">
+    <link href="assets/css/lib/animate.css" rel="stylesheet">
+    <link href="assets/css/lib/carousel.css" rel="stylesheet">
+    <link href="assets/css/lib/owl-carousel.css" rel="stylesheet">
+    <link href="assets/css/lib/et-line.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- PORTFOLIO AND LIGHTBOX SETTINGS -->
+    <link href="bfassets/css/bootFolio.css" rel="stylesheet">
+    <link href="bfassets/css/prettyPhoto.css" rel="stylesheet">
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 <body>
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        <img class="img-responsive" src="assets/img/dr-logo.png">
-      </a>
-    </div>
-  </div>
-</nav>
+    <div id="preloader">
+        <div id="spinner"></div>
+        <img class="preloader" src="assets/img/dr-logo.png" alt="">
+    </div><!-- end loader -->
 
-	<div class="container">
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<a><img class="img-responsive img-header" src="assets/img/dr-header.jpg"></a>
-			</div>
-		</div>
-	</div>
-	
+    <div class="wrapper">
 
-	<script src="assets/js/lib/jquery.js"></script>
+        <div id="opensearch" class="collapse myform">
+            <div class="container-fluid ">
+                <div class="topbar">
+                    <form role="search" action="#" class="search_form_top" method="get">
+                        <input type="text" placeholder="What are you looking for?" name="s" class="form-control" autocomplete="off">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <header class="header">
+            <div id="multimenu" class="menu-wrapper">
+                <nav class="navbar yamm navbar-default" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="fa fa-bars"></span>
+                            </button>
+                            <a class="navbar-brand" href="#"><img src="assets/img/dr-logo.png"></a>
+                        </div>
+                    </div><!--/.container-fluid -->
+                </nav>
+            </div><!-- end menu-wrapper -->
+        </header><!-- end header -->
+
+        <section id="page-header" class="section-g clearfix">
+            <div class="container">
+                <div class="section-title">
+                    <div class="pull-left">
+                    <h3><span class="font-backend">A</span> About us</h3>
+                    </div>
+
+                    <div class="pull-right">
+                        <div class="breadcrumb-container">
+                            <ul class="breadcrumb">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Pages</a></li>
+                                <li class="active">About us</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- end sectiontitle -->       
+            </div><!-- end container -->
+        </section><!-- end section -->
+
+        <section id="about" class="section-w clearfix">
+            <div class="container">
+                <div class="section-full">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="service-box text-center">
+                                <span class="service-icon border-radius">01</span>
+                                <h3>Web Design</h3>
+                                <p>Mauris id viverra augue, eu porttitor diam. Praesent faucibus est a interdum elementum. Nam varius at ipsum id dignissim</p>
+                            </div><!-- end service-box -->
+                        </div><!-- end col -->
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="service-box text-center">
+                                <span class="service-icon border-radius">02</span>
+                                <h3>Branding</h3>
+                                <p>Mauris id viverra augue, eu porttitor diam. Praesent faucibus est a interdum elementum. Nam varius at ipsum id dignissim</p>
+                            </div><!-- end service-box -->
+                        </div><!-- end col -->
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <div class="service-box text-center">
+                                <span class="service-icon border-radius">03</span>
+                                <h3>Photography</h3>
+                                <p>Mauris id viverra augue, eu porttitor diam. Praesent faucibus est a interdum elementum. Nam varius at ipsum id dignissim</p>
+                            </div><!-- end service-box -->
+                        </div><!-- end col -->
+                    </div><!-- end row -->
+                </div><!-- end section-wrapper -->
+
+                <div class="section-wrapper">
+                    <div class="text-center">
+                        <a class="btn btn-primary btn-lg" href="#" title="">VIEW ALL SERVICES</a>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </section><!-- end section -->
+
+        <section class="bg-image section-g clearfix">
+            <div class="image-wrapper col-md-6 col-sm-3 pull-left">
+                <div class="background-image-wrapper wow slideInLeft">
+                    <img class="background-image" alt="" src="assets/img/dr-header.jpg">
+                    <div class="mini-title">
+                        <a href="http://www.youtube.com/watch?v=dorZ3vag5PI" data-gal="prettyPhoto" title=""><i class="icon-video"></i></a>
+                        <h2>OUR STUDIO</h2>
+                    </div><!-- end mini-title -->
+                </div>
+            </div>
+                
+            <div class="container">
+                <div class="row">
+                    <div class="content col-md-6 col-md-offset-7 col-sm-6 col-sm-offset-4 clearfix">
+                        <div class="section-title text-left">
+                            <h3><span class="font-backend">C</span> Company Up's & Down's</h3>
+                        </div>
+                        <div class="section-wrapper">
+                            <div class="textrotate">
+                            <ul class="bxslider">
+                                <li>
+                                    <h3>Started The Nation Agency in 1999  </h3>
+                                    <h4>Posted : 20 - Jan - 2015</h4>
+                                    <p>Etiam sit amet fringilla lacus. Nam dictum sem, eu aliquam. Maecenas volutpat, diam enim sagittis quam, id porta quam. d id       fermentum nibh volutpat, accumsan purus. Etiam sit amet fringilla lacus. </p>
+                                </li>
+                                <li>
+                                    <h3>Worked 20 Day & Night for The Nation Template </h3>
+                                    <h4>Posted : 22 - Feb - 2015</h4>
+                                    <p>Nam dictum sem, eu aliquam. Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. Etiam sit amet fringilla lacus. </p>
+                                </li>
+                                <li>
+                                    <h3>Started The Nation Agency in 1999  </h3>
+                                    <h4>Posted : 20 - Jan - 2015</h4>
+                                    <p>Etiam sit amet fringilla lacus. Nam dictum sem, eu aliquam. Maecenas volutpat, diam enim sagittis quam, id porta quam. d id       fermentum nibh volutpat, accumsan purus. Etiam sit amet fringilla lacus. </p>
+                                </li>
+                                <li>
+                                    <h3>Worked 20 Day & Night for The Nation Template </h3>
+                                    <h4>Posted : 22 - Feb - 2015</h4>
+                                    <p>Nam dictum sem, eu aliquam. Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus. Etiam sit amet fringilla lacus. </p>
+                                </li>
+                            </ul>
+                            </div><!-- end textrotate -->
+                        </div>
+                    </div>
+                </div><!--end of row-->
+            </div>
+        </section>
+
+        <section id="team" class="section-w clearfix">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h3><span class="font-backend">T & S</span> Our Team & Skills</h3>
+                    <p class="lead">We’re The Nation Agency, a small design agency based in United States. We’ve been crafting beautiful websites, launching stunning<br> brands and making clients happy for years.</p>
+                </div><!-- end sectiontitle -->
+                <div class="row section-wrapper">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="section-title text-left">
+                            <h3>About Our Team</h3>
+                        </div><!-- end sectiontitle -->
+                        <p>We don’t work from the same office. We have hobbies outside of tech. We don’t go to conferences. We don’t have meetings. We’re guided by passion and love for clean, elegant and minimal design. Our approach is to build rich. We just create amazing work.</p>
+
+                        <p>We don’t chase trends or follow crowds. We’re guided by passion and love for clean, elegant and minimal design. Our approach is to build rich digital experiences for our clients that authentically resonates with their brands and a global audience.</p>
+                    </div><!-- end col -->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="skills">
+                            <p><i class="fa fa-mobile-phone"></i> Html5</p>
+                            <div class="progress progress-striped active">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" data-transitiongoal="96"><span>96</span></div>
+                            </div>
+                            <p><i class="fa fa-camera-retro"></i> WordPress</p>
+                            <div class="progress progress-striped active">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" data-transitiongoal="100"><span>100</span></div>
+                            </div>
+                            <p><i class="fa fa-edit"></i>  Graphic Design</p>
+                            <div class="progress progress-striped active">
+                                <div class="progress-bar progress-bar-striped" role="progressbar" data-transitiongoal="86"><span>86</span></div>
+                            </div>
+                        </div><!-- end skills -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+                <hr>
+                <div class="row section-wrapper">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="teambox text-center">
+                            <div class="entry">
+                            <img src="assets/img/dr-logo.png" alt="" class="img-responsive">
+                                <div class="magnifier">
+                                    <div class="buttons text-center">
+                                    <h3>Michael Roof</h3>
+                                    <p>Co_founder & Designer</p>
+                                    <p>We’ll etch your brand onto tangible objects: business cards, ads, stickers, brochures, you name it. You won’t see business cards, ads, stickers, brochures anything until we’re done drooling at the result.</p>
+                                        <span class="social-icons">
+                                            <span><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" data-title="Facebook" href="#"><i class="fa fa-facebook"></i></a></span>
+                                            <span><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" data-title="Twitter" href="#"><i class="fa fa-twitter"></i></a></span>
+                                            <span><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" data-title="Google Plus" href="#"><i class="fa fa-google-plus"></i></a></span>
+                                            <span><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" data-title="Skype" href="#"><i class="fa fa-skype"></i></a></span>
+                                        </span><!-- end social icons -->
+                                    </div><!-- end buttons -->
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <h3>Michael Roof</h3>
+                                <p>Co_founder & Designer</p>
+                            </div>
+                        </div><!-- end teambox -->
+                    </div><!-- end col -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="teambox text-center">
+                            <div class="entry">
+                            <img src="assets/img/dr-logo.png" alt="" class="img-responsive">
+                                <div class="magnifier">
+                                    <div class="buttons text-center">
+                                    <h3>Charles WHITE</h3>
+                                    <p>Co_founder & Designer</p>
+                                    <p>We’ll etch your brand onto tangible objects: business cards, ads, stickers, brochures, you name it. You won’t see business cards, ads, stickers, brochures anything until we’re done drooling at the result.</p>
+                                        <span class="social-icons">
+                                            <span><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" data-title="Facebook" href="#"><i class="fa fa-facebook"></i></a></span>
+                                            <span><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" data-title="Twitter" href="#"><i class="fa fa-twitter"></i></a></span>
+                                            <span><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" data-title="Google Plus" href="#"><i class="fa fa-google-plus"></i></a></span>
+                                            <span><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" data-title="Skype" href="#"><i class="fa fa-skype"></i></a></span>
+                                        </span><!-- end social icons -->
+                                    </div><!-- end buttons -->
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <h3>Charles WHITE</h3>
+                                <p>Co_founder & Designer</p>
+                            </div>
+                        </div><!-- end teambox -->
+                    </div><!-- end col -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="teambox text-center">
+                            <div class="entry">
+                            <img src="assets/img/dr-logo.png" alt="" class="img-responsive">
+                                <div class="magnifier">
+                                    <div class="buttons text-center">
+                                    <h3>Martin cambrige</h3>
+                                    <p>Head Support</p>
+                                    <p>We’ll etch your brand onto tangible objects: business cards, ads, stickers, brochures, you name it. You won’t see business cards, ads, stickers, brochures anything until we’re done drooling at the result.</p>
+                                        <span class="social-icons">
+                                            <span><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" data-title="Facebook" href="#"><i class="fa fa-facebook"></i></a></span>
+                                            <span><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" data-title="Twitter" href="#"><i class="fa fa-twitter"></i></a></span>
+                                            <span><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" data-title="Google Plus" href="#"><i class="fa fa-google-plus"></i></a></span>
+                                            <span><a data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" data-title="Skype" href="#"><i class="fa fa-skype"></i></a></span>
+                                        </span><!-- end social icons -->
+                                    </div><!-- end buttons -->
+                                </div>
+                            </div>
+                            <div class="desc">
+                                <h3>Martin cambrige</h3>
+                                <p>Head Support</p>
+                            </div>
+                        </div><!-- end teambox -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end section -->
+
+        <section id="contact" class="section-parallax littlepadding2" style="background-image: url('assets/img/dr-header.jpg');" data-stellar-background-ratio="" data-stellar-vertical-offset="">
+            <div class="container">
+                <div class="text-center">
+                <h2><a href="#">Click here to view</a></h2>
+                </div>
+            </div><!-- end container -->
+        </section><!-- end section -->
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="widget">
+                            <div class="about-widget">
+                                <img src="assets/img/dr-logo.png" alt="">
+                                <p>We’re The Nation Agency, a small design agency based in United States. We’ve been crafting beautiful websites, launching stunning brands and making clients happy for years.</p>
+                                <div class="social-icons">
+                                    <span><a class="border-radius" data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" data-title="Facebook" href="#"><i class="fa fa-facebook"></i></a></span>
+                                    <span><a class="border-radius" data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" data-title="Twitter" href="#"><i class="fa fa-twitter"></i></a></span>
+                                    <span><a class="border-radius" data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" data-title="Google+" href="#"><i class="fa fa-google-plus"></i></a></span>
+                                    <span><a class="border-radius" data-rel="tooltip" data-toggle="tooltip" data-trigger="hover" data-placement="bottom" data-title="Skype" href="#"><i class="fa fa-skype"></i></a></span>
+                                </div><!-- end social icons -->
+                            </div><!-- end about-widget -->
+
+                        </div><!-- end widget -->
+                    </div><!-- end col -->
+
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="widget">
+                            <div class="section-title">
+                                <h3>Useful Links</h3>
+                            </div><!-- title -->
+                            <ul>
+                                <li><a href="#">Works</a></li>
+                                <li><a href="#">About Company</a></li>
+                                <li><a href="#">Enquires</a></li>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">What we do?</a></li>
+                            </ul>
+                        </div><!-- end widget -->
+                    </div><!-- end col -->
+
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="widget">
+                            <div class="section-title">
+                                <h3>Contact Us</h3>
+                            </div><!-- title -->
+
+                            <div class="contact-widget">
+                                <div class="box">
+                                    <p>Allison Brislin</p>
+                                    <p>+45 (0)4 79 25 37 98</p>
+                                    <p>allison@nation.com</p>
+                                </div>
+                                <hr>
+                                <div class="box">
+                                    <p>Martin Greenwood</p>
+                                    <p>+45 (0)4 79 25 37 99</p>
+                                    <p>martin@nation.com</p>
+                                </div>
+                            </div><!-- end contact-widget -->
+                        </div><!-- end widget -->
+                    </div><!-- end col -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </footer><!-- end footer -->
+        
+        <div class="copyrights">
+            <div class="container">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p>Copyright 2015 ©  The Nation | All Rights Reserved</p>
+                </div><!-- end col-lg-4 -->
+            </div><!-- end container -->
+        </div><!-- end copyrights -->
+
+        <div class="dmtop">Scroll to Top</div>
+    </div><!-- end wrapper -->
+    
+    <!-- jQuery -->
+    <script src="assets/js/lib/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/lib/bootstrap.min.js"></script>    
+    <!-- Menu Display -->
+    <script src="assets/js/lib/menu.js"></script>
+    <!-- Retina Display -->
+    <script src="assets/js/lib/retina.js"></script>
+    <!-- CSS3 Animations -->
+    <script src="assets/js/lib/wow.js"></script>
+    <!-- Parallax -->
+    <script src="assets/js/lib/jquery.stellar.js"></script>
+    <!-- Contact Form -->
+    <script src="assets/js/lib/jquery.jigowatt.js"></script>
+    <!-- Parallax -->
+    <script src="assets/js/lib/smooth-scroll.js"></script>
+    <!-- Carousel -->
+    <script src="assets/js/lib/owl.carousel.js"></script>
+    <script src="assets/js/lib/owl-scripts.js"></script>
+    <!-- Verttical Carousel -->
+    <script src="assets/js/lib/jquery.bxslider.js"></script>
+    <!-- Skills Bar -->
+    <script src="assets/js/lib/progressbar.js"></script>
+    <!-- Lightbox Scripts -->
+    <script src="bfassets/js/jquery.prettyPhoto.js"></script>
+    <!-- Onepage Scripts -->
+    <script src="assets/js/lib/onepage-scripts.js"></script>
+
 </body>
 </html>
