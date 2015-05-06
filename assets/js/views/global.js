@@ -6,6 +6,7 @@ var Global = Backbone.View.extend({
 	},
 	render: function() {
 		$('.global').html(this.globalTemplate());
+		$('.app-container').hide();
 		return this;
 	}
 });
