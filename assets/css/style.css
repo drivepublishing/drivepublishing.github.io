@@ -14,6 +14,11 @@ h1 {
 	padding-bottom: 15px;
 }
 
+
+nav .container-fluid {
+	background: #fff;
+}
+
 .navbar-default {
 	z-index: 2;
 }
@@ -31,7 +36,8 @@ h1 {
 }
 
 .client-item {
-	padding-top: 20px;
+	padding: 0px;
+	max-width: 250px;
 }
 
 .navbar-brand {
