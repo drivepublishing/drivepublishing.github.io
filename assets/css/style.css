@@ -71,3 +71,11 @@ p.lead {
 p.paragraph-about {
 	font-size: 26px;
 }
+
+@media (max-width: 960px) {
+	.container-header {
+		background-image: url('../img/hollywood.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
