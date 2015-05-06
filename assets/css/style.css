@@ -30,7 +30,6 @@ nav .container-fluid {
 	text-transform: uppercase;
 }
 
-
 .about-services {
 	margin-top: 60px;
 	padding-top: 20px;
@@ -44,7 +43,12 @@ nav .container-fluid {
 }
 
 .container-header {
-	background: #fff;
+	background-image: url('../img/hollywood.jpg');
+	background-size: 100%
+}
+
+.container-header p {
+	color: #9a9a9a;
 }
 
 .client-item {
