@@ -2,6 +2,6 @@
 
 $(function() {
 
-	$('.app-container').fullpage();
+	$('.app-container').fullpage({paddingBottom: '250px'});
 
 });

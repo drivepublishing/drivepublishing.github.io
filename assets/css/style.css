@@ -2,7 +2,7 @@
 
 body {
 	font-family: 'Raleway', sans-serif;
-
+	background: url('../img/greyzz.png');
 }
 
 .navbar-default {
@@ -15,14 +15,6 @@ body {
 
 .container-header {
 	background: #fff;
-}
-
-.container-about {
-	background: #9dccde;
-}
-
-.container-contact {
-	background: lightblue;
 }
 
 .client-item {
