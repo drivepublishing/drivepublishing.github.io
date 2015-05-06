@@ -18,11 +18,15 @@ body {
 }
 
 .container-about {
+	background: #9dccde;
+}
+
+.container-contact {
 	background: lightblue;
 }
 
-.container-clients {
-	background: lightblue;
+.client-item {
+	padding-top: 20px;
 }
 
 .navbar-brand {
@@ -35,4 +39,8 @@ body {
 
 p.lead {
 	font-weight: 500;
+}
+
+p.paragraph-about {
+	font-size: 26px;
 }
