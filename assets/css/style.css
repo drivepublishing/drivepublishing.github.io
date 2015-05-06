@@ -28,6 +28,7 @@ nav .container-fluid {
 
 .navbar-right li a {
 	text-transform: uppercase;
+	cursor: pointer;
 }
 
 .about-services {
@@ -44,7 +45,7 @@ nav .container-fluid {
 
 .container-header {
 	background-image: url('../img/hollywood.jpg');
-	background-size: 100%
+	background-size: 100%;
 }
 
 .container-header p {
@@ -77,5 +78,15 @@ p.paragraph-about {
 		background-image: url('../img/hollywood.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
+	}
+}
+
+@media (min-width: 415px) {
+	.container-header {
+		background: url('../img/hollywood.jpg') no-repeat center center fixed; 
+	  -webkit-background-size: auto 100%;
+	  -moz-background-size: auto 100%;
+	  -o-background-size: auto 100%;
+	  background-size: auto 100%;
 	}
 }
