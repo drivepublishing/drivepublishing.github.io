@@ -1,3 +1,30 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700,900);
+
+body {
+	font-family: 'Raleway', sans-serif;
+
+}
+
+.navbar-default {
+	z-index: 2;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.container-header {
+	background: #fff;
+}
+
+.container-about {
+	background: lightblue;
+}
+
+.container-clients {
+	background: lightblue;
+}
+
 .navbar-brand {
 	margin-top: -8px;
 }
@@ -6,10 +33,6 @@
 	max-width: 455px;
 }
 
-.header-img {
-	max-height: 175px;
-}
-
-#page-header {
-	background-color: #fff !important;
+p.lead {
+	font-weight: 500;
 }
