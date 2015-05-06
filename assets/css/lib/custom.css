@@ -105,7 +105,7 @@ a:hover,a:focus {
 ::selection {
     color: #fff;
     text-shadow:none;
-    background:#0b0b0b;
+    background: #0b0b0b;
 }
 
 .lead {
@@ -2510,6 +2510,7 @@ a.plus-x:hover{
 }
 
 #page-header {
+    background-color: #fff !important;
     padding:70px 0 40px !important;
     position:relative;
     overflow: hidden;

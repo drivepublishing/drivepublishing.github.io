@@ -5,3 +5,11 @@
 .img-header {
 	max-width: 455px;
 }
+
+.header-img {
+	max-height: 175px;
+}
+
+#page-header {
+	background-color: #fff !important;
+}
