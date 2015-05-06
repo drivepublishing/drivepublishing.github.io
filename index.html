@@ -27,12 +27,15 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">About</a></li>
           <li><a href="#">Clients</a></li>
-          <li><a href="#">Global</a></li>
+          <li class="nav-global"><a href="#">Global</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div>
   </nav>
+
+  <div class="global"></div>
+
   
   <div class="app-container">
 
@@ -100,8 +103,17 @@
       </div>
     </div>
 
-
 </div><!-- app-container -->
+
+<script type="text/template" id="global-template">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Global</h1>
+      </div>
+    </div>
+  </div>
+</script>
 
   <script src="assets/js/lib/jquery.js"></script>
   <script src="assets/js/lib/underscore.js"></script>
@@ -109,6 +121,7 @@
   <script src="assets/js/lib/bootstrap.js"></script>
   <script src="assets/js/lib/wow.js"></script>
   <script src="assets/js/lib/jquery.fullPage.js"></script>
+  <script src="assets/js/views/global.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

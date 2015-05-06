@@ -1,4 +1,4 @@
-
+var global = new Global();
 
 $(function() {
 
