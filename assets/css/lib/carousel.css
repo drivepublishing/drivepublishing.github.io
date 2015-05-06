@@ -50,7 +50,7 @@
 
 .bx-wrapper .bx-loading {
   min-height: 50px;
-  background: url(../images/loading.gif) center center no-repeat #fff;
+  background: url(../../img/dr-logo.png) center center no-repeat #fff;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -136,7 +136,7 @@
 .bx-controls-direction {
   height:100%;
   position: absolute;
-  background:url(../images/line.png);
+  /*background:url(../images/line.png);*/
   top:0;
   bottom:0;
   padding:0;

@@ -5,10 +5,10 @@
     Loader Effect
 =============================================== */
 
-    $(window).load(function() {
-        $("#preloader").delay(500).fadeOut();
-        $(".preloader").delay(600).fadeOut("slow");
-    });
+    // $(window).load(function() {
+    //     $("#preloader").delay(500).fadeOut();
+    //     $(".preloader").delay(600).fadeOut("slow");
+    // });
 /* ==============================================
     Vertical Carousel
 =============================================== */
@@ -42,17 +42,17 @@
     Back to Top
 =============================================== */
 
-    jQuery(window).scroll(function(){
-        if (jQuery(this).scrollTop() > 1) {
-            jQuery('.dmtop').css({bottom:"25px"});
-        } else {
-            jQuery('.dmtop').css({bottom:"-100px"});
-        }
-    });
-    jQuery('.dmtop').click(function(){
-        jQuery('html, body').animate({scrollTop: '0px'}, 800);
-        return false;
-    });
+    // jQuery(window).scroll(function(){
+    //     if (jQuery(this).scrollTop() > 1) {
+    //         jQuery('.dmtop').css({bottom:"25px"});
+    //     } else {
+    //         jQuery('.dmtop').css({bottom:"-100px"});
+    //     }
+    // });
+    // jQuery('.dmtop').click(function(){
+    //     jQuery('html, body').animate({scrollTop: '0px'}, 800);
+    //     return false;
+    // });
 
 /* ==============================================
     Fun Facts
