@@ -1,9 +1,17 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
 	font-family: 'Raleway', sans-serif;
 	background: url('../img/furley_bg.png');
 	color: #004883;
+}
+
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 7px;
+	text-transform: uppercase;
+	padding-bottom: 15px;
 }
 
 .navbar-default {
@@ -12,6 +20,10 @@ body {
 
 .navbar {
 	margin-bottom: 0;
+}
+
+.navbar-right li a {
+	text-transform: uppercase;
 }
 
 .container-header {
