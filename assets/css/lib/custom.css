@@ -2349,7 +2349,7 @@ a.plus-x:hover{
   - BLOG STYLES  -
 **********************************************/
 
-.pager li a,
+/*.pager li a,
 .pager li span {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -2360,9 +2360,9 @@ a.plus-x:hover{
     padding: 15px 22px;
     position: relative;
     text-decoration: none;
-}
+}*/
 
-.pagination > li > a, 
+/*.pagination > li > a, 
 .pagination > li > span {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -2374,9 +2374,9 @@ a.plus-x:hover{
     padding: 15px 22px;
     position: relative;
     text-decoration: none;
-}
+}*/
 
-.pager li a:hover,
+/*.pager li a:hover,
 .pagination a:hover,
 .pagination a:focus,
 .pagination a.active,
@@ -2386,7 +2386,7 @@ a.plus-x:hover{
     border-color:#0b0b0b !important;
     background-color: #0b0b0b !important;
     color:#fff !important;
-}
+}*/
 
 .blog-list .blog-item {
     margin-bottom: 90px
@@ -2494,16 +2494,16 @@ a.plus-x:hover{
     font-family: "Dosis",sans-serif;
 }
 
-.breadcrumb > li + li:before {
+/*.breadcrumb > li + li:before {
     padding: 0 5px;
     color: #777;
     font-family: "FontAwesome";
     content: "\f105";
-}
+}*/
 
-.breadcrumb > .active {
+/*.breadcrumb > .active {
     color: #777;
-}
+}*/
 
 #page-content {
     border-bottom: 1px solid #f9f9f9
