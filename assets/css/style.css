@@ -87,12 +87,12 @@ p.lead {
 		border-radius: 3px;
 	}
 	.service-title {
-		padding: 1em;
+		padding-top: 1em;
 		height: 100px;
 	}
 	.service-desc {
-		padding: 1em;
-		height: 175px;
+		padding-top: 1em;
+		height: 200px;
 		width: 275px;
 	}
 	.service-desc p {
