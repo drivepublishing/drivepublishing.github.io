@@ -37,17 +37,6 @@ nav .container-fluid {
 	cursor: pointer;
 }
 
-.about-services {
-	margin-top: 60px;
-	padding-top: 20px;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	min-height: 250px;
-}
-
-.about-services p {
-	font-size: 18px;
-}
 
 .container-header p {
 	color: #9a9a9a;
@@ -62,15 +51,11 @@ nav .container-fluid {
 	margin-top: -8px;
 }
 
-
-
 p.lead {
 	font-weight: 500;
 }
 
-p.paragraph-about {
-	font-size: 26px;
-}
+
 
 @media (max-width: 415px) {
 	.container-header {
@@ -88,7 +73,37 @@ p.paragraph-about {
 		padding-top: 80px;
 		max-width: 200px;
 		margin: auto;
-	}    
+	}
+
+	/*About*/
+	p.paragraph-about {
+		font-size: 18px;
+	}
+
+	.about-service-items {
+		padding-left: 0;
+	}
+
+	ul.about-service-items li {
+		display: inline-block;
+	}
+	.about-services {
+		margin: 1em;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+	}
+	.service-title {
+		padding: 1em;
+		height: 100px;
+	}
+	.service-desc {
+		padding: 1em;
+		height: 175px;
+		width: 275px;
+	}
+	.about-services p {
+		font-size: 18px;
+	}
 }
 
 /* Extra Small Devices, Phones */ 
@@ -104,6 +119,12 @@ p.paragraph-about {
 	.img-header {
 		max-width: 455px;
 	}
+
+	
+	p.paragraph-about {
+		font-size: 24px;
+	}
+
 }
 
 /* Medium Devices, Desktops */
