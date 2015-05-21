@@ -3,7 +3,6 @@
 
 body {
 	font-family: 'Raleway', sans-serif;
-	background: url('../img/furley_bg.png');
 	color: #004883;
 }
 
@@ -11,6 +10,18 @@ body {
 	background-image: url('../img/hollywood.jpg');
 	background-size: cover;
 	height: 100vh;
+}
+
+.section-about {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: url('../img/furley_bg.png');
+}
+
+.section-clients {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: url('../img/furley_bg.png');
 }
 
 h1 {
@@ -37,11 +48,6 @@ nav .container-fluid {
 	cursor: pointer;
 }
 
-
-.container-header p {
-	color: #9a9a9a;
-}
-
 .client-item {
 	padding: 0px;
 	max-width: 250px;
@@ -53,18 +59,6 @@ nav .container-fluid {
 
 p.lead {
 	font-weight: 500;
-}
-
-
-
-@media (max-width: 415px) {
-	.container-header {
-		background: url('../img/hollywood.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-	}
 }
 
 /* Custom, iPhone Retina */ 
@@ -101,6 +95,9 @@ p.lead {
 		height: 175px;
 		width: 275px;
 	}
+	.service-desc p {
+	  padding-top: 15px;
+	}
 	.about-services p {
 		font-size: 18px;
 	}
@@ -120,7 +117,6 @@ p.lead {
 		max-width: 455px;
 	}
 
-	
 	p.paragraph-about {
 		font-size: 24px;
 	}
