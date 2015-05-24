@@ -72,7 +72,26 @@ ul.client-items li {
 
 .client-item {
 	list-style-type: none;
-	padding: 0;	
+	padding: 0;
+}
+
+.img-client-container {
+	position: relative;
+}
+
+.client-info {
+	display: none;
+}
+
+.client-item:hover .client-info {
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	background-color: #000;
+	color: #fff;
+	opacity: 0.8;
 }
 
 .footer {
