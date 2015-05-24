@@ -14,8 +14,15 @@ body {
 
 .section-about, .section-clients {
 	padding-top: 50px;
-	padding-bottom: 50px;
 	background: url('../img/furley_bg.png');
+}
+
+.section-contact {
+	background: url('../img/furley_bg.png');
+}
+
+.section-contact .section-title {
+	padding: 0;
 }
 
 .section-title {
@@ -85,6 +92,10 @@ ul.client-items li {
 .client-info p {
 	margin-top: 40%;
 	font-size: 22px;
+}
+
+.contact {
+	float: right;
 }
 
 .footer {
