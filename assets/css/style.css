@@ -24,7 +24,7 @@ body {
 	background: url('../img/furley_bg.png');
 }
 
-h1 {
+.section-title {
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 7px;
 	text-transform: uppercase;
@@ -48,10 +48,6 @@ nav .container-fluid {
 	cursor: pointer;
 }
 
-.client-item {
-	padding: 0px;
-	max-width: 250px;
-}
 
 .navbar-brand {
 	margin-top: -8px;
@@ -59,6 +55,20 @@ nav .container-fluid {
 
 p.lead {
 	font-weight: 500;
+}
+
+
+ul.client-items li {
+	display: inline-block;
+}
+
+.client-items {
+	padding-left: 0;
+}
+
+.client-item {
+	list-style-type: none;
+	padding: 0;	
 }
 
 .footer {
@@ -112,6 +122,10 @@ p.lead {
 		padding-left: 50px;
 		max-width: 340px;
 	}
+
+	.img-client {
+		width: 200px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -130,5 +144,8 @@ p.lead {
 @media only screen and (min-width : 992px) {
 	.img-header {
 		max-width: 600px;
+	}
+	.img-client {
+		width: 225px;
 	}
 }
