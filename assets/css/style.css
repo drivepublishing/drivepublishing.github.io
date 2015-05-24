@@ -28,7 +28,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 7px;
 	text-transform: uppercase;
-	padding-bottom: 15px;
+	padding-bottom: 30px;
 }
 
 nav .container-fluid {
@@ -59,6 +59,7 @@ p.lead {
 
 
 .services {
+	padding-bottom: 50px;
 	border-bottom: 1px solid #ccc;
 }
 
@@ -122,7 +123,7 @@ ul.client-items li {
 	}
 
 	ul.about-service-items li {
-		display: inline-block;
+		display: block;
 	}
 	.about-services {
 		margin: 1em;
@@ -133,11 +134,10 @@ ul.client-items li {
 	}
 	.service-desc {
 		padding-top: 1em;
-		height: 200px;
-		width: 275px;
+		text-align: center;
 	}
 	.service-desc p {
-	  padding-top: 15px;
+	  padding-top: 50px;
 	}
 	.about-services p {
 		font-size: 18px;
@@ -154,6 +154,10 @@ ul.client-items li {
 	.img-client {
 		width: 250px;
 	}
+
+	.service-desc p {
+	  padding: 50px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -165,6 +169,16 @@ ul.client-items li {
 	p.paragraph-about {
 		font-size: 24px;
 	}
+	
+	ul.about-service-items li {
+		display: inline-block;
+	}
+
+	.service-desc {
+		height: 200px;
+		width: 275px;
+	}
+
 
 }
 
