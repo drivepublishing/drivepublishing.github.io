@@ -124,7 +124,7 @@ ul.client-items li {
 	}
 
 	.img-client {
-		width: 200px;
+		width: 250px;
 	}
 }
 
@@ -146,6 +146,6 @@ ul.client-items li {
 		max-width: 600px;
 	}
 	.img-client {
-		width: 225px;
+		width: 325px;
 	}
 }
