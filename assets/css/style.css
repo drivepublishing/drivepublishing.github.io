@@ -12,13 +12,7 @@ body {
 	height: 100vh;
 }
 
-.section-about {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	background: url('../img/furley_bg.png');
-}
-
-.section-clients {
+.section-about, .section-clients {
 	padding-top: 50px;
 	padding-bottom: 50px;
 	background: url('../img/furley_bg.png');
@@ -31,15 +25,14 @@ body {
 	padding-bottom: 30px;
 }
 
-nav .container-fluid {
-	background: #fff;
+.services, .clients {
+	padding-bottom: 50px;
+	border-bottom: 1px solid #ccc;
 }
 
 .navbar-default {
+	background: #fff;
 	z-index: 2;
-}
-
-.navbar {
 	margin-bottom: 0;
 }
 
@@ -48,19 +41,13 @@ nav .container-fluid {
 	cursor: pointer;
 }
 
-
-.navbar-brand {
-	margin-top: -8px;
+.img-nav {
+	margin-top: 2px;
+	height: 45px;
 }
 
 p.lead {
 	font-weight: 500;
-}
-
-
-.services {
-	padding-bottom: 50px;
-	border-bottom: 1px solid #ccc;
 }
 
 ul.client-items li {
