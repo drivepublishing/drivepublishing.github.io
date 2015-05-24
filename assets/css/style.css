@@ -58,6 +58,10 @@ p.lead {
 }
 
 
+.services {
+	border-bottom: 1px solid #ccc;
+}
+
 ul.client-items li {
 	display: inline-block;
 }
