@@ -94,6 +94,11 @@ ul.client-items li {
 	opacity: 0.8;
 }
 
+.client-info p {
+	margin-top: 40%;
+	font-size: 22px;
+}
+
 .footer {
 	padding-top: 50px;
 	background: url('../img/furley_bg.png');
