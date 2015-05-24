@@ -95,7 +95,11 @@ ul.client-items li {
 }
 
 .contact {
-	float: right;
+	text-align: right;
+}
+
+.contact img {
+	max-width: 150px;
 }
 
 .footer {
