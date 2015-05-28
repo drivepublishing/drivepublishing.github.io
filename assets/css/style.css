@@ -100,7 +100,7 @@ ul.client-items li {
 
 .client-info p {
 	margin-top: 40%;
-	font-size: 22px;
+	font-size: 26px;
 }
 
 .contact {
@@ -155,6 +155,21 @@ ul.client-items li {
 	}
 }
 
+@media only screen and (min-width : 320px) {
+	.client-item {
+	  margin-top: -7px;
+	}
+
+	.img-client {
+		width: 100%;
+	}
+
+	.client-item.logo {
+		display: none;
+	}
+
+}
+
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
 	.img-header {
@@ -165,10 +180,15 @@ ul.client-items li {
 	.img-client {
 		width: 250px;
 	}
+	
+	.client-item.logo {
+		display: inline-block;
+	}
 
 	.service-desc p {
 	  padding: 50px;
 	}
+
 }
 
 /* Small Devices, Tablets */
