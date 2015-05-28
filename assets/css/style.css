@@ -93,6 +93,10 @@ ul.client-items li {
 	display: none;
 }
 
+.pull-up-5 {
+	margin-top: -5px;
+}
+
 
 .client-info p {
 	margin-top: 40%;
