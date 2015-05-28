@@ -89,6 +89,11 @@ ul.client-items li {
 	opacity: 0.8;
 }
 
+.client-item .client-info.off {
+	display: none;
+}
+
+
 .client-info p {
 	margin-top: 40%;
 	font-size: 22px;
