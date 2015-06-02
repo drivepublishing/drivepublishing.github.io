@@ -99,6 +99,10 @@ ul.client-items li {
 	font-weight: light;
 }
 
+.contact a {
+	color: #FFFFFF;
+}
+
 .contact img {
 	max-width: 150px;
 }
