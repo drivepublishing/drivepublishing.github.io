@@ -13,12 +13,11 @@ body {
 }
 
 .section-about, .section-clients {
-	padding-top: 50px;
 	background: url('../img/furley_bg.png');
 }
 
 .section-contact {
-	background: url('../img/furley_bg.png');
+	background-color: #004883;
 }
 
 .section-contact .section-title {
@@ -83,18 +82,9 @@ ul.client-items li {
 	display: block;
 	height: 100%;
 	width: 100%;
-	z-index: 1;
 	background-color: #000;
 	color: #fff;
 	opacity: 0.8;
-}
-
-.client-item .client-info.off {
-	display: none;
-}
-
-.pull-up-5 {
-	margin-top: -5px;
 }
 
 
@@ -104,7 +94,9 @@ ul.client-items li {
 }
 
 .contact {
+	color: #FFFFFF;
 	text-align: right;
+	font-weight: light;
 }
 
 .contact img {
@@ -112,8 +104,8 @@ ul.client-items li {
 }
 
 .footer {
-	padding-top: 50px;
-	background: url('../img/furley_bg.png');
+	color: #FFFFFF;
+	background-color: #004883;
 }
 
 /* Custom, iPhone Retina */ 
@@ -157,9 +149,8 @@ ul.client-items li {
 
 @media only screen and (min-width : 320px) {
 	.client-item {
-	  margin-top: -7px;
+	  margin: -7px;
 	}
-
 	.img-client {
 		width: 100%;
 	}
