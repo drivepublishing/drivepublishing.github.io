@@ -1,3 +1,84 @@
-.img-client-drive {
+ul.client-items li {
+  display: inline-block;
+}
+
+.clients-container {
+  margin-bottom: 30px;
+}
+
+.client-items {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.client-item {
+  list-style-type: none;
+  padding: 0;
+}
+
+.img-client-container {
+  position: relative;
+}
+
+.client-info {
   display: none;
+}
+
+.client-item:hover .client-info {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.8;
+}
+
+
+.client-info p {
+  margin-top: 40%;
+  font-size: 26px;
+}
+
+.clients .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+@media (min-width: $screen-xxs) {
+  .img-client-drive {
+    display: none;
+  }
+  .client-item {
+    margin: -7px;
+  }
+  .img-client {
+    width: 100%;
+  }
+
+  .client-item.logo {
+    display: none;
+  }
+}
+
+@media (min-width: $screen-sm) {
+  .img-client {
+    width: 250px;
+  }
+}
+
+@media (min-width : $screen-md) {
+  .img-client {
+    width: 325px;
+  }
+  .img-client-drive {
+    width: 640px;
+    height: 325px;
+  }
+}
+
+@media (min-width : $screen-lg) {
+  .img-client-drive {
+    display: block;
+  }
 }

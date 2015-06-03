@@ -6,180 +6,18 @@ body {
   color: #004883;
 }
 
-/* line 13, scss/partials/_base.scss */
-.section-clients {
-  background-color: #FFFFFF;
-}
-
-/* line 17, scss/partials/_base.scss */
-.section-contact {
-  background-color: #004883;
-}
-
-/* line 21, scss/partials/_base.scss */
-.section-contact .section-title {
-  padding: 0;
-}
-
-/* line 25, scss/partials/_base.scss */
+/* line 9, scss/partials/_base.scss */
 .section-title {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 7px;
-  text-transform: uppercase;
   padding-bottom: 30px;
 }
 
-/* line 32, scss/partials/_base.scss */
-.navbar-default {
-  background: #fff;
-  z-index: 2;
-  margin-bottom: 0;
-}
-
-/* line 38, scss/partials/_base.scss */
-.navbar-right li a {
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-/* line 43, scss/partials/_base.scss */
-.img-nav {
-  margin-top: 2px;
-  height: 45px;
-}
-
-/* line 48, scss/partials/_base.scss */
+/* line 15, scss/partials/_base.scss */
 p.lead {
   font-weight: 500;
 }
 
-/* line 52, scss/partials/_base.scss */
-ul.client-items li {
-  display: inline-block;
-}
-
-/* line 56, scss/partials/_base.scss */
-.clients-container {
-  margin-bottom: 30px;
-}
-
-/* line 60, scss/partials/_base.scss */
-.client-items {
-  padding: 0;
-  margin-bottom: 0;
-}
-
-/* line 65, scss/partials/_base.scss */
-.client-item {
-  list-style-type: none;
-  padding: 0;
-}
-
-/* line 70, scss/partials/_base.scss */
-.img-client-container {
-  position: relative;
-}
-
-/* line 74, scss/partials/_base.scss */
-.client-info {
-  display: none;
-}
-
-/* line 78, scss/partials/_base.scss */
-.client-item:hover .client-info {
-  position: absolute;
-  display: block;
-  height: 100%;
-  width: 100%;
-  background-color: #000;
-  color: #fff;
-  opacity: 0.8;
-}
-
-/* line 89, scss/partials/_base.scss */
-.client-info p {
-  margin-top: 40%;
-  font-size: 26px;
-}
-
-/* line 94, scss/partials/_base.scss */
-.contact {
-  color: #FFFFFF;
-  text-align: right;
-  font-weight: light;
-}
-
-/* line 100, scss/partials/_base.scss */
-.section-clients .section-title {
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-/* line 104, scss/partials/_base.scss */
-.contact a {
-  color: #FFFFFF;
-}
-
-/* line 108, scss/partials/_base.scss */
-.contact img {
-  max-width: 150px;
-}
-
-/* line 112, scss/partials/_base.scss */
-.footer {
-  color: #FFFFFF;
-  background-color: #004883;
-}
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  /* line 125, scss/partials/_base.scss */
-  .client-item {
-    margin: -7px;
-  }
-
-  /* line 128, scss/partials/_base.scss */
-  .img-client {
-    width: 100%;
-  }
-
-  /* line 132, scss/partials/_base.scss */
-  .client-item.logo {
-    display: none;
-  }
-}
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  /* line 141, scss/partials/_base.scss */
-  .img-client {
-    width: 250px;
-  }
-
-  /* line 145, scss/partials/_base.scss */
-  .service-desc p {
-    padding: 15px;
-  }
-}
-/* Small Devices, Tablets */
-/* Medium Devices, Desktops */
-@media (min-width: 992px) {
-  /* line 156, scss/partials/_base.scss */
-  .img-client {
-    width: 325px;
-  }
-
-  /* line 159, scss/partials/_base.scss */
-  .img-client-drive {
-    width: 640px;
-    height: 325px;
-  }
-}
-@media (min-width: 1200px) {
-  /* line 166, scss/partials/_base.scss */
-  .img-client-drive {
-    display: block;
-  }
-}
 /* line 1, scss/partials/_header.scss */
 .header {
   background-image: url("../img/hollywood.jpg");
@@ -232,8 +70,157 @@ ul.client-items li {
 }
 
 /* line 1, scss/partials/_clients.scss */
-.img-client-drive {
+ul.client-items li {
+  display: inline-block;
+}
+
+/* line 5, scss/partials/_clients.scss */
+.clients-container {
+  margin-bottom: 30px;
+}
+
+/* line 9, scss/partials/_clients.scss */
+.client-items {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+/* line 14, scss/partials/_clients.scss */
+.client-item {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* line 19, scss/partials/_clients.scss */
+.img-client-container {
+  position: relative;
+}
+
+/* line 23, scss/partials/_clients.scss */
+.client-info {
   display: none;
+}
+
+/* line 27, scss/partials/_clients.scss */
+.client-item:hover .client-info {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.8;
+}
+
+/* line 38, scss/partials/_clients.scss */
+.client-info p {
+  margin-top: 40%;
+  font-size: 26px;
+}
+
+/* line 43, scss/partials/_clients.scss */
+.clients .section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 320px) {
+  /* line 49, scss/partials/_clients.scss */
+  .img-client-drive {
+    display: none;
+  }
+
+  /* line 52, scss/partials/_clients.scss */
+  .client-item {
+    margin: -7px;
+  }
+
+  /* line 55, scss/partials/_clients.scss */
+  .img-client {
+    width: 100%;
+  }
+
+  /* line 59, scss/partials/_clients.scss */
+  .client-item.logo {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  /* line 65, scss/partials/_clients.scss */
+  .img-client {
+    width: 250px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 71, scss/partials/_clients.scss */
+  .img-client {
+    width: 325px;
+  }
+
+  /* line 74, scss/partials/_clients.scss */
+  .img-client-drive {
+    width: 640px;
+    height: 325px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 81, scss/partials/_clients.scss */
+  .img-client-drive {
+    display: block;
+  }
+}
+/* line 1, scss/partials/_contact.scss */
+.contact {
+  background-color: #FFFFFF;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+/* line 7, scss/partials/_contact.scss */
+.contact .section-title {
+  padding: 0;
+}
+
+/* line 11, scss/partials/_contact.scss */
+.contact {
+  color: #004883;
+  text-align: right;
+  font-weight: light;
+}
+
+/* line 19, scss/partials/_contact.scss */
+.contact a {
+  color: #004883;
+}
+
+/* line 23, scss/partials/_contact.scss */
+.contact img {
+  max-width: 150px;
+}
+
+/* line 1, scss/partials/_footer.scss */
+.footer {
+  background-color: #FFFFFF;
+  color: #004883;
+}
+
+/* line 1, scss/partials/_navbar.scss */
+.navbar-default {
+  background: #fff;
+  z-index: 2;
+  margin-bottom: 0;
+}
+
+/* line 7, scss/partials/_navbar.scss */
+.navbar-right li a {
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* line 12, scss/partials/_navbar.scss */
+.img-nav {
+  margin-top: 2px;
+  height: 45px;
 }
 
 /* line 1, scss/partials/_about.scss */
@@ -251,14 +238,30 @@ ul.client-items li {
     background-position-y: 43%;
     background-repeat: no-repeat;
   }
+  /* line 11, scss/partials/_about.scss */
+  .about p:first-child {
+    font-size: 22px;
+  }
+  /* line 14, scss/partials/_about.scss */
+  .about .lead {
+    font-size: 18px;
+    font-weight: 200;
+  }
 }
-/* line 12, scss/partials/_about.scss */
+@media (min-width: 480px) {
+  /* line 1, scss/partials/_about.scss */
+  .about {
+    background-size: 30%;
+    background-position-x: 85%;
+  }
+}
+/* line 24, scss/partials/_about.scss */
 .about p:first-child {
-  font-size: 22px;
+  font-size: 26px;
 }
-/* line 15, scss/partials/_about.scss */
+/* line 27, scss/partials/_about.scss */
 .about .lead {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 200;
 }
 
