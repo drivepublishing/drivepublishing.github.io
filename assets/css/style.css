@@ -119,52 +119,58 @@ ul.client-items li {
 }
 
 /* line 43, scss/partials/_clients.scss */
-.clients .section-title {
+.clients {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* line 48, scss/partials/_clients.scss */
+.section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 @media (min-width: 320px) {
-  /* line 49, scss/partials/_clients.scss */
+  /* line 54, scss/partials/_clients.scss */
   .img-client-drive {
     display: none;
   }
 
-  /* line 52, scss/partials/_clients.scss */
+  /* line 57, scss/partials/_clients.scss */
   .client-item {
     margin: -7px;
   }
 
-  /* line 55, scss/partials/_clients.scss */
+  /* line 60, scss/partials/_clients.scss */
   .img-client {
     width: 100%;
   }
 
-  /* line 59, scss/partials/_clients.scss */
+  /* line 64, scss/partials/_clients.scss */
   .client-item.logo {
     display: none;
   }
 }
 @media (min-width: 768px) {
-  /* line 65, scss/partials/_clients.scss */
+  /* line 70, scss/partials/_clients.scss */
   .img-client {
     width: 250px;
   }
 }
 @media (min-width: 992px) {
-  /* line 71, scss/partials/_clients.scss */
+  /* line 76, scss/partials/_clients.scss */
   .img-client {
     width: 325px;
   }
 
-  /* line 74, scss/partials/_clients.scss */
+  /* line 79, scss/partials/_clients.scss */
   .img-client-drive {
     width: 640px;
     height: 325px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 81, scss/partials/_clients.scss */
+  /* line 86, scss/partials/_clients.scss */
   .img-client-drive {
     display: block;
   }
@@ -178,10 +184,11 @@ ul.client-items li {
 
 /* line 7, scss/partials/_contact.scss */
 .contact .section-title {
-  padding: 0;
+  padding-bottom: 10px;
+  text-align: right;
 }
 
-/* line 11, scss/partials/_contact.scss */
+/* line 12, scss/partials/_contact.scss */
 .contact {
   color: #004883;
   text-align: right;

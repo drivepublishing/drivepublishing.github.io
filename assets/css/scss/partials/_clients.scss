@@ -40,9 +40,14 @@ ul.client-items li {
   font-size: 26px;
 }
 
-.clients .section-title {
+.clients {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 
 @media (min-width: $screen-xxs) {
