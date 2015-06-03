@@ -234,7 +234,7 @@ ul.client-items li {
 .img-header {
   background-image: url("../img/hollywood.jpg");
 }
-@media only screen and (min-width: 320px) {
+@media (min-width: 320px) {
   /* line 1, scss/partials/_header.scss */
   .img-header {
     padding: 42%;
@@ -244,32 +244,38 @@ ul.client-items li {
     background-position-y: -20%;
   }
 }
+@media (min-width: 480px) {
+  /* line 1, scss/partials/_header.scss */
+  .img-header {
+    padding: 43%;
+    background-size: 125%;
+    background-repeat: no-repeat;
+    background-position-x: 5%;
+    background-position-y: -20%;
+  }
+}
 
-/* line 11, scss/partials/_header.scss */
+/* line 18, scss/partials/_header.scss */
 .body-header {
   text-align: center;
 }
-/* line 13, scss/partials/_header.scss */
+/* line 20, scss/partials/_header.scss */
 .body-header .header-logo {
   z-index: 1;
 }
-@media only screen and (min-width: 320px) {
-  /* line 13, scss/partials/_header.scss */
+@media (min-width: 320px) {
+  /* line 20, scss/partials/_header.scss */
   .body-header .header-logo {
     margin-top: -85%%;
     width: 80%;
     padding-left: 20%;
   }
 }
-@media only screen and (min-width: 768px) {
-  /* line 25, scss/partials/_header.scss */
-  .body-header .img-header {
-    max-width: 455px;
-  }
-}
-@media (min-width: 992px) {
-  /* line 30, scss/partials/_header.scss */
-  .body-header .img-header {
-    max-width: 600px;
+@media (min-width: 480px) {
+  /* line 20, scss/partials/_header.scss */
+  .body-header .header-logo {
+    margin-top: -85%%;
+    width: 80%;
+    padding-left: 20%;
   }
 }
