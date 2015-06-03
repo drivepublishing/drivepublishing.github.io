@@ -237,7 +237,7 @@ ul.client-items li {
 @media only screen and (min-width: 320px) {
   /* line 1, scss/partials/_header.scss */
   .img-header {
-    padding: 50%;
+    padding: 42%;
     background-size: 125%;
     background-repeat: no-repeat;
     background-position-x: 10%;
@@ -256,7 +256,7 @@ ul.client-items li {
 @media only screen and (min-width: 320px) {
   /* line 13, scss/partials/_header.scss */
   .body-header .header-logo {
-    margin-top: -100%%;
+    margin-top: -85%%;
     width: 80%;
     padding-left: 20%;
   }
