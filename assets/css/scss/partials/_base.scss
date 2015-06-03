@@ -8,9 +8,7 @@ body {
 
 
 
-.section-about {
-  background: url('../img/furley_bg.png');
-}
+
 
 .section-clients {
   background-color: #FFFFFF;
@@ -29,10 +27,6 @@ body {
   letter-spacing: 7px;
   text-transform: uppercase;
   padding-bottom: 30px;
-}
-
-.services {
-  padding-bottom: 50px;
 }
 
 .navbar-default {
@@ -124,29 +118,7 @@ ul.client-items li {
 @media only screen and (min-width : $screen-xxs) {
 
 
-  /*About*/
-  p.paragraph-about {
-    font-size: 18px;
-  }
 
-  .about-service-items {
-    padding-left: 0;
-  }
-
-  ul.about-service-items li {
-    display: inline-block;
-  }
-  .about-service-item {
-    text-align: center;
-    width: 275px;
-    padding-top: 15px;
-  }
-  .about-service-item p {
-    font-size: 18px;
-  }
-  .img-client-drive {
-    display: none;
-  }
 }
 
 @media only screen and (min-width : $screen-xxs) {
@@ -177,12 +149,7 @@ ul.client-items li {
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : $screen-sm) {
-  p.paragraph-about {
-    font-size: 24px;
-  }
 
-}
 
 /* Medium Devices, Desktops */
 @media (min-width : $screen-md) {

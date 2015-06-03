@@ -6,27 +6,22 @@ body {
   color: #004883;
 }
 
-/* line 11, scss/partials/_base.scss */
-.section-about {
-  background: url("../img/furley_bg.png");
-}
-
-/* line 15, scss/partials/_base.scss */
+/* line 13, scss/partials/_base.scss */
 .section-clients {
   background-color: #FFFFFF;
 }
 
-/* line 19, scss/partials/_base.scss */
+/* line 17, scss/partials/_base.scss */
 .section-contact {
   background-color: #004883;
 }
 
-/* line 23, scss/partials/_base.scss */
+/* line 21, scss/partials/_base.scss */
 .section-contact .section-title {
   padding: 0;
 }
 
-/* line 27, scss/partials/_base.scss */
+/* line 25, scss/partials/_base.scss */
 .section-title {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 7px;
@@ -34,68 +29,63 @@ body {
   padding-bottom: 30px;
 }
 
-/* line 34, scss/partials/_base.scss */
-.services {
-  padding-bottom: 50px;
-}
-
-/* line 38, scss/partials/_base.scss */
+/* line 32, scss/partials/_base.scss */
 .navbar-default {
   background: #fff;
   z-index: 2;
   margin-bottom: 0;
 }
 
-/* line 44, scss/partials/_base.scss */
+/* line 38, scss/partials/_base.scss */
 .navbar-right li a {
   text-transform: uppercase;
   cursor: pointer;
 }
 
-/* line 49, scss/partials/_base.scss */
+/* line 43, scss/partials/_base.scss */
 .img-nav {
   margin-top: 2px;
   height: 45px;
 }
 
-/* line 54, scss/partials/_base.scss */
+/* line 48, scss/partials/_base.scss */
 p.lead {
   font-weight: 500;
 }
 
-/* line 58, scss/partials/_base.scss */
+/* line 52, scss/partials/_base.scss */
 ul.client-items li {
   display: inline-block;
 }
 
-/* line 62, scss/partials/_base.scss */
+/* line 56, scss/partials/_base.scss */
 .clients-container {
   margin-bottom: 30px;
 }
 
-/* line 66, scss/partials/_base.scss */
+/* line 60, scss/partials/_base.scss */
 .client-items {
   padding: 0;
   margin-bottom: 0;
 }
 
-/* line 71, scss/partials/_base.scss */
+/* line 65, scss/partials/_base.scss */
 .client-item {
   list-style-type: none;
   padding: 0;
 }
 
-/* line 76, scss/partials/_base.scss */
+/* line 70, scss/partials/_base.scss */
 .img-client-container {
   position: relative;
 }
 
-/* line 80, scss/partials/_base.scss */
+/* line 74, scss/partials/_base.scss */
 .client-info {
   display: none;
 }
 
-/* line 84, scss/partials/_base.scss */
+/* line 78, scss/partials/_base.scss */
 .client-item:hover .client-info {
   position: absolute;
   display: block;
@@ -106,36 +96,36 @@ ul.client-items li {
   opacity: 0.8;
 }
 
-/* line 95, scss/partials/_base.scss */
+/* line 89, scss/partials/_base.scss */
 .client-info p {
   margin-top: 40%;
   font-size: 26px;
 }
 
-/* line 100, scss/partials/_base.scss */
+/* line 94, scss/partials/_base.scss */
 .contact {
   color: #FFFFFF;
   text-align: right;
   font-weight: light;
 }
 
-/* line 106, scss/partials/_base.scss */
+/* line 100, scss/partials/_base.scss */
 .section-clients .section-title {
   text-align: center;
   padding-bottom: 30px;
 }
 
-/* line 110, scss/partials/_base.scss */
+/* line 104, scss/partials/_base.scss */
 .contact a {
   color: #FFFFFF;
 }
 
-/* line 114, scss/partials/_base.scss */
+/* line 108, scss/partials/_base.scss */
 .contact img {
   max-width: 150px;
 }
 
-/* line 118, scss/partials/_base.scss */
+/* line 112, scss/partials/_base.scss */
 .footer {
   color: #FFFFFF;
   background-color: #004883;
@@ -143,139 +133,140 @@ ul.client-items li {
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
-  /*About*/
-  /* line 128, scss/partials/_base.scss */
-  p.paragraph-about {
-    font-size: 18px;
-  }
-
-  /* line 132, scss/partials/_base.scss */
-  .about-service-items {
-    padding-left: 0;
-  }
-
-  /* line 136, scss/partials/_base.scss */
-  ul.about-service-items li {
-    display: inline-block;
-  }
-
-  /* line 139, scss/partials/_base.scss */
-  .about-service-item {
-    text-align: center;
-    width: 275px;
-    padding-top: 15px;
-  }
-
-  /* line 144, scss/partials/_base.scss */
-  .about-service-item p {
-    font-size: 18px;
-  }
-
-  /* line 147, scss/partials/_base.scss */
-  .img-client-drive {
-    display: none;
-  }
-}
-@media only screen and (min-width: 320px) {
-  /* line 153, scss/partials/_base.scss */
+  /* line 125, scss/partials/_base.scss */
   .client-item {
     margin: -7px;
   }
 
-  /* line 156, scss/partials/_base.scss */
+  /* line 128, scss/partials/_base.scss */
   .img-client {
     width: 100%;
   }
 
-  /* line 160, scss/partials/_base.scss */
+  /* line 132, scss/partials/_base.scss */
   .client-item.logo {
     display: none;
   }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
-  /* line 169, scss/partials/_base.scss */
+  /* line 141, scss/partials/_base.scss */
   .img-client {
     width: 250px;
   }
 
-  /* line 173, scss/partials/_base.scss */
+  /* line 145, scss/partials/_base.scss */
   .service-desc p {
     padding: 15px;
   }
 }
 /* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /* line 181, scss/partials/_base.scss */
-  p.paragraph-about {
-    font-size: 24px;
-  }
-}
 /* Medium Devices, Desktops */
 @media (min-width: 992px) {
-  /* line 189, scss/partials/_base.scss */
+  /* line 156, scss/partials/_base.scss */
   .img-client {
     width: 325px;
   }
 
-  /* line 192, scss/partials/_base.scss */
+  /* line 159, scss/partials/_base.scss */
   .img-client-drive {
     width: 640px;
     height: 325px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 199, scss/partials/_base.scss */
+  /* line 166, scss/partials/_base.scss */
   .img-client-drive {
     display: block;
   }
 }
 /* line 1, scss/partials/_header.scss */
-.img-header {
+.header {
   background-image: url("../img/hollywood.jpg");
 }
 @media (min-width: 320px) {
   /* line 1, scss/partials/_header.scss */
-  .img-header {
-    padding: 42%;
-    background-size: 125%;
+  .header {
+    padding: 50%;
+    background-size: 115%;
+    background-position-y: 110%;
     background-repeat: no-repeat;
-    background-position-x: 10%;
-    background-position-y: -20%;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   /* line 1, scss/partials/_header.scss */
-  .img-header {
-    padding: 43%;
-    background-size: 125%;
-    background-repeat: no-repeat;
-    background-position-x: 5%;
-    background-position-y: -20%;
+  .header {
+    padding: 35%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 1, scss/partials/_header.scss */
+  .header {
+    padding: 28%;
+    background-size: 100%;
+    background-position-x: 10%;
   }
 }
 
-/* line 18, scss/partials/_header.scss */
-.body-header {
+/* line 1, scss/partials/_about.scss */
+.about {
+  background: #004883;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* line 8, scss/partials/_about.scss */
+p.paragraph-about {
+  font-size: 18px;
+}
+
+/* line 13, scss/partials/_about.scss */
+.img-client-drive {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 18, scss/partials/_about.scss */
+  p.paragraph-about {
+    font-size: 24px;
+  }
+}
+/* line 1, scss/partials/_services.scss */
+.services {
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
 }
-/* line 20, scss/partials/_header.scss */
-.body-header .header-logo {
-  z-index: 1;
+/* line 5, scss/partials/_services.scss */
+.services .fa {
+  font-size: 4em;
+}
+/* line 8, scss/partials/_services.scss */
+.services .about-service-items {
+  padding-left: 0;
+}
+/* line 12, scss/partials/_services.scss */
+.services ul.about-service-items li {
+  display: inline-block;
+  list-style-type: none;
 }
 @media (min-width: 320px) {
-  /* line 20, scss/partials/_header.scss */
-  .body-header .header-logo {
-    margin-top: -85%%;
-    width: 80%;
-    padding-left: 20%;
+  /* line 12, scss/partials/_services.scss */
+  .services ul.about-service-items li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #cccccc;
+    min-height: 250px;
+    max-height: 250px;
   }
 }
-@media (min-width: 480px) {
-  /* line 20, scss/partials/_header.scss */
-  .body-header .header-logo {
-    margin-top: -85%%;
-    width: 80%;
-    padding-left: 20%;
-  }
+/* line 22, scss/partials/_services.scss */
+.services ul.about-service-items li .about-service-item {
+  text-align: center;
+  width: 275px;
+}
+/* line 26, scss/partials/_services.scss */
+.services ul.about-service-items li .about-service-item p {
+  font-size: 18px;
 }

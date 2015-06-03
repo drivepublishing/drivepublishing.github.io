@@ -1,39 +1,17 @@
-.img-header {
+.header {
   background-image: url('../img/hollywood.jpg');
   @media (min-width: $screen-xxs) {
-    padding: 42%;
-    background-size: 125%;
+    padding: 50%;
+    background-size: 115%;
+    background-position-y: 110%;
     background-repeat: no-repeat;
+  }
+  @media (min-width: $screen-sm) {
+    padding: 35%;
+  }
+  @media (min-width: $screen-md) {
+    padding: 28%;
+    background-size: 100%;
     background-position-x: 10%;
-    background-position-y: -20%;
-  }
-  @media (min-width: $screen-xs) {
-    padding: 43%;
-    background-size: 125%;
-    background-repeat: no-repeat;
-    background-position-x: 5%;
-    background-position-y: -20%;
-  }
-}
-.body-header {
-  text-align: center;
-  .header-logo {
-    z-index: 1;
-    @media (min-width: $screen-xxs) {
-      margin-top: -85%%;
-      width: 80%;
-      padding-left: 20%;
-    }
-    @media (min-width: $screen-xs) {
-      margin-top: -85%%;
-      width: 80%;
-      padding-left: 20%;
-    }
-    @media only screen and (min-width: $screen-sm) {
-    
-    }
-    @media (min-width: $screen-md) {
-
-    }
   }
 }
