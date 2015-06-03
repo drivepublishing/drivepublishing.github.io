@@ -11,9 +11,10 @@ body {
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 7px;
   padding-bottom: 30px;
+  text-transform: uppercase;
 }
 
-/* line 15, scss/partials/_base.scss */
+/* line 16, scss/partials/_base.scss */
 p.lead {
   font-weight: 500;
 }
