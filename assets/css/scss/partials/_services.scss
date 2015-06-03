@@ -15,6 +15,7 @@
   ul.about-service-items li {
     display: inline-block;
     list-style-type: none;
+    margin: 20px;
     @media (min-width: $screen-xxs) {
       padding-top: 20px;
       padding-bottom: 20px;

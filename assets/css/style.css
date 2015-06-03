@@ -292,6 +292,7 @@ ul.client-items li {
 .services ul.about-service-items li {
   display: inline-block;
   list-style-type: none;
+  margin: 20px;
 }
 @media (min-width: 320px) {
   /* line 15, scss/partials/_services.scss */
@@ -309,16 +310,16 @@ ul.client-items li {
     border-bottom: 1px none;
   }
 }
-/* line 28, scss/partials/_services.scss */
+/* line 29, scss/partials/_services.scss */
 .services ul.about-service-items li .about-service-item {
   text-align: center;
   width: 275px;
 }
-/* line 31, scss/partials/_services.scss */
+/* line 32, scss/partials/_services.scss */
 .services ul.about-service-items li .about-service-item h3 {
   padding-bottom: 10px;
 }
-/* line 35, scss/partials/_services.scss */
+/* line 36, scss/partials/_services.scss */
 .services ul.about-service-items li .about-service-item p {
   font-size: 18px;
   line-height: 1em;
