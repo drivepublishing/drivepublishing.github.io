@@ -1,0 +1,34 @@
+.img-header {
+  background-image: url('../img/hollywood.jpg');
+  @media only screen and (min-width: $screen-xxs) {
+    padding: 50%;
+    background-size: 125%;
+    background-repeat: no-repeat;
+    background-position-x: 10%;
+    background-position-y: -20%;
+  }
+}
+.body-header {
+  text-align: center;
+  .header-logo {
+    z-index: 1;
+  @media only screen and (min-width: $screen-xxs) {
+    margin-top: -100%%;
+    width: 80%;
+    padding-left: 20%;
+  }
+}
+  @media only screen and (min-width: $screen-xs) {
+
+  }
+  @media only screen and (min-width : $screen-sm) {
+    .img-header {
+      max-width: 455px;
+    }
+  }
+  @media (min-width: $screen-md) {
+    .img-header {
+      max-width: 600px;
+    }
+  }
+}

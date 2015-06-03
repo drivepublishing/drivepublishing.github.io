@@ -1,221 +1,275 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700,900);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
+/* line 4, scss/partials/_base.scss */
 body {
-	font-family: 'Raleway', sans-serif;
-	color: #004883;
+  font-family: 'Raleway', sans-serif;
+  color: #004883;
 }
 
-.section-welcome {
-	background-image: url('../img/hollywood.jpg');
-	background-size: cover;
-	height: 100vh;
-}
-
+/* line 11, scss/partials/_base.scss */
 .section-about {
-	background: url('../img/furley_bg.png');
+  background: url("../img/furley_bg.png");
 }
 
+/* line 15, scss/partials/_base.scss */
 .section-clients {
-	background-color: #FFFFFF;
+  background-color: #FFFFFF;
 }
 
+/* line 19, scss/partials/_base.scss */
 .section-contact {
-	background-color: #004883;
+  background-color: #004883;
 }
 
+/* line 23, scss/partials/_base.scss */
 .section-contact .section-title {
-	padding: 0;
+  padding: 0;
 }
 
+/* line 27, scss/partials/_base.scss */
 .section-title {
-	font-family: 'Open Sans', sans-serif;
-	letter-spacing: 7px;
-	text-transform: uppercase;
-	padding-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
 }
 
+/* line 34, scss/partials/_base.scss */
 .services {
-	padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 
+/* line 38, scss/partials/_base.scss */
 .navbar-default {
-	background: #fff;
-	z-index: 2;
-	margin-bottom: 0;
+  background: #fff;
+  z-index: 2;
+  margin-bottom: 0;
 }
 
+/* line 44, scss/partials/_base.scss */
 .navbar-right li a {
-	text-transform: uppercase;
-	cursor: pointer;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
+/* line 49, scss/partials/_base.scss */
 .img-nav {
-	margin-top: 2px;
-	height: 45px;
+  margin-top: 2px;
+  height: 45px;
 }
 
+/* line 54, scss/partials/_base.scss */
 p.lead {
-	font-weight: 500;
+  font-weight: 500;
 }
 
+/* line 58, scss/partials/_base.scss */
 ul.client-items li {
-	display: inline-block;
+  display: inline-block;
 }
 
+/* line 62, scss/partials/_base.scss */
 .clients-container {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
+/* line 66, scss/partials/_base.scss */
 .client-items {
-	padding: 0;
-	margin-bottom: 0;
+  padding: 0;
+  margin-bottom: 0;
 }
 
+/* line 71, scss/partials/_base.scss */
 .client-item {
-	list-style-type: none;
-	padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
+/* line 76, scss/partials/_base.scss */
 .img-client-container {
-	position: relative;
+  position: relative;
 }
 
+/* line 80, scss/partials/_base.scss */
 .client-info {
-	display: none;
+  display: none;
 }
 
+/* line 84, scss/partials/_base.scss */
 .client-item:hover .client-info {
-	position: absolute;
-	display: block;
-	height: 100%;
-	width: 100%;
-	background-color: #000;
-	color: #fff;
-	opacity: 0.8;
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.8;
 }
 
-
+/* line 95, scss/partials/_base.scss */
 .client-info p {
-	margin-top: 40%;
-	font-size: 26px;
+  margin-top: 40%;
+  font-size: 26px;
 }
 
+/* line 100, scss/partials/_base.scss */
 .contact {
-	color: #FFFFFF;
-	text-align: right;
-	font-weight: light;
+  color: #FFFFFF;
+  text-align: right;
+  font-weight: light;
 }
 
+/* line 106, scss/partials/_base.scss */
 .section-clients .section-title {
-	text-align: center;
-	padding-bottom: 30px;
+  text-align: center;
+  padding-bottom: 30px;
 }
+
+/* line 110, scss/partials/_base.scss */
 .contact a {
-	color: #FFFFFF;
+  color: #FFFFFF;
 }
 
+/* line 114, scss/partials/_base.scss */
 .contact img {
-	max-width: 150px;
+  max-width: 150px;
 }
 
+/* line 118, scss/partials/_base.scss */
 .footer {
-	color: #FFFFFF;
-	background-color: #004883;
+  color: #FFFFFF;
+  background-color: #004883;
 }
 
-/* Custom, iPhone Retina */ 
-@media only screen and (min-width : 320px) {
-	.img-header {
-		padding-top: 80px;
-		max-width: 200px;
-		margin: auto;
-	}
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /*About*/
+  /* line 128, scss/partials/_base.scss */
+  p.paragraph-about {
+    font-size: 18px;
+  }
 
-	/*About*/
-	p.paragraph-about {
-		font-size: 18px;
-	}
+  /* line 132, scss/partials/_base.scss */
+  .about-service-items {
+    padding-left: 0;
+  }
 
-	.about-service-items {
-		padding-left: 0;
-	}
+  /* line 136, scss/partials/_base.scss */
+  ul.about-service-items li {
+    display: inline-block;
+  }
 
-	ul.about-service-items li {
-		display: inline-block;
-	}
-	.about-service-item {
-		text-align: center;
-		width: 275px;
-		padding-top: 15px;
-	}
-	.about-service-item p {
-		font-size: 18px;
-	}
-	.img-client-drive {
-		display: none;
-	}
+  /* line 139, scss/partials/_base.scss */
+  .about-service-item {
+    text-align: center;
+    width: 275px;
+    padding-top: 15px;
+  }
+
+  /* line 144, scss/partials/_base.scss */
+  .about-service-item p {
+    font-size: 18px;
+  }
+
+  /* line 147, scss/partials/_base.scss */
+  .img-client-drive {
+    display: none;
+  }
 }
+@media only screen and (min-width: 320px) {
+  /* line 153, scss/partials/_base.scss */
+  .client-item {
+    margin: -7px;
+  }
 
-@media only screen and (min-width : 320px) {
-	.client-item {
-	  margin: -7px;
-	}
-	.img-client {
-		width: 100%;
-	}
+  /* line 156, scss/partials/_base.scss */
+  .img-client {
+    width: 100%;
+  }
 
-	.client-item.logo {
-		display: none;
-	}
-
+  /* line 160, scss/partials/_base.scss */
+  .client-item.logo {
+    display: none;
+  }
 }
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /* line 169, scss/partials/_base.scss */
+  .img-client {
+    width: 250px;
+  }
 
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
-	.img-header {
-		padding-left: 50px;
-		max-width: 340px;
-	}
-
-	.img-client {
-		width: 250px;
-	}
-
-	.service-desc p {
-	  padding: 15px;
-	}
-
+  /* line 173, scss/partials/_base.scss */
+  .service-desc p {
+    padding: 15px;
+  }
 }
-
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-	.img-header {
-		max-width: 455px;
-	}
-
-	p.paragraph-about {
-		font-size: 24px;
-	}
-
+@media only screen and (min-width: 768px) {
+  /* line 181, scss/partials/_base.scss */
+  p.paragraph-about {
+    font-size: 24px;
+  }
 }
-
 /* Medium Devices, Desktops */
-@media (min-width : 992px) {
-	.img-header {
-		max-width: 600px;
-	}
-	.img-client {
-		width: 325px;
-	}
-	.img-client-drive {
-		width: 640px;
-		height: 325px;
-	}
+@media (min-width: 992px) {
+  /* line 189, scss/partials/_base.scss */
+  .img-client {
+    width: 325px;
+  }
+
+  /* line 192, scss/partials/_base.scss */
+  .img-client-drive {
+    width: 640px;
+    height: 325px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 199, scss/partials/_base.scss */
+  .img-client-drive {
+    display: block;
+  }
+}
+/* line 1, scss/partials/_header.scss */
+.img-header {
+  background-image: url("../img/hollywood.jpg");
+}
+@media only screen and (min-width: 320px) {
+  /* line 1, scss/partials/_header.scss */
+  .img-header {
+    padding: 50%;
+    background-size: 125%;
+    background-repeat: no-repeat;
+    background-position-x: 10%;
+    background-position-y: -20%;
+  }
 }
 
-@media (min-width : 1258px) {
-	.img-client-drive {
-		display: block;
-	}
+/* line 11, scss/partials/_header.scss */
+.body-header {
+  text-align: center;
+}
+/* line 13, scss/partials/_header.scss */
+.body-header .header-logo {
+  z-index: 1;
+}
+@media only screen and (min-width: 320px) {
+  /* line 13, scss/partials/_header.scss */
+  .body-header .header-logo {
+    margin-top: -100%%;
+    width: 80%;
+    padding-left: 20%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 25, scss/partials/_header.scss */
+  .body-header .img-header {
+    max-width: 455px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 30, scss/partials/_header.scss */
+  .body-header .img-header {
+    max-width: 600px;
+  }
 }
