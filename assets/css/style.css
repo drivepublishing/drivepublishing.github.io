@@ -208,51 +208,60 @@ ul.client-items li {
   }
 }
 
-/* line 1, scss/partials/_about.scss */
-.about {
-  background: #004883;
-  color: white;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-/* line 8, scss/partials/_about.scss */
-p.paragraph-about {
-  font-size: 18px;
-}
-
-/* line 13, scss/partials/_about.scss */
+/* line 1, scss/partials/_clients.scss */
 .img-client-drive {
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
-  /* line 18, scss/partials/_about.scss */
-  p.paragraph-about {
-    font-size: 24px;
+/* line 1, scss/partials/_about.scss */
+.about {
+  color: #004883;
+  background-image: url("../img/drv-op-35.png");
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media (min-width: 320px) {
+  /* line 1, scss/partials/_about.scss */
+  .about {
+    background-size: 150%;
+    background-position-x: -5%;
+    background-position-y: 43%;
+    background-repeat: no-repeat;
   }
 }
+/* line 12, scss/partials/_about.scss */
+.about p:first-child {
+  font-size: 22px;
+}
+/* line 15, scss/partials/_about.scss */
+.about .lead {
+  font-size: 18px;
+  font-weight: 200;
+}
+
 /* line 1, scss/partials/_services.scss */
 .services {
+  background: #004883;
+  color: white;
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
 }
-/* line 5, scss/partials/_services.scss */
+/* line 7, scss/partials/_services.scss */
 .services .fa {
   font-size: 4em;
 }
-/* line 8, scss/partials/_services.scss */
+/* line 10, scss/partials/_services.scss */
 .services .about-service-items {
   padding-left: 0;
 }
-/* line 12, scss/partials/_services.scss */
+/* line 15, scss/partials/_services.scss */
 .services ul.about-service-items li {
   display: inline-block;
   list-style-type: none;
 }
 @media (min-width: 320px) {
-  /* line 12, scss/partials/_services.scss */
+  /* line 15, scss/partials/_services.scss */
   .services ul.about-service-items li {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -261,12 +270,12 @@ p.paragraph-about {
     max-height: 250px;
   }
 }
-/* line 22, scss/partials/_services.scss */
+/* line 25, scss/partials/_services.scss */
 .services ul.about-service-items li .about-service-item {
   text-align: center;
   width: 275px;
 }
-/* line 26, scss/partials/_services.scss */
+/* line 29, scss/partials/_services.scss */
 .services ul.about-service-items li .about-service-item p {
   font-size: 18px;
 }

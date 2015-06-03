@@ -1,22 +1,20 @@
 .about {
-  background: $primarylight;
-  color: $white;
+  color: $primarylight;
+  background-image: url('../img/drv-op-35.png');
   padding-top: 50px;
   padding-bottom: 50px;
-}
-
-p.paragraph-about {
-  font-size: 18px;
-}
-
-
-.img-client-drive {
-  display: none;
-}
-
-@media only screen and (min-width : $screen-sm) {
-  p.paragraph-about {
-    font-size: 24px;
+  @media (min-width: $screen-xxs) {
+    background-size: 150%;
+    background-position-x: -5%;
+    background-position-y: 43%;
+    background-repeat: no-repeat;
+  }
+  p:first-child {
+    font-size: 22px;
+  }
+  .lead {
+    font-size: 18px;
+    font-weight: 200;
   }
 
 }
