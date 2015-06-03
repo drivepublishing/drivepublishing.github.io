@@ -202,18 +202,32 @@ ul.client-items li {
     margin-left: -150px;
   }
 }
+@media (min-width: 480px) {
+  /* line 1, scss/partials/_header.scss */
+  .header {
+    padding: 40%;
+  }
+  /* line 19, scss/partials/_header.scss */
+  .header .header-logo {
+    margin-top: -350px;
+    margin-left: -175px;
+  }
+}
 @media (min-width: 768px) {
   /* line 1, scss/partials/_header.scss */
   .header {
     padding: 35%;
   }
+  /* line 26, scss/partials/_header.scss */
+  .header .header-logo {
+    margin-top: -500px;
+  }
 }
 @media (min-width: 992px) {
   /* line 1, scss/partials/_header.scss */
   .header {
-    padding: 28%;
-    background-size: 100%;
-    background-position-x: 10%;
+    padding: 30%;
+    background-position-y: 80%;
   }
 }
 
@@ -279,12 +293,18 @@ ul.client-items li {
     max-height: 250px;
   }
 }
-/* line 25, scss/partials/_services.scss */
+@media (min-width: 480px) {
+  /* line 15, scss/partials/_services.scss */
+  .services ul.about-service-items li {
+    border-bottom: 1px none;
+  }
+}
+/* line 28, scss/partials/_services.scss */
 .services ul.about-service-items li .about-service-item {
   text-align: center;
   width: 275px;
 }
-/* line 29, scss/partials/_services.scss */
+/* line 32, scss/partials/_services.scss */
 .services ul.about-service-items li .about-service-item p {
   font-size: 18px;
 }
