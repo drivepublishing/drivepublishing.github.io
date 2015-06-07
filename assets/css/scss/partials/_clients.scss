@@ -1,11 +1,10 @@
 .clients {
-  padding-top: 80px;
   background-color: $primarydark;
   background-image: url('../img/drv-w-sm.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 150px;
-  background-position-y: 40px;
+  background-position-y: 60px;
   .entry-content {
     margin: 0;
     padding: 0;
@@ -15,7 +14,8 @@
     text-align: center;
     font-family: $primarysans;
     font-weight: 200;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
 .client-item {
