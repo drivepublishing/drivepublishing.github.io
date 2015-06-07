@@ -5,22 +5,23 @@ body {
   font-family: Raleway;
   color: #004883;
   background-color: white;
+  overflow-x: hidden;
 }
 
-/* line 10, scss/partials/_base.scss */
+/* line 11, scss/partials/_base.scss */
 .section-title {
   font-family: Raleway;
   padding-bottom: 30px;
   text-transform: uppercase;
 }
 
-/* line 16, scss/partials/_base.scss */
+/* line 17, scss/partials/_base.scss */
 .lead {
   font-size: 18px;
   font-weight: 200;
 }
 
-/* line 21, scss/partials/_base.scss */
+/* line 22, scss/partials/_base.scss */
 h2.section-title {
   font-size: 38px;
 }
@@ -100,7 +101,7 @@ h2.section-title {
 }
 /* line 18, scss/partials/_clients.scss */
 .clients .client-item .client-info {
-  background: #231f20;
+  background: #004883;
   color: white;
   display: none;
   height: 100%;
@@ -140,7 +141,7 @@ h2.section-title {
   /* line 49, scss/partials/_clients.scss */
   .clients .client-item .client-info p {
     font-size: 32px;
-    margin-top: 30px;
+    margin-top: 8%;
   }
   /* line 54, scss/partials/_clients.scss */
   .clients .client-item.drive {
@@ -160,8 +161,8 @@ h2.section-title {
   }
   /* line 67, scss/partials/_clients.scss */
   .clients .client-item .client-info p {
-    font-size: 20px;
-    margin-top: 45%;
+    font-size: 24px;
+    margin-top: 40%;
   }
   /* line 72, scss/partials/_clients.scss */
   .clients .client-item:hover .faculty-info {
@@ -169,6 +170,7 @@ h2.section-title {
   }
   /* line 75, scss/partials/_clients.scss */
   .clients .client-item.drive {
+    cursor: default;
     display: block;
   }
 }
