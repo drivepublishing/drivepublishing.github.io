@@ -14,6 +14,11 @@
       color: $primarylight;
     }
   }
+  li {
+    text-align: right;
+    padding: 5px 15px 5px;
+    border-top: 1px solid $primarygreylight;
+  }
 }
 
 .navbar-right li a {
@@ -22,6 +27,7 @@
 }
 
 .img-nav {
-  margin-top: 2px;
-  height: 45px;
+  margin-top: 3px;
+  margin-left: 3px;
+  height: 40px;
 }

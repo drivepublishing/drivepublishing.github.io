@@ -251,17 +251,24 @@ h2.section-title {
   font-size: 3em;
   color: #004883;
 }
+/* line 17, scss/partials/_navbar.scss */
+.navbar-default li {
+  text-align: right;
+  padding: 5px 15px 5px;
+  border-top: 1px solid #f8f8f8;
+}
 
-/* line 19, scss/partials/_navbar.scss */
+/* line 24, scss/partials/_navbar.scss */
 .navbar-right li a {
   text-transform: uppercase;
   cursor: pointer;
 }
 
-/* line 24, scss/partials/_navbar.scss */
+/* line 29, scss/partials/_navbar.scss */
 .img-nav {
-  margin-top: 2px;
-  height: 45px;
+  margin-top: 3px;
+  margin-left: 3px;
+  height: 40px;
 }
 
 /* line 1, scss/partials/_about.scss */
