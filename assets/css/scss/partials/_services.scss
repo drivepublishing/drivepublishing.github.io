@@ -3,13 +3,14 @@
   color: $primarylight;
   text-align: center;
   .services-border {
-    border-top: 2px solid $black5;
-    border-bottom: 2px solid $black5;
+    border-top: 1px solid $black20;
+    border-bottom: 1px solid $black20;
   }
   .services-container {
     margin: 0;
   }
   .fa {
+    color: $primarydark;
     font-size: 4em;
   }
   .service-items {
@@ -20,13 +21,14 @@
         padding: 15px;
       }
       @media (min-height: $screen-sm) {
-        padding: 25px 15px; 
+        padding: 35px 15px; 
       }
       .service-title {
         padding-bottom: 10px;
       }
       .caption {
         line-height: 1em;
+        color: $primarygreydark;
         @media (min-height: $screen-xxs) {
           font-size: 16px;
         }
@@ -37,20 +39,20 @@
       &.pull-left {
         @media (min-width: $screen-xxs) {
           border-right: none;
-          border-bottom: 2px solid $black5;
+          border-bottom: 1px solid $black20;
         }
         @media (min-width: $screen-sm) {
-          border-right: 2px solid $black5;
+          border-right: 1px solid $black20;
           border-bottom: none;
         }
       }
       &.pull-right {
         @media (min-width: $screen-xxs) {
           border-left: none;
-          border-top: 2px solid $black5;
+          border-top: 1px solid $black20;
         }
         @media (min-width: $screen-sm) {
-          border-left: 2px solid $black5;
+          border-left: 1px solid $black20;
           border-top: none;
         }
       }

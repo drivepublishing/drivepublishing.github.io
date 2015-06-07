@@ -132,7 +132,7 @@ h2.section-title {
 /* line 1, scss/partials/_clients.scss */
 .clients {
   padding-top: 80px;
-  background-color: #004883;
+  background-color: #15365d;
   background-image: url("../img/drv-w-sm.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -380,8 +380,8 @@ h2.section-title {
 }
 /* line 5, scss/partials/_services.scss */
 .services .services-border {
-  border-top: 2px solid #f1f1f2;
-  border-bottom: 2px solid #f1f1f2;
+  border-top: 1px solid #d0d2d3;
+  border-bottom: 1px solid #d0d2d3;
 }
 /* line 9, scss/partials/_services.scss */
 .services .services-container {
@@ -389,73 +389,75 @@ h2.section-title {
 }
 /* line 12, scss/partials/_services.scss */
 .services .fa {
+  color: #15365d;
   font-size: 4em;
 }
-/* line 15, scss/partials/_services.scss */
+/* line 16, scss/partials/_services.scss */
 .services .service-items {
   padding-left: 0;
 }
-/* line 17, scss/partials/_services.scss */
+/* line 18, scss/partials/_services.scss */
 .services .service-items .service-item {
   text-align: center;
 }
 @media (min-height: 320px) {
-  /* line 17, scss/partials/_services.scss */
+  /* line 18, scss/partials/_services.scss */
   .services .service-items .service-item {
     padding: 15px;
   }
 }
 @media (min-height: 768px) {
-  /* line 17, scss/partials/_services.scss */
+  /* line 18, scss/partials/_services.scss */
   .services .service-items .service-item {
-    padding: 25px 15px;
+    padding: 35px 15px;
   }
 }
-/* line 25, scss/partials/_services.scss */
+/* line 26, scss/partials/_services.scss */
 .services .service-items .service-item .service-title {
   padding-bottom: 10px;
 }
-/* line 28, scss/partials/_services.scss */
+/* line 29, scss/partials/_services.scss */
 .services .service-items .service-item .caption {
   line-height: 1em;
+  color: #6c6d6f;
 }
 @media (min-height: 320px) {
-  /* line 28, scss/partials/_services.scss */
+  /* line 29, scss/partials/_services.scss */
   .services .service-items .service-item .caption {
     font-size: 16px;
   }
 }
 @media (min-height: 768px) {
-  /* line 28, scss/partials/_services.scss */
+  /* line 29, scss/partials/_services.scss */
   .services .service-items .service-item .caption {
     font-size: 18px;
   }
 }
 @media (min-width: 320px) {
-  /* line 37, scss/partials/_services.scss */
+  /* line 39, scss/partials/_services.scss */
   .services .service-items .service-item.pull-left {
     border-right: none;
-    border-bottom: 2px solid #f1f1f2;
+    border-bottom: 1px solid #d0d2d3;
   }
 }
 @media (min-width: 768px) {
-  /* line 37, scss/partials/_services.scss */
+  /* line 39, scss/partials/_services.scss */
   .services .service-items .service-item.pull-left {
-    border-right: 2px solid #f1f1f2;
+    border-right: 1px solid #d0d2d3;
     border-bottom: none;
   }
 }
 @media (min-width: 320px) {
-  /* line 47, scss/partials/_services.scss */
+  /* line 49, scss/partials/_services.scss */
   .services .service-items .service-item.pull-right {
     border-left: none;
-    border-top: 2px solid #f1f1f2;
+    border-top: 1px solid #d0d2d3;
   }
 }
 @media (min-width: 768px) {
-  /* line 47, scss/partials/_services.scss */
+  /* line 49, scss/partials/_services.scss */
   .services .service-items .service-item.pull-right {
-    border-left: 2px solid #f1f1f2;
+    border-left: 1px solid #d0d2d3;
     border-top: none;
   }
 }
