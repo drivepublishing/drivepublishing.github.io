@@ -2,17 +2,22 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
-  font-family: 'Raleway', sans-serif;
-  color: #004883;
+  font-family: $primarysans;
+  color: $primarylight;
+  background-color: $white;
 }
 
 .section-title {
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: 7px;
+  font-family: $primarysans;
   padding-bottom: 30px;
   text-transform: uppercase;
 }
 
-p.lead {
-  font-weight: 500;
+.lead {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+h2.section-title {
+  font-size: 38px;
 }
