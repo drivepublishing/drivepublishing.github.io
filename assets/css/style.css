@@ -121,32 +121,46 @@ p.lead {
   }
   /* line 47, scss/partials/_clients.scss */
   .clients .client-item {
-    padding: 25%;
+    padding: 50%;
   }
   /* line 49, scss/partials/_clients.scss */
-  .clients .client-item .client-text {
+  .clients .client-item .client-info {
     display: block;
     height: 25%;
     bottom: 0;
   }
+  /* line 53, scss/partials/_clients.scss */
+  .clients .client-item .client-info p {
+    font-size: 32px;
+    margin-top: 30px;
+  }
+  /* line 58, scss/partials/_clients.scss */
+  .clients .client-item.drive {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
-  /* line 58, scss/partials/_clients.scss */
+  /* line 65, scss/partials/_clients.scss */
   .clients .client-item {
     padding: 12.5%;
   }
-  /* line 60, scss/partials/_clients.scss */
+  /* line 67, scss/partials/_clients.scss */
   .clients .client-item .client-info {
     display: none;
     height: 100%;
     top: 0;
   }
-  /* line 64, scss/partials/_clients.scss */
+  /* line 71, scss/partials/_clients.scss */
   .clients .client-item .client-info p {
     font-size: 20px;
+    margin-top: 45%;
   }
-  /* line 68, scss/partials/_clients.scss */
+  /* line 76, scss/partials/_clients.scss */
   .clients .client-item:hover .faculty-info {
+    display: block;
+  }
+  /* line 79, scss/partials/_clients.scss */
+  .clients .client-item.drive {
     display: block;
   }
 }

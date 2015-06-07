@@ -45,17 +45,24 @@
       li { list-style-type: none; }
     }
     .client-item {
-      padding: 25%;
-      .client-text {
+      padding: 50%;
+      .client-info {
         display: block;
         height: 25%;
         bottom: 0;
+        p {
+          font-size: 32px;
+          margin-top: 30px;
+        }
+      }
+      &.drive {
+        display: none;
       }
     }
   }
 
   @media(min-width: $screen-sm) {
-  .client-item {
+    .client-item {
       padding: 12.5%;
       .client-info {
         display: none;
@@ -63,11 +70,16 @@
         top: 0;
         p {
           font-size: 20px;
+          margin-top: 45%;
         }
       }
       &:hover .faculty-info {    
         display: block;
       }
+      &.drive {
+        display: block;
+      }
     }
   }
+
 }
