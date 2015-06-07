@@ -2,24 +2,40 @@
   background-color: $black;
   padding-top: 10px;
   padding-bottom: 20px;
-}
-
-.contact .section-title {
-  padding-bottom: 10px;
-  text-align: right;
-}
-
-.contact {
   color: $white;
-  text-align: right;
   font-weight: light;
-}
+  font-family: $primaryserif;
+
+  .subhead {
+    padding-bottom: 10px;
+    font-size: 22px;
+  }
+  .contact-item {  
+    padding-bottom: 5px;
+    .lead {
+      margin-bottom: 0;
+    }
+    p a {
+      line-height: 0.7em;
+      color: $white;
+    }
+  }
+  
+  .contact-items {
+    @media (min-width: $screen-xxs) {
+      float: none;
+      text-align: center;
+      .contact-item {
+        text-align: center;
+      }
+    }
+    @media (min-width: $screen-xs) {
+      float: right;
+      .contact-item {
+        text-align: left;
+      }      
+    }
+  }
 
 
-.contact a {
-  color: $white;
-}
-
-.contact img {
-  max-width: 150px;
 }

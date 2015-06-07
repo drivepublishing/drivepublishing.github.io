@@ -116,58 +116,58 @@ h2.section-title {
   display: block;
 }
 @media (min-width: 320px) {
-  /* line 38, scss/partials/_clients.scss */
+  /* line 36, scss/partials/_clients.scss */
   .clients .client-items {
     display: inline-block;
     width: 100%;
     padding: 0;
     margin-bottom: -7px;
   }
-  /* line 43, scss/partials/_clients.scss */
+  /* line 41, scss/partials/_clients.scss */
   .clients .client-items li {
     list-style-type: none;
   }
-  /* line 45, scss/partials/_clients.scss */
+  /* line 43, scss/partials/_clients.scss */
   .clients .client-item {
     padding: 50%;
   }
-  /* line 47, scss/partials/_clients.scss */
+  /* line 45, scss/partials/_clients.scss */
   .clients .client-item .client-info {
     display: block;
     height: 25%;
     bottom: 0;
   }
-  /* line 51, scss/partials/_clients.scss */
+  /* line 49, scss/partials/_clients.scss */
   .clients .client-item .client-info p {
     font-size: 32px;
     margin-top: 30px;
   }
-  /* line 56, scss/partials/_clients.scss */
+  /* line 54, scss/partials/_clients.scss */
   .clients .client-item.drive {
     display: none;
   }
 }
 @media (min-width: 768px) {
-  /* line 63, scss/partials/_clients.scss */
+  /* line 61, scss/partials/_clients.scss */
   .clients .client-item {
     padding: 12.5%;
   }
-  /* line 65, scss/partials/_clients.scss */
+  /* line 63, scss/partials/_clients.scss */
   .clients .client-item .client-info {
     display: none;
     height: 100%;
     top: 0;
   }
-  /* line 69, scss/partials/_clients.scss */
+  /* line 67, scss/partials/_clients.scss */
   .clients .client-item .client-info p {
     font-size: 20px;
     margin-top: 45%;
   }
-  /* line 74, scss/partials/_clients.scss */
+  /* line 72, scss/partials/_clients.scss */
   .clients .client-item:hover .faculty-info {
     display: block;
   }
-  /* line 77, scss/partials/_clients.scss */
+  /* line 75, scss/partials/_clients.scss */
   .clients .client-item.drive {
     display: block;
   }
@@ -178,29 +178,48 @@ h2.section-title {
   background-color: #231f20;
   padding-top: 10px;
   padding-bottom: 20px;
-}
-
-/* line 7, scss/partials/_contact.scss */
-.contact .section-title {
-  padding-bottom: 10px;
-  text-align: right;
-}
-
-/* line 12, scss/partials/_contact.scss */
-.contact {
   color: white;
-  text-align: right;
   font-weight: light;
+  font-family: Open Sans;
 }
-
-/* line 19, scss/partials/_contact.scss */
-.contact a {
+/* line 9, scss/partials/_contact.scss */
+.contact .subhead {
+  padding-bottom: 10px;
+  font-size: 22px;
+}
+/* line 13, scss/partials/_contact.scss */
+.contact .contact-item {
+  padding-bottom: 5px;
+}
+/* line 15, scss/partials/_contact.scss */
+.contact .contact-item .lead {
+  margin-bottom: 0;
+}
+/* line 18, scss/partials/_contact.scss */
+.contact .contact-item p a {
+  line-height: 0.7em;
   color: white;
 }
-
-/* line 23, scss/partials/_contact.scss */
-.contact img {
-  max-width: 150px;
+@media (min-width: 320px) {
+  /* line 24, scss/partials/_contact.scss */
+  .contact .contact-items {
+    float: none;
+    text-align: center;
+  }
+  /* line 28, scss/partials/_contact.scss */
+  .contact .contact-items .contact-item {
+    text-align: center;
+  }
+}
+@media (min-width: 480px) {
+  /* line 24, scss/partials/_contact.scss */
+  .contact .contact-items {
+    float: right;
+  }
+  /* line 34, scss/partials/_contact.scss */
+  .contact .contact-items .contact-item {
+    text-align: left;
+  }
 }
 
 /* line 1, scss/partials/_footer.scss */
