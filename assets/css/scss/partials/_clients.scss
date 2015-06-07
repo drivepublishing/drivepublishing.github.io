@@ -1,16 +1,21 @@
 .clients {
-  padding-top: 75px;
-  background-color: $primarygreylight;
+  padding-top: 80px;
+  background-color: $primarylight;
+  background-image: url('../img/drv-w-sm.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150px;
+  background-position-y: 40px;
   .entry-content {
     margin: 0;
     padding: 0;
   }
   .section-title {
-    color: $primarylight;
+    color: $white;
     text-align: center;
     font-family: $primarysans;
     font-weight: 200;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
   }
 
 .client-item {
