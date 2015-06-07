@@ -28,27 +28,32 @@ h2.section-title {
 /* line 1, scss/partials/_header.scss */
 .header {
   background-image: url("../img/hollywood.jpg");
+  position: relative;
 }
 @media (min-width: 320px) {
   /* line 1, scss/partials/_header.scss */
   .header {
-    padding: 30%;
+    padding: 40%;
     background-size: 125%;
     background-position-y: 50%;
     background-repeat: no-repeat;
   }
-  /* line 9, scss/partials/_header.scss */
+  /* line 10, scss/partials/_header.scss */
   .header .header-logo-container {
-    position: absolute;
-    z-index: 2;
-    margin: -30%;
-    padding: 5% 10%;
-  }
-  /* line 14, scss/partials/_header.scss */
-  .header .header-logo-container .header-logo-img {
-    width: 35%;
-    top: 0;
+    display: block;
+    height: 100%;
     left: 0;
+    top: 0;
+    opacity: 0.8;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+  /* line 20, scss/partials/_header.scss */
+  .header .header-logo-container .header-logo-img {
+    padding-top: 15px;
+    width: 200px;
   }
 }
 @media (min-width: 768px) {
