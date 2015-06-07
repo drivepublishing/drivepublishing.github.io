@@ -2,6 +2,18 @@
   background: $white;
   z-index: 2;
   margin-bottom: 0;
+  .navbar-collapse,
+  .navbar-toggle {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-color: $white;;
+    background-color: $white;
+    .fa {
+      font-size: 3em;
+      color: $primarylight;
+    }
+  }
 }
 
 .navbar-right li a {
