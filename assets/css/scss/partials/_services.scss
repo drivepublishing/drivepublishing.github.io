@@ -36,7 +36,7 @@
         }
       }
       &.pull-right {
-        @media (min-width: $screen-xs) {
+        @media (min-width: $screen-xxs) {
           border-left: none;
           border-top: 2px solid $black5;
         }
