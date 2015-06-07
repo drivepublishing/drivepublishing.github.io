@@ -1,11 +1,12 @@
 .clients {
   padding-top: 50px;
-  padding-bottom: 50px;
+  background-color: $primarygreylight;
   .entry-content {
     margin: 0;
     padding: 0;
   }
   .section-title {
+    color: $primarylight;
     text-align: center;
     padding-bottom: 50px;
   }
@@ -42,6 +43,7 @@
       display: inline-block;
       width: 100%;
       padding: 0;
+      margin-bottom: -7px;
       li { list-style-type: none; }
     }
     .client-item {
