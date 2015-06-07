@@ -70,40 +70,46 @@ p.lead {
   }
 }
 
-/* line 1, scss/partials/_clients.scss */
+/* line 2, scss/partials/_clients.scss */
+.clients .entry-content {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, scss/partials/_clients.scss */
 ul.client-items li {
   display: inline-block;
 }
 
-/* line 5, scss/partials/_clients.scss */
+/* line 12, scss/partials/_clients.scss */
 .clients-container {
   margin-bottom: 30px;
 }
 
-/* line 9, scss/partials/_clients.scss */
+/* line 16, scss/partials/_clients.scss */
 .client-items {
   padding: 0;
   margin-bottom: 0;
 }
 
-/* line 14, scss/partials/_clients.scss */
+/* line 21, scss/partials/_clients.scss */
 .client-item {
   list-style-type: none;
   padding: 0;
   margin-top: -7px;
 }
 
-/* line 20, scss/partials/_clients.scss */
+/* line 27, scss/partials/_clients.scss */
 .img-client-container {
   position: relative;
 }
 
-/* line 24, scss/partials/_clients.scss */
+/* line 31, scss/partials/_clients.scss */
 .client-info {
   display: none;
 }
 
-/* line 28, scss/partials/_clients.scss */
+/* line 35, scss/partials/_clients.scss */
 .client-item:hover .client-info {
   position: absolute;
   display: block;
@@ -114,60 +120,60 @@ ul.client-items li {
   opacity: 0.8;
 }
 
-/* line 38, scss/partials/_clients.scss */
+/* line 45, scss/partials/_clients.scss */
 .client-info p {
   margin-top: 40%;
   font-size: 26px;
 }
 
-/* line 43, scss/partials/_clients.scss */
+/* line 50, scss/partials/_clients.scss */
 .clients {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-/* line 48, scss/partials/_clients.scss */
+/* line 55, scss/partials/_clients.scss */
 .section-title {
   text-align: center;
   padding-bottom: 50px;
 }
 
 @media (min-width: 320px) {
-  /* line 54, scss/partials/_clients.scss */
+  /* line 61, scss/partials/_clients.scss */
   .img-client-drive {
     display: none;
   }
 
-  /* line 60, scss/partials/_clients.scss */
+  /* line 67, scss/partials/_clients.scss */
   .img-client {
     width: 100%;
   }
 
-  /* line 64, scss/partials/_clients.scss */
+  /* line 71, scss/partials/_clients.scss */
   .client-item.logo {
     display: none;
   }
 }
 @media (min-width: 768px) {
-  /* line 70, scss/partials/_clients.scss */
+  /* line 77, scss/partials/_clients.scss */
   .img-client {
     width: 250px;
   }
 }
 @media (min-width: 992px) {
-  /* line 76, scss/partials/_clients.scss */
+  /* line 83, scss/partials/_clients.scss */
   .img-client {
     width: 325px;
   }
 
-  /* line 79, scss/partials/_clients.scss */
+  /* line 86, scss/partials/_clients.scss */
   .img-client-drive {
     width: 640px;
     height: 325px;
   }
 }
 @media (min-width: 1200px) {
-  /* line 86, scss/partials/_clients.scss */
+  /* line 93, scss/partials/_clients.scss */
   .img-client-drive {
     display: block;
   }
@@ -271,53 +277,68 @@ ul.client-items li {
 
 /* line 1, scss/partials/_services.scss */
 .services {
-  background: #004883;
-  color: white;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  background: white;
+  color: #004883;
   text-align: center;
 }
-/* line 7, scss/partials/_services.scss */
+/* line 5, scss/partials/_services.scss */
+.services .services-border {
+  border-top: 2px solid #f1f1f2;
+  border-bottom: 2px solid #f1f1f2;
+}
+/* line 9, scss/partials/_services.scss */
+.services .services-container {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+/* line 14, scss/partials/_services.scss */
 .services .fa {
   font-size: 4em;
 }
-/* line 10, scss/partials/_services.scss */
-.services .about-service-items {
+/* line 17, scss/partials/_services.scss */
+.services .service-items {
   padding-left: 0;
 }
-/* line 15, scss/partials/_services.scss */
-.services ul.about-service-items li {
-  display: inline-block;
-  list-style-type: none;
-  margin: 20px;
+/* line 19, scss/partials/_services.scss */
+.services .service-items .service-item {
+  padding: 50px 15px;
+  text-align: center;
+}
+/* line 23, scss/partials/_services.scss */
+.services .service-items .service-item h3 {
+  padding-bottom: 10px;
+}
+/* line 26, scss/partials/_services.scss */
+.services .service-items .service-item p {
+  font-size: 18px;
+  line-height: 1em;
 }
 @media (min-width: 320px) {
-  /* line 15, scss/partials/_services.scss */
-  .services ul.about-service-items li {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #cccccc;
-    min-height: 250px;
-    max-height: 250px;
+  /* line 30, scss/partials/_services.scss */
+  .services .service-items .service-item.pull-left {
+    border-right: none;
+    border-bottom: 2px solid #f1f1f2;
+  }
+}
+@media (min-width: 768px) {
+  /* line 30, scss/partials/_services.scss */
+  .services .service-items .service-item.pull-left {
+    border-right: 2px solid #f1f1f2;
+    border-bottom: none;
   }
 }
 @media (min-width: 480px) {
-  /* line 15, scss/partials/_services.scss */
-  .services ul.about-service-items li {
-    border-bottom: 1px none;
+  /* line 40, scss/partials/_services.scss */
+  .services .service-items .service-item.pull-right {
+    border-left: none;
+    border-top: 2px solid #f1f1f2;
   }
 }
-/* line 29, scss/partials/_services.scss */
-.services ul.about-service-items li .about-service-item {
-  text-align: center;
-  width: 275px;
-}
-/* line 32, scss/partials/_services.scss */
-.services ul.about-service-items li .about-service-item h3 {
-  padding-bottom: 10px;
-}
-/* line 36, scss/partials/_services.scss */
-.services ul.about-service-items li .about-service-item p {
-  font-size: 18px;
-  line-height: 1em;
+@media (min-width: 768px) {
+  /* line 40, scss/partials/_services.scss */
+  .services .service-items .service-item.pull-right {
+    border-left: 2px solid #f1f1f2;
+    border-top: none;
+  }
 }

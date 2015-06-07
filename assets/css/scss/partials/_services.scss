@@ -1,41 +1,53 @@
 .services {
-  background: $primarylight;
-  color: $white;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  background: $white;
+  color: $primarylight;
   text-align: center;
+  .services-border {
+    border-top: 2px solid $black5;
+    border-bottom: 2px solid $black5;
+  }
+  .services-container {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+  }
   .fa {
     font-size: 4em;
   }
-  .about-service-items {
-    padding-left: 0;
-  }
-
-
-  ul.about-service-items li {
-    display: inline-block;
-    list-style-type: none;
-    margin: 20px;
-    @media (min-width: $screen-xxs) {
-      padding-top: 20px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #cccccc;
-      min-height: 250px;
-      max-height: 250px;
-    }
-    @media (min-width: $screen-xs) {
-      border-bottom: 1px none;
-    }
-    .about-service-item {
+  .service-items {
+    padding-left: 0;    
+    .service-item {
+      
+      padding: 50px 15px;
       text-align: center;
-      width: 275px;
       h3 {
         padding-bottom: 10px;
       }
-    }
-    .about-service-item p {
-      font-size: 18px;
-      line-height: 1em;
+      p {
+        font-size: 18px;
+        line-height: 1em;
+      }
+      &.pull-left {
+        @media (min-width: $screen-xxs) {
+          border-right: none;
+          border-bottom: 2px solid $black5;
+        }
+        @media (min-width: $screen-sm) {
+          border-right: 2px solid $black5;
+          border-bottom: none;
+        }
+      }
+      &.pull-right {
+        @media (min-width: $screen-xs) {
+          border-left: none;
+          border-top: 2px solid $black5;
+        }
+        @media (min-width: $screen-sm) {
+          border-left: 2px solid $black5;
+          border-top: none;
+        }
+      }
     }
   }
+
 }
