@@ -310,26 +310,33 @@ h2.section-title {
   font-size: 3em;
   color: #004883;
 }
-/* line 17, scss/partials/_navbar.scss */
+/* line 18, scss/partials/_navbar.scss */
 .navbar-default li {
   text-align: right;
   padding: 5px 15px 5px;
   border-top: 1px solid #f8f8f8;
 }
 
-/* line 24, scss/partials/_navbar.scss */
+/* line 25, scss/partials/_navbar.scss */
 .navbar-right li a {
   text-transform: uppercase;
   cursor: pointer;
 }
 
-/* line 29, scss/partials/_navbar.scss */
+/* line 31, scss/partials/_navbar.scss */
 .img-nav {
-  margin-top: 3px;
-  margin-left: 5px;
-  height: 40px;
+  display: none;
 }
 
+@media (min-width: 768px) {
+  /* line 36, scss/partials/_navbar.scss */
+  .img-nav {
+    display: block;
+    margin-top: 10px;
+    margin-left: 5px;
+    height: 40px;
+  }
+}
 /* line 1, scss/partials/_about.scss */
 .about {
   color: #004883;
