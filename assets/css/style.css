@@ -70,114 +70,87 @@ p.lead {
   }
 }
 
-/* line 2, scss/partials/_clients.scss */
-.clients .entry-content {
-  margin: 0;
-  padding: 0;
-}
-
-/* line 8, scss/partials/_clients.scss */
-ul.client-items li {
-  display: inline-block;
-}
-
-/* line 12, scss/partials/_clients.scss */
-.clients-container {
-  margin-bottom: 30px;
-}
-
-/* line 16, scss/partials/_clients.scss */
-.client-items {
-  padding: 0;
-  margin-bottom: 0;
-}
-
-/* line 21, scss/partials/_clients.scss */
-.client-item {
-  list-style-type: none;
-  padding: 0;
-  margin-top: -7px;
-}
-
-/* line 27, scss/partials/_clients.scss */
-.img-client-container {
-  position: relative;
-}
-
-/* line 31, scss/partials/_clients.scss */
-.client-info {
-  display: none;
-}
-
-/* line 35, scss/partials/_clients.scss */
-.client-item:hover .client-info {
-  position: absolute;
-  display: block;
-  height: 100%;
-  width: 100%;
-  background-color: #000;
-  color: #fff;
-  opacity: 0.8;
-}
-
-/* line 45, scss/partials/_clients.scss */
-.client-info p {
-  margin-top: 40%;
-  font-size: 26px;
-}
-
-/* line 50, scss/partials/_clients.scss */
+/* line 1, scss/partials/_clients.scss */
 .clients {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-
-/* line 55, scss/partials/_clients.scss */
-.section-title {
+/* line 4, scss/partials/_clients.scss */
+.clients .entry-content {
+  margin: 0;
+  padding: 0;
+}
+/* line 8, scss/partials/_clients.scss */
+.clients .section-title {
   text-align: center;
   padding-bottom: 50px;
 }
-
+/* line 17, scss/partials/_clients.scss */
+.clients .client-item {
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+}
+/* line 21, scss/partials/_clients.scss */
+.clients .client-item .client-info {
+  background: #231f20;
+  color: white;
+  display: none;
+  height: 100%;
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+/* line 33, scss/partials/_clients.scss */
+.clients .client-item:hover .client-info {
+  display: block;
+}
 @media (min-width: 320px) {
-  /* line 61, scss/partials/_clients.scss */
-  .img-client-drive {
-    display: none;
-  }
-
-  /* line 67, scss/partials/_clients.scss */
-  .img-client {
+  /* line 41, scss/partials/_clients.scss */
+  .clients .client-items {
+    display: inline-block;
     width: 100%;
+    padding: 0;
   }
-
-  /* line 71, scss/partials/_clients.scss */
-  .client-item.logo {
-    display: none;
+  /* line 45, scss/partials/_clients.scss */
+  .clients .client-items li {
+    list-style-type: none;
+  }
+  /* line 47, scss/partials/_clients.scss */
+  .clients .client-item {
+    padding: 25%;
+  }
+  /* line 49, scss/partials/_clients.scss */
+  .clients .client-item .client-text {
+    display: block;
+    height: 25%;
+    bottom: 0;
   }
 }
 @media (min-width: 768px) {
-  /* line 77, scss/partials/_clients.scss */
-  .img-client {
-    width: 250px;
+  /* line 58, scss/partials/_clients.scss */
+  .clients .client-item {
+    padding: 12.5%;
   }
-}
-@media (min-width: 992px) {
-  /* line 83, scss/partials/_clients.scss */
-  .img-client {
-    width: 325px;
+  /* line 60, scss/partials/_clients.scss */
+  .clients .client-item .client-info {
+    display: none;
+    height: 100%;
+    top: 0;
   }
-
-  /* line 86, scss/partials/_clients.scss */
-  .img-client-drive {
-    width: 640px;
-    height: 325px;
+  /* line 64, scss/partials/_clients.scss */
+  .clients .client-item .client-info p {
+    font-size: 20px;
   }
-}
-@media (min-width: 1200px) {
-  /* line 93, scss/partials/_clients.scss */
-  .img-client-drive {
+  /* line 68, scss/partials/_clients.scss */
+  .clients .client-item:hover .faculty-info {
     display: block;
   }
 }
+
 /* line 1, scss/partials/_contact.scss */
 .contact {
   background-color: #FFFFFF;

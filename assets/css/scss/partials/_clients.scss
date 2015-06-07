@@ -1,96 +1,73 @@
 .clients {
+  padding-top: 50px;
+  padding-bottom: 50px;
   .entry-content {
     margin: 0;
     padding: 0;
   }
-}
+  .section-title {
+    text-align: center;
+    padding-bottom: 50px;
+  }
 
-ul.client-items li {
-  display: inline-block;
-}
 
-.clients-container {
-  margin-bottom: 30px;
-}
 
-.client-items {
-  padding: 0;
-  margin-bottom: 0;
-}
+
 
 .client-item {
-  list-style-type: none;
-  padding: 0;
-  margin-top: -7px;
-}
-
-.img-client-container {
+  background-size: cover;
   position: relative;
-}
-
-.client-info {
-  display: none;
-}
-
-.client-item:hover .client-info {
-  position: absolute;
-  display: block;
-  height: 100%;
-  width: 100%;
-  background-color: #000;
-  color: #fff;
-  opacity: 0.8;
-}
-
-.client-info p {
-  margin-top: 40%;
-  font-size: 26px;
-}
-
-.clients {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.section-title {
-  text-align: center;
-  padding-bottom: 50px;
-}
-
-@media (min-width: $screen-xxs) {
-  .img-client-drive {
+  cursor: pointer;
+  & .client-info {
+    background: $black;
+    color: $white;
     display: none;
-  }
-  .client-item {
-    
-  }
-  .img-client {
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    text-align: center;
     width: 100%;
+    z-index: 1;
   }
-
-  .client-item.logo {
-    display: none;
-  }
-}
-
-@media (min-width: $screen-sm) {
-  .img-client {
-    width: 250px;
-  }
-}
-
-@media (min-width : $screen-md) {
-  .img-client {
-    width: 325px;
-  }
-  .img-client-drive {
-    width: 640px;
-    height: 325px;
-  }
-}
-
-@media (min-width : $screen-lg) {
-  .img-client-drive {
+  &:hover .client-info {
     display: block;
+  }
+}
+
+
+
+  @media (min-width: $screen-xxs) {
+    .client-items {
+      display: inline-block;
+      width: 100%;
+      padding: 0;
+      li { list-style-type: none; }
+    }
+    .client-item {
+      padding: 25%;
+      .client-text {
+        display: block;
+        height: 25%;
+        bottom: 0;
+      }
+    }
+  }
+
+  @media(min-width: $screen-sm) {
+  .client-item {
+      padding: 12.5%;
+      .client-info {
+        display: none;
+        height: 100%;
+        top: 0;
+        p {
+          font-size: 20px;
+        }
+      }
+      &:hover .faculty-info {    
+        display: block;
+      }
+    }
   }
 }
