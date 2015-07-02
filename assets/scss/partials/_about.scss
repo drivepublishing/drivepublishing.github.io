@@ -8,7 +8,10 @@
     background-position-x: -5%;
     background-position-y: 43%;
     background-repeat: no-repeat;
-    p:first-child {
+    .section-title {
+      font-size: 36px;
+    }
+    .lead:first-child {
       font-size: 22px;
     }
     .lead {
@@ -21,7 +24,7 @@
     background-size: 75%;
     background-position-x: 110%;
   }
-  p:first-child {
+  .lead:first-child {
     font-size: 26px;
   }
   .lead {
