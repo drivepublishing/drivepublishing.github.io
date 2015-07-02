@@ -27,13 +27,14 @@ module.exports = {
 			filename: 'vendor.js'
 		},
 		src: [
-			'assets/js/**/*.js',
-			'!assets/js/vendor/**/*.js'
+			'assets/js/main.js'
 		],
 		watch: [
 			'assets/js/**/*.js',
 			'!assets/js/vendor/**/*.js'
-		]
+		],
+		dest: 'dist/js',
+		filename: 'scripts.js'
 	},
 	jshint: {
 		src: [
