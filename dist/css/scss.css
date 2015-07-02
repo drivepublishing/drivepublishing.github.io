@@ -40,7 +40,7 @@ h2.section-title {
   @media (min-width: 320px) {
     /* line 1, /Users/ev/src/dev/drive/assets/scss/partials/_header.scss */
     .header {
-      padding: 40%;
+      padding: 30%;
       background-size: 125%;
       background-position-y: 50%;
       background-repeat: no-repeat; }
