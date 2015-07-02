@@ -49,5 +49,9 @@ module.exports = {
 			'config/**/*.js',
 			'gulpfile.js'
 		]
+	},
+	img: {
+		src: 'assets/img/**/*',
+		dest: 'dist/img'
 	}
 };
