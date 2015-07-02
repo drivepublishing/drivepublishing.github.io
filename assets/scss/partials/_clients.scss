@@ -75,7 +75,8 @@
   }
   @media(min-width: $screen-sm) {
     .clients-container {
-      padding: 5%;
+      padding-left: 10%;
+      padding-right: 10%;
     }
     .client-item {
       padding: 12.5%;
