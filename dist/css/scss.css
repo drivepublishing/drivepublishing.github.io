@@ -179,24 +179,25 @@ h2.section-title {
   @media (min-width: 768px) {
     /* line 77, /Users/ev/src/dev/drive/assets/scss/partials/_clients.scss */
     .clients .clients-container {
-      padding: 5%; }
-    /* line 80, /Users/ev/src/dev/drive/assets/scss/partials/_clients.scss */
+      padding-left: 10%;
+      padding-right: 10%; }
+    /* line 81, /Users/ev/src/dev/drive/assets/scss/partials/_clients.scss */
     .clients .client-item {
       padding: 12.5%;
       width: 25%; }
-      /* line 83, /Users/ev/src/dev/drive/assets/scss/partials/_clients.scss */
+      /* line 84, /Users/ev/src/dev/drive/assets/scss/partials/_clients.scss */
       .clients .client-item .client-info {
         display: none;
         height: 100%;
         top: 0; }
-        /* line 87, /Users/ev/src/dev/drive/assets/scss/partials/_clients.scss */
+        /* line 88, /Users/ev/src/dev/drive/assets/scss/partials/_clients.scss */
         .clients .client-item .client-info p {
           font-size: 24px;
           margin-top: 40%; }
-      /* line 92, /Users/ev/src/dev/drive/assets/scss/partials/_clients.scss */
+      /* line 93, /Users/ev/src/dev/drive/assets/scss/partials/_clients.scss */
       .clients .client-item:hover .faculty-info {
         display: block; }
-      /* line 95, /Users/ev/src/dev/drive/assets/scss/partials/_clients.scss */
+      /* line 96, /Users/ev/src/dev/drive/assets/scss/partials/_clients.scss */
       .clients .client-item.drive {
         cursor: default;
         display: block;
