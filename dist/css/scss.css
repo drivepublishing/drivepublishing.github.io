@@ -99,9 +99,9 @@ h2.section-title {
   @media (min-width: 1200px) {
     /* line 1, /Users/ev/src/dev/drive/assets/scss/partials/_header.scss */
     .header {
-      padding: 25%;
+      padding: 24%;
       background-size: 120%;
-      background-position-y: 50%;
+      background-position-y: 40%;
       background-position-x: 0%; } }
 
 /* line 1, /Users/ev/src/dev/drive/assets/scss/partials/_clients.scss */
