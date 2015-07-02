@@ -1,7 +1,7 @@
 module.exports = {
 	scss: {
 		src: 'assets/scss/*.scss',
-		watch: 'assets/scss/**/*.less',
+		watch: 'assets/scss/**/*.scss',
 		dest: 'dist/css',
 		filename: 'scss.css'
 	},
