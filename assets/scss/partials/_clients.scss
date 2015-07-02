@@ -94,9 +94,10 @@
         display: block;
       }
       &.drive {
+        background-color: $white;
         cursor: default;
         display: block;
-        width: 50%;
+        width: 25%;
       }
     }
   }
