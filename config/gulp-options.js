@@ -38,5 +38,8 @@ module.exports = {
     sourceComments: 'map',
     sourceMap: 'sass',
     outputStyle: 'nested'
+  },
+  imagemin: {
+    progressive: true
   }
 };

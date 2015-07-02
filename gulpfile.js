@@ -13,7 +13,7 @@ gulp.task('watch', function() {
   gulp.watch(paths.js.watch, ['scripts']);
 });
 // Build
-gulp.task('build', ['scss', 'scripts', 'js', 'css']);
+gulp.task('build', ['scss', 'scripts', 'js', 'css', 'img']);
 
 gulp.task('scss', function() {
   return gulp.src(paths.scss.src)
@@ -54,7 +54,6 @@ gulp.task('scripts', function() {
     .pipe(g.uglify())
     .pipe(gulp.dest(paths.js.dest))
     .pipe(g.filesize())
-    .pipe(g.notify('scripts.js created'))
     .on('error', gutil.log);
 });
 
@@ -63,4 +62,10 @@ gulp.task('lint', function() {
     .pipe(g.plumber(options.plumber))
     .pipe(g.jshint())
     .pipe(g.notify(options.notify.jshint));
+});
+
+gulp.task('img', function() {
+  return gulp.src(paths.img.src)
+  .pipe(g.imagemin(options.imagemin))
+  .pipe(gulp.dest(paths.img.dest));
 });
