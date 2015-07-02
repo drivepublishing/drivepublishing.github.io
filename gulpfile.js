@@ -1,17 +1,19 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
     g = require('gulp-load-plugins')();
-
 var options = require('./config/gulp-options');
 var paths = require('./config/paths');
 
+// Default
 gulp.task('default', ['scss', 'lint', 'watch']);
-gulp.task('build', ['scss', 'scripts', 'js', 'css']);
-
+//
 gulp.task('watch', function() {
   gulp.watch(paths.scss.watch, ['scss']);
   gulp.watch(paths.jshint.watch, ['lint']);
+  gulp.watch(paths.js.watch, ['scripts']);
 });
+// Build
+gulp.task('build', ['scss', 'scripts', 'js', 'css']);
 
 gulp.task('scss', function() {
   return gulp.src(paths.scss.src)
