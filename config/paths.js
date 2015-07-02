@@ -1,9 +1,9 @@
 module.exports = {
-	less: {
-		src: 'assets/less/*.less',
-		watch: 'assets/less/**/*.less',
+	scss: {
+		src: 'assets/scss/*.scss',
+		watch: 'assets/scss/**/*.less',
 		dest: 'dist/css',
-		filename: 'less.css'
+		filename: 'scss.css'
 	},
 	css: {
 		vendor: {
