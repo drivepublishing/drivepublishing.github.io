@@ -199,9 +199,10 @@ h2.section-title {
         display: block; }
       /* line 96, /Users/ev/src/dev/drive/assets/scss/partials/_clients.scss */
       .clients .client-item.drive {
+        background-color: #FFFFFF;
         cursor: default;
         display: block;
-        width: 50%; } }
+        width: 25%; } }
 
 /* line 1, /Users/ev/src/dev/drive/assets/scss/partials/_contact.scss */
 .contact {
