@@ -1,2 +1,13 @@
-@import "scss/vendor/bootstrap";
-@import "scss/partials/partials";
+@import "vendor/bootstrap/variables";
+@import "vendor/bootstrap/mixins";
+
+@import "partials/globals";
+@import "partials/base";
+@import "partials/header";
+@import "partials/clients";
+@import "partials/contact";
+@import "partials/footer";
+@import "partials/navbar";
+@import "partials/about";
+@import "partials/services";
+@import "partials/quote";
