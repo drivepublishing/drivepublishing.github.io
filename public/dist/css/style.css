@@ -9551,7 +9551,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 body {
   font-family: Raleway;
   color: #004883;
-  background-color: #FFFFFF; }
+  background-color: #ffffff; }
 
 .section-title {
   font-family: Raleway;
@@ -9643,7 +9643,7 @@ h2.section-title {
     margin: 0;
     padding: 0; }
   .clients .section-title {
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     font-family: Raleway;
     font-weight: 200;
@@ -9654,7 +9654,7 @@ h2.section-title {
     cursor: pointer; }
     .clients .client-item .client-info {
       background: #004883;
-      color: #FFFFFF;
+      color: #ffffff;
       display: none;
       height: 100%;
       left: 0;
@@ -9707,7 +9707,7 @@ h2.section-title {
       .clients .client-item:hover .faculty-info {
         display: block; }
       .clients .client-item.drive {
-        background-color: #FFFFFF;
+        background-color: #ffffff;
         cursor: default;
         display: block;
         width: 25%; } }
@@ -9716,7 +9716,7 @@ h2.section-title {
   background-color: #15365d;
   padding-top: 10px;
   padding-bottom: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: light;
   font-family: Open Sans; }
   .contact .subhead {
@@ -9728,7 +9728,7 @@ h2.section-title {
       margin-bottom: 0; }
     .contact .contact-item p a {
       line-height: 0.7em;
-      color: #FFFFFF; }
+      color: #ffffff; }
   @media (min-width: 320px) {
     .contact .contact-items {
       float: none;
@@ -9746,7 +9746,7 @@ h2.section-title {
   color: #f8f8f8; }
 
 .navbar-default {
-  background: #FFFFFF;
+  background: #ffffff;
   z-index: 2;
   margin-bottom: 0; }
   .navbar-default .navbar-collapse,
@@ -9754,8 +9754,8 @@ h2.section-title {
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
-    border-color: #FFFFFF;
-    background-color: #FFFFFF; }
+    border-color: #ffffff;
+    background-color: #ffffff; }
     .navbar-default .navbar-collapse .fa,
     .navbar-default .navbar-toggle .fa {
       font-size: 3em;
@@ -9808,7 +9808,7 @@ h2.section-title {
     font-weight: 200; }
 
 .services {
-  background: #FFFFFF;
+  background: #ffffff;
   color: #004883;
   text-align: center; }
   .services .services-border {
