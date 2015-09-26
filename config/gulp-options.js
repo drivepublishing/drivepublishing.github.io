@@ -10,9 +10,6 @@ module.exports = {
       baseDir: './'
     }
   },
-  babel: {
-    modules: 'common'
-  },
   plumber: {
     errorHandler: function(err) {
       gutil.beep();

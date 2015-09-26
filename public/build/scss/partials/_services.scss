@@ -14,14 +14,14 @@
     font-size: 4em;
   }
   .service-items {
-    padding-left: 0;    
+    padding-left: 0;
     .service-item {
       text-align: center;
       @media (min-height: $screen-xxs) {
         padding: 15px;
       }
-      @media (min-height: $screen-sm) {
-        padding: 35px 15px; 
+      @media (min-height: $sm) {
+        padding: 35px 15px;
       }
       .service-title {
         padding-bottom: 10px;
@@ -32,7 +32,7 @@
         @media (min-height: $screen-xxs) {
           font-size: 16px;
         }
-        @media (min-height: $screen-sm) {
+        @media (min-height: $sm) {
           font-size: 18px;
         }
       }
@@ -41,7 +41,7 @@
           border-right: none;
           border-bottom: 1px solid $black20;
         }
-        @media (min-width: $screen-sm) {
+        @media (min-width: $sm) {
           border-right: 1px solid $black20;
           border-bottom: none;
         }
@@ -51,7 +51,7 @@
           border-left: none;
           border-top: 1px solid $black20;
         }
-        @media (min-width: $screen-sm) {
+        @media (min-width: $sm) {
           border-left: 1px solid $black20;
           border-top: none;
         }

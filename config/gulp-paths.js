@@ -19,6 +19,7 @@ module.exports = {
       '!public/build/js/vendor/**/*.js'
     ],
     filename: 'scripts.js',
+    min: 'scripts.min.js',
     vendor: {
       src: [
         'public/build/js/vendor/jquery.js',
@@ -28,12 +29,12 @@ module.exports = {
     }
   },
   eslint: {
-    watch: [
+    src: [
       'public/build/js/**/*.js',
       '!public/build/js/vendor/**/*.js',
       'config/**/*.js',
       'gulpfile.js'
-    ],
+    ]
   },
   img: {
     src: 'public/build/img/**/*'

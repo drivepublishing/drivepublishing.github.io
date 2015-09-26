@@ -1,42 +1,54 @@
-.navbar-default {
-  background: $white;
-  z-index: 2;
-  margin-bottom: 0;
-  .navbar-collapse,
-  .navbar-toggle {
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    border-color: $white;;
-    background-color: $white;
-    .fa {
-      font-size: 3em;
-      color: $primarylight;
-    }
-    
-  }
-  li {
-    text-align: right;
-    padding: 5px 15px 5px;
-    border-top: 1px solid $primarygreylight;
-  }
-}
-
-.navbar-right li a {
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-
-.img-nav {
-  display: none;
-}
-
-@media (min-width: $screen-sm) {
-  .img-nav {
+body.on {
+  .nav-links {
+    width: 100%;
     display: block;
-    margin-top: 10px;
-    margin-left: 5px;
-    height: 40px;
+  }
+}
+
+.drv-navbar {
+  background: $color-bg-1;
+  z-index: 2;
+  min-height: 60px;
+  overflow: auto;
+  padding-top: 10px;
+  display: block;
+  @include box-shadow(-4px -19px 46px 2px rgba(0, 0, 0, 0.75));
+  .burger-container {
+    font-size: 2em;
+    float: right;
+    display: inline-block;
+    @media (min-width: $sm) {
+      display: none;
+    }
+  }
+  .nav-links {
+    float: right;
+    display: none;
+    position: relative;
+    @media (min-width: $sm) {
+      display: inline-block;
+    }
+  }
+  .nav-link {
+    text-align: right;
+    margin-left: 10px;
+    text-transform: uppercase;
+    @include padding-y(10px);
+    @media (min-width: $sm) {
+      @include padding-y(auto);
+    }
+  }
+  .logo-container {
+    float: left;
+    width: auto;
+  }
+  .nav-logo {
+    width: 40px;
+  }
+}
+
+@media (min-width: $sm) {
+  .nav-img {
+
   }
 }

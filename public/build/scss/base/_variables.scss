@@ -4,8 +4,8 @@ $md:                      800px;
 $lg:                      1000px;
 $max:                     1200px;
 
-$font-tx-serif:           Raleway;
-$font-tx-sans:            Open Sans;
+$font-serif:             Raleway;
+$font-sans:              Open Sans;
 
 $color-tx-0:              #231f20;
 $color-tx-1:              #ffffff;
@@ -44,7 +44,7 @@ $primarygreydark: #6c6d6f;
 
 $primarylight: $color-tx-2;
 $primarydark: $color-tx-3;
-$primarysans: $font-tx-serif;
-$primaryserif: $font-tx-sans;
+$primarysans: $font-serif;
+$primaryserif: $font-sans;
 $white: $color-tx-1;
 $black: $color-tx-0;

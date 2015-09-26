@@ -1,35 +1,30 @@
 .about {
-  color: $primarylight;
+  color: $color-tx-2;
   background-image: url('../img/drv-op-10.png');
-  padding-top: 50px;
   padding-bottom: 50px;
-  @media (min-width: $screen-xxs) {
-    background-size: 150%;
-    background-position-x: -5%;
-    background-position-y: 43%;
-    background-repeat: no-repeat;
-    .section-title {
-      font-size: 36px;
-    }
-    .lead:first-child {
-      font-size: 22px;
-    }
-    .lead {
-      font-size: 18px;
-      font-weight: 200;
-    }
-  }
-
-  @media (min-width: $screen-xs) {
+  background-size: 150%;
+  background-position-x: -5%;
+  background-position-y: 43%;
+  background-repeat: no-repeat;
+  @media (min-width: $xs) {
     background-size: 75%;
     background-position-x: 110%;
   }
-  .lead:first-child {
-    font-size: 26px;
+  .section-header {
+    @include margin-y(20px);
+    font-size: 36px;
+    font-family: $font-serif;
+    font-weight: 300;
+    text-transform: uppercase;
   }
-  .lead {
-    font-size: 22px;
+  .meta {
+    font-size: 18px;
     font-weight: 200;
+    @media (min-width: $sm) {
+      font-size: 20px;
+      &.em {
+        font-size: 22px;
+      }
+    }
   }
-
 }

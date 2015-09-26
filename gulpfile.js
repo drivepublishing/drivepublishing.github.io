@@ -22,7 +22,7 @@ gulp.task('js:watch', function() {
 });
 
 gulp.task('eslint:watch', function() {
-  gulp.watch(paths.eslint.watch, ['eslint']);
+  gulp.watch(paths.eslint.src, ['eslint']);
 });
 
 gulp.task('jshint:watch', function() {
@@ -58,7 +58,7 @@ gulp.task('js', function() {
   return gulp.src(paths.js.src)
     .pipe($.plumber(opts.plumber))
     .pipe($.sourcemaps.init())
-    .pipe($.babel(opts.babel))
+    .pipe($.babel())
     .on('error', opts.plumber.errorHandler)
     .pipe($.concat(paths.js.filename))
     .pipe(gulp.dest(paths.dest.js))

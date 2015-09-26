@@ -4,6 +4,9 @@
   color: $color-tx-1;
   font-weight: 300;
   font-family: $primaryserif;
+  @media (min-width: $sm) {
+    @include padding-x(50px);
+  }
   .subhead {
     margin-bottom: 10px;
     font-size: 21px;
@@ -15,7 +18,7 @@
     margin-bottom: 0;
   }
   .contact-item {
-    padding-bottom: 5px;
+    margin-bottom: 5px;
     .lead {
       margin-bottom: 0;
     }

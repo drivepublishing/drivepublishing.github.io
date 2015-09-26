@@ -1,29 +1,27 @@
 .header {
   background-image: url('../img/hollywood.jpg');
   position: relative;
-  @media (min-width: $screen-xxs) {
-    padding: 30%;
-    background-size: 125%;
-    background-position-y: 50%;
-    background-repeat: no-repeat;
-    .header-logo-container {
-      display: block;
-      height: 100%;
-      left: 0;
-      top: 0;
-      opacity: 0.8;
-      position: absolute;
-      text-align: center;
-      width: 100%;
-      z-index: 1;
-      padding-top: 15px;
-      .header-logo-img {
-        height: 75px;
-        width: auto;
-      }
+  padding: 30%;
+  background-size: 125%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  .header-logo-container {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    padding-top: 15px;
+    .header-logo-img {
+      height: 75px;
+      width: auto;
     }
   }
-  @media (min-width: $screen-xs) {
+  @media (min-width: $xs) {
     .header-logo-container {
       padding-top: 30px;
       .header-logo-img {
@@ -32,7 +30,7 @@
       }
     }
   }
-  @media (min-width: $screen-sm) {
+  @media (min-width: $sm) {
     height: 90vh;
     background-size: 130%;
     background-position-y: 0%;
@@ -44,9 +42,9 @@
         width: auto;
       }
     }
-    
+
   }
-  @media (min-width: $screen-md) {
+  @media (min-width: $md) {
     background-size: 140%;
     background-position-y: 70%;
     .header-logo-container {
@@ -60,7 +58,7 @@
     }
 
   }
-  @media (min-width: $screen-lg) {
+  @media (min-width: $lg) {
     padding: 24%;
     background-size: 120%;
     background-position-y: 40%;
