@@ -11630,61 +11630,70 @@ body {
 h2.section-title {
   font-size: 38px; }
 
-.header {
-  background-image: url("../img/hollywood.jpg");
+.hero {
   position: relative;
-  padding: 30%;
-  background-size: 125%;
-  background-position-y: 50%;
-  background-repeat: no-repeat; }
-  .header .header-logo-container {
+  height: 290px;
+  width: 100%;
+  background-size: 175%;
+  background-position-y: 35%;
+  background-position-x: 0%;
+  background-repeat: no-repeat;
+  visibility: hidden;
+  overflow: hidden;
+  -webkit-box-shadow: 1px -21px 41px 6px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px -21px 41px 6px rgba(0, 0, 0, 0.75); }
+  @media (min-width: 400px) {
+    .hero {
+      height: 320px;
+      background-size: 150%;
+      background-position-y: 35%;
+      background-position-x: 0%; } }
+  @media (min-width: 600px) {
+    .hero {
+      height: 400px;
+      background-size: 125%;
+      background-position-y: 20%;
+      background-position-x: 0%; } }
+  @media (min-width: 800px) {
+    .hero {
+      height: 600px;
+      background-size: 125%;
+      background-position-y: 35%;
+      background-position-x: 0%; } }
+  @media (min-width: 1000px) {
+    .hero {
+      background-size: 125%;
+      background-position-y: 25%;
+      background-position-x: 0%; } }
+  @media (min-width: 1100px) {
+    .hero {
+      background-size: 100%; } }
+  .hero .image-container {
     display: block;
     height: 100%;
     left: 0;
-    top: 0;
+    right: 0;
+    top: 35px;
     opacity: 0.8;
     position: absolute;
-    text-align: center;
-    width: 100%;
     z-index: 1;
-    padding-top: 15px; }
-    .header .header-logo-container .header-logo-img {
-      height: 75px;
-      width: auto; }
-  @media (min-width: 400px) {
-    .header .header-logo-container {
-      padding-top: 30px; }
-      .header .header-logo-container .header-logo-img {
-        height: 115px;
-        width: auto; } }
-  @media (min-width: 600px) {
-    .header {
-      height: 90vh;
-      background-size: 130%;
-      background-position-y: 0%;
-      background-position-x: 0%; }
-      .header .header-logo-container {
-        padding-top: 50px; }
-        .header .header-logo-container .header-logo-img {
-          height: 200px;
-          width: auto; } }
-  @media (min-width: 800px) {
-    .header {
-      background-size: 140%;
-      background-position-y: 70%; }
-      .header .header-logo-container {
-        padding-top: 50px;
-        padding-left: 30px;
-        text-align: left; }
-        .header .header-logo-container .header-logo-img {
-          height: 200px;
-          width: auto; } }
-  @media (min-width: 1000px) {
-    .header {
-      padding: 24%;
-      background-size: 120%;
-      background-position-y: 40%;
-      background-position-x: 0%; } }
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+    @media (min-width: 1100px) {
+      .hero .image-container {
+        top: 90px;
+        margin-left: 20%;
+        text-align: left; } }
+    .hero .image-container .img-overlay {
+      display: none;
+      width: 55%; }
+      @media (min-width: 900px) {
+        .hero .image-container .img-overlay {
+          width: 40%; } }
+      @media (min-width: 1100px) {
+        .hero .image-container .img-overlay {
+          width: 35%; } }
 
 .clients {
   background-color: #15365d;
@@ -11826,6 +11835,7 @@ h2.section-title {
   overflow: auto;
   padding-top: 10px;
   display: block;
+  position: relative;
   -webkit-box-shadow: -4px -19px 46px 2px rgba(0, 0, 0, 0.75);
   box-shadow: -4px -19px 46px 2px rgba(0, 0, 0, 0.75); }
   .drv-navbar .burger-container {

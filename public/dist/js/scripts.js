@@ -20,6 +20,33 @@ DRV.Nav = {
   }
 };
 
+DRV.Hero = {
+  init: function init() {
+    this.loadImage();
+  },
+  loadImage: function loadImage() {
+    var $hero = $('.hero'),
+        src = 'public/dist/img/hollywood.jpg',
+        img = new Image(),
+        callback = function callback() {
+      DRV.Hero.triggerAnimation();
+    };
+
+    img.addEventListener('load', callback);
+    img.src = src;
+    $hero.css({ 'background-image': 'url(\'' + src + '\')' });
+  },
+  triggerAnimation: function triggerAnimation() {
+    var $image = $('.img-overlay'),
+        $hero = $('.hero');
+
+    $hero.css({ 'visibility': 'visible' });
+    $hero.addClass('fadeIn');
+    $image.css({ 'display': 'inline-block' });
+  }
+};
+
 $(document).on('ready', function () {
   DRV.Nav.init();
+  DRV.Hero.init();
 });
