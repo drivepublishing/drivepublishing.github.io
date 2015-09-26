@@ -7,14 +7,14 @@ let gulp        = require('gulp'),
     paths       = require('./config/gulp-paths'),
     opts        = require('./config/gulp-options');
 
-gulp.task('default', ['scss', 'lint', 'watch']);
+gulp.task('default', ['scss:watch', 'js:watch', 'eslint:watch', 'browserSync']);
 
 //////////////////////
 // WATCH
 //////////////////////
 
-gulp.task('less:watch', function() {
-  gulp.watch(paths.less.watch, ['less:reload']);
+gulp.task('scss:watch', function() {
+  gulp.watch(paths.scss.watch, ['scss:reload']);
 });
 
 gulp.task('js:watch', function() {
@@ -42,7 +42,7 @@ gulp.task('browserSync', function() {
     gulp.watch('*.html').on('change', browserSync.reload);
 });
 
-gulp.task('less:reload', ['less'], function() {
+gulp.task('scss:reload', ['scss'], function() {
     browserSync.reload();
 });
 
@@ -88,13 +88,21 @@ gulp.task('js:vendor', function() {
     .on('error', gutil.log);
 });
 
+//////////////////////
+// SCSS
+//////////////////////
+
 gulp.task('scss', function() {
   return gulp.src(paths.scss.src)
     .pipe($.plumber(opts.plumber))
-    .pipe($.sass(options.scss))
+    .pipe($.sass())
     .pipe($.rename(paths.scss.filename))
     .pipe(gulp.dest(paths.dest.css))
-    .on('error', gutil.log);
+    .on('error', opts.plumber.errorHandler)
+    .pipe($.autoprefixer(opts.autoprefixer))
+    .pipe($.cssmin())
+    .pipe($.rename(paths.scss.min))
+    .pipe(gulp.dest(paths.dest.css)).on('error', gutil.log);
 });
 
 //////////////////////
