@@ -49,20 +49,35 @@ DRV.Grid = {
   init() {
     this.setDimensions();
   },
+  onResize() {
+    this.setDimensions();
+  },
   setDimensions() {
     let windowX = $(window).width(),
         $cell = $('.client-item');
 
-    if (windowX >= 400) {
-      return false;
+    if (windowX < 400) {
+      $cell.height(windowX);
+    }
+    else if (windowX >= 400 && windowX < 600) {
+      $cell.height(windowX / 2);
+    }
+    else if (windowX >= 600 && windowX < 1200) {
+      $cell.height(windowX / 4);
+    }
+    else if (windowX >= 1200) {
+      $cell.height(300)
     }
 
-    $cell.height(windowX);
   }
 };
 
 $(document).on('ready', function() {
   DRV.Nav.init();
   DRV.Hero.init();
+  DRV.Grid.init();
+});
+
+$(window).resize(function() {
   DRV.Grid.init();
 });

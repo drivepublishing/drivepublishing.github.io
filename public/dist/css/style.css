@@ -11701,16 +11701,13 @@ h2.section-title {
   background-color: #004883;
   background-image: url("../img/furley_bg.png");
   padding-left: 0;
-  padding-right: 0; }
-  @media (min-width: 400px) {
-    .clients {
-      padding-left: 15px;
-      padding-right: 15px; } }
+  padding-right: 0;
+  padding-bottom: 100px; }
   .clients .header-container {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px; }
-    @media (min-width: 400px) {
+    @media (min-width: 600px) {
       .clients .header-container {
         text-align: left; } }
   .clients .section-header {
@@ -11719,16 +11716,41 @@ h2.section-title {
     font-weight: 200;
     font-size: 36px;
     text-transform: uppercase; }
+  .clients .clients-container {
+    text-align: center; }
+  .clients #hidden-square {
+    background-image: url("../img/drv-md.png");
+    background-color: #15365d; }
+  .clients #hidden-rectangle {
+    background-image: url("../img/client-drive.png");
+    display: none; }
   .clients .client-item {
     background-size: cover;
     position: relative;
-    cursor: pointer;
     margin-bottom: -5px;
     display: inline-block;
     width: 100%; }
     @media (min-width: 400px) {
       .clients .client-item {
-        margin-bottom: auto; } }
+        margin-bottom: auto;
+        width: 50%;
+        margin-left: -2.25px;
+        margin-right: -2.25px;
+        margin-top: -2.5px;
+        margin-bottom: -2.5px; } }
+    @media (min-width: 600px) {
+      .clients .client-item {
+        width: 25%; }
+        .clients .client-item:hover .client-info {
+          display: block; } }
+    .clients .client-item .overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      height: 100%;
+      background-color: #231f20;
+      opacity: 0.2; }
     .clients .client-item .client-info {
       background: #004883;
       color: #ffffff;
@@ -11740,45 +11762,23 @@ h2.section-title {
       text-align: center;
       z-index: 1;
       height: 25%;
-      font-size: 24px;
       opacity: 0.8; }
-      .clients .client-item .client-info p {
-        margin-top: 20px; }
-      @media (min-width: 400px) {
+      @media (min-width: 600px) {
         .clients .client-item .client-info {
-          display: none;
+          height: 30%;
+          display: none; } }
+      @media (min-width: 800px) {
+        .clients .client-item .client-info {
           height: 25%; } }
-      .clients .client-item .client-info:hover .client-info {
-        display: block; }
-    .clients .client-item.drive {
-      display: none; }
-  @media (min-width: 400px) {
-    .clients .client-item {
-      padding: 25%;
-      width: 50%; }
-      .clients .client-item .client-info p {
-        font-size: 18px; } }
-  @media (min-width: 600px) {
-    .clients .clients-container {
-      padding-left: 10%;
-      padding-right: 10%; }
-    .clients .client-item {
-      padding: 12.5%;
-      width: 25%; }
-      .clients .client-item .client-info {
-        display: none;
-        height: 100%;
-        top: 0; }
-        .clients .client-item .client-info p {
-          font-size: 24px;
-          margin-top: 40%; }
-      .clients .client-item:hover .faculty-info {
-        display: block; }
-      .clients .client-item.drive {
-        background-color: #ffffff;
-        cursor: default;
-        display: block;
-        width: 25%; } }
+    .clients .client-item p {
+      font-size: 24px;
+      margin-top: 20px; }
+      @media (min-width: 400px) {
+        .clients .client-item p {
+          font-size: 15px; } }
+      @media (min-width: 800px) {
+        .clients .client-item p {
+          font-size: 17px; } }
 
 .contact {
   background-color: #15365d;
