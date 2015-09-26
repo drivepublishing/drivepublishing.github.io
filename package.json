@@ -17,10 +17,13 @@
   },
   "homepage": "https://github.com/evturn/drive#readme",
   "devDependencies": {
+    "browser-sync": "^2.9.6",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.1.0",
+    "gulp-babel": "^5.2.1",
     "gulp-concat": "^2.6.0",
     "gulp-cssmin": "^0.1.6",
+    "gulp-eslint": "^1.0.0",
     "gulp-filesize": "0.0.6",
     "gulp-imagemin": "^2.3.0",
     "gulp-jshint": "^1.11.0",
