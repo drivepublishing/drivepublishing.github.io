@@ -1,13 +1,35 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700,900);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
 body {
+  font-family: $font-serif;
+  color: $color-tx-2;
+  background-color: $color-bg-1;
+  &.on {
+    overflow: hidden;
+    .nav-links {
+      width: 100%;
+      display: block;
+    }
+    .curtain {
+      display: block;
+    }
+  }
+}
+#ll {
   position: relative;
   min-height: 100%;
-  font-family: $primarysans;
-  color: $primarylight;
-  background-color: $white;
 }
+.curtain {
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-color: $color-bg-0;
+    opacity: 0.3;
+  display: none;
+}
+
 
 .section-title {
   font-family: $primarysans;
@@ -23,7 +45,3 @@ body {
 h2.section-title {
   font-size: 38px;
 }
-
-.bg-greylight { background-color: $primarygreylight; }
-.bg-greymed { background-color: $primarygreymed; }
-.bg-greydark { background-color: $primarygreydark; }

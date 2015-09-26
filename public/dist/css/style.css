@@ -11581,11 +11581,32 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   max-width: 1200px; }
 
 body {
-  position: relative;
-  min-height: 100%;
   font-family: Raleway;
   color: #004883;
   background-color: #ffffff; }
+  body.on {
+    overflow: hidden; }
+    body.on .nav-links {
+      width: 100%;
+      display: block; }
+    body.on .curtain {
+      display: block; }
+
+#ll {
+  position: relative;
+  min-height: 100%; }
+
+.curtain {
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #231f20;
+  opacity: 0.3;
+  display: none; }
 
 .section-title {
   font-family: Raleway;
@@ -11598,15 +11619,6 @@ body {
 
 h2.section-title {
   font-size: 38px; }
-
-.bg-greylight {
-  background-color: #f8f8f8; }
-
-.bg-greymed {
-  background-color: #bbbdbf; }
-
-.bg-greydark {
-  background-color: #6c6d6f; }
 
 .header {
   background-image: url("../img/hollywood.jpg");
@@ -11796,10 +11808,6 @@ h2.section-title {
 .footer {
   background-color: #15365d;
   color: #f8f8f8; }
-
-body.on .nav-links {
-  width: 100%;
-  display: block; }
 
 .drv-navbar {
   background: #ffffff;
