@@ -1,11 +1,10 @@
 .services {
   background-color: $color-bg-1;
   color: $color-tx-2;
+  border-top: 1px solid $black20;
   text-align: center;
   @include padding-x(0);
   @include clearfix();
-  border-top: 1px solid $black20;
-  border-bottom: 1px solid $black20;
   .fa {
     color: $color-tx-3;
     font-size: 4em;
@@ -18,9 +17,6 @@
     color: $color-tx-grey-0;
     font-size: 14px;
     margin-bottom: 10px;
-    @media (min-height: $sm) {
-      // font-size: 18px;
-    }
   }
   .service-item {
     border-bottom: 1px solid $black20;

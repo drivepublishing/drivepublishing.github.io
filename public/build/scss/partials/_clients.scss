@@ -1,59 +1,61 @@
 .clients {
-  background-color: $primarydark;
-  background-image: url('../img/drv-w-sm.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 150px;
-  background-position-y: 10px;
-  .entry-content {
-    margin: 0;
-    padding: 0;
+  background-color: $color-bg-2;
+  background-image: url('../img/furley_bg.png');
+  @include padding-x(0);
+  @media (min-width: $xs) {
+    @include padding-x(15px);
   }
-  .section-title {
-    color: $white;
+  .header-container {
     text-align: center;
-    font-family: $primarysans;
+    @include padding-y(30px);
+    @media (min-width: $xs) {
+      text-align: left;
+    }
+  }
+  .section-header {
+    color: $color-tx-2;
+    font-family: $font-serif;
     font-weight: 200;
-    padding-bottom: 50px;
-  }
-
-.client-item {
-  background-size: cover;
-  position: relative;
-  cursor: pointer;
-  & .client-info {
-    background: $primarylight;
-    color: $white;
-    display: none;
-    height: 100%;
-    left: 0;
-    opacity: 0.8;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    z-index: 1;
-  }
-  &:hover .client-info {
-    display: block;
-  }
-}
-  .client-items {
-    display: inline-block;
-    width: 100%;
-    padding: 0;
-    margin-bottom: -7px;
-    li { list-style-type: none; }
+    font-size: 36px;
+    text-transform: uppercase;
   }
   .client-item {
-    padding: 50%;
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: -5px;
+    display: inline-block;
+    width: 100%;
+    @media (min-width: $xs) {
+      margin-bottom: auto;
+    }
     .client-info {
+      background: $color-tx-2;
+      color: $color-tx-1;
       display: block;
-      height: 25%;
+      position: absolute;
+      left: 0;
+      right: 0;
       bottom: 0;
+      text-align: center;
+      z-index: 1;
+      height: 25%;
+      font-size: 24px;
+      opacity: 0.8;
       p {
-        font-size: 24px;
-        margin-top: 8%;
+        margin-top: 20px;
       }
+    @media (min-width: $xs) {
+      display: none;
+      height: 25%;
+    }
+    &:hover .client-info {
+      display: block;
+    }
+  }
+  .client-item {
+
+
     }
     &.drive {
       display: none;
