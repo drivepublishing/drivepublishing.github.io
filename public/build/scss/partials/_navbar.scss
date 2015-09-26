@@ -29,6 +29,15 @@
     @include padding-y(10px);
     @media (min-width: $sm) {
       @include padding-y(auto);
+      display: inline-block;
+      font-size: 20px;
+      a {
+        text-decoration: none;
+        @include transition(ease 0.3s all);
+        &:hover {
+          color: $color-tx-0;
+        }
+      }
     }
   }
   .logo-container {
@@ -37,11 +46,5 @@
   }
   .nav-logo {
     width: 40px;
-  }
-}
-
-@media (min-width: $sm) {
-  .nav-img {
-
   }
 }

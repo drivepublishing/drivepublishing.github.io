@@ -11841,7 +11841,16 @@ h2.section-title {
     @media (min-width: 600px) {
       .drv-navbar .nav-link {
         padding-top: auto;
-        padding-bottom: auto; } }
+        padding-bottom: auto;
+        display: inline-block;
+        font-size: 20px; }
+        .drv-navbar .nav-link a {
+          text-decoration: none;
+          -webkit-transition: ease 0.3s all;
+          -o-transition: ease 0.3s all;
+          transition: ease 0.3s all; }
+          .drv-navbar .nav-link a:hover {
+            color: #231f20; } }
   .drv-navbar .logo-container {
     float: left;
     width: auto; }
