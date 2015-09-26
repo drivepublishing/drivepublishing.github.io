@@ -11,6 +11,7 @@
     font-size: 2em;
     float: right;
     display: inline-block;
+    cursor: pointer;
     @media (min-width: $sm) {
       display: none;
     }
@@ -25,7 +26,7 @@
   }
   .nav-link {
     text-align: right;
-    margin-left: 10px;
+    margin-left: 25px;
     text-transform: uppercase;
     @include padding-y(10px);
     @media (min-width: $sm) {
