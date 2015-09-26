@@ -2,53 +2,56 @@
   background-color: $color-bg-1;
   color: $color-tx-2;
   text-align: center;
-  border-bottom: 1px solid $black20;
   @include padding-x(0);
   @include clearfix();
+  border-top: 1px solid $black20;
+  border-bottom: 1px solid $black20;
   .fa {
     color: $color-tx-3;
     font-size: 4em;
   }
   .headline {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   .meta {
-    line-height: 1em;
+    line-height: 19px;
     color: $color-tx-grey-0;
-    font-size: 16px;
+    font-size: 14px;
+    margin-bottom: 10px;
     @media (min-height: $sm) {
-      font-size: 18px;
+      // font-size: 18px;
     }
   }
   .service-item {
-    border-top: 1px solid $black20;
+    border-bottom: 1px solid $black20;
     text-align: center;
     width: 100%;
     display: block;
     @include padding-y(15px);
-    @media (min-height: $sm) {
-      padding: 35px 15px;
+    @media (min-width: $sm) {
+      width: 33%;
       display: inline-block;
+      border-bottom: none;
+      border-left: 1px solid $black20;
+      border-right: 1px solid $black20;
       &.p-left {
-        border-right: none;
-        border-bottom: 1px solid $black20;
-        @media (min-width: $sm) {
-          float: left;
-          border-right: 1px solid $black20;
-          border-bottom: none;
-        }
+        float: left;
+        border: none;
       }
       &.p-right {
-        border-left: none;
-        border-top: 1px solid $black20;
-        @media (min-width: $sm) {
-          float: right;
-          border-left: 1px solid $black20;
-          border-top: none;
-        }
+        float: right;
+        border: none;
       }
     }
-  }
-  .title-container {
+    .desc-container {
+      @media (min-width: $sm) {
+        width: 90%;
+        @include margin-x(auto);
+        min-height: 120px;
+      }
+      @media (min-width: $md) {
+        min-height: 90px;
+      }
+    }
   }
 }

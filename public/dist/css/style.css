@@ -11617,6 +11617,9 @@ body {
   opacity: 0.3;
   display: none; }
 
+p {
+  margin-bottom: auto; }
+
 .section-title {
   font-family: Raleway;
   padding-bottom: 30px;
@@ -11916,6 +11919,14 @@ h2.section-title {
           float: left; }
         .about .bio-extended .p-right {
           display: inline-block; } }
+    @media (min-width: 1000px) {
+      .about .bio-extended {
+        width: 95%;
+        max-width: 850px; }
+        .about .bio-extended .p-left,
+        .about .bio-extended .p-right {
+          padding-left: 20px;
+          padding-right: 20px; } }
     .about .bio-extended .meta {
       font-size: 15px;
       line-height: 25px;
@@ -11930,7 +11941,9 @@ h2.section-title {
       @media (min-width: 800px) {
         .about .bio-extended .meta {
           font-size: 17px;
-          line-height: 26px; } }
+          line-height: 26px; }
+          .about .bio-extended .meta.new-line {
+            margin-top: 40px; } }
   .about .section-header {
     font-size: 36px;
     font-family: Raleway;
@@ -11948,14 +11961,19 @@ h2.section-title {
         display: block;
         width: 90%;
         line-height: 36px; } }
+    @media (min-width: 1000px) {
+      .about .bio-lead {
+        width: 95%;
+        max-width: 850px; } }
 
 .services {
   background-color: #ffffff;
   color: #004883;
   text-align: center;
-  border-bottom: 1px solid #d0d2d3;
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  border-top: 1px solid #d0d2d3;
+  border-bottom: 1px solid #d0d2d3; }
   .services:before,
   .services:after {
     content: " ";
@@ -11966,42 +11984,41 @@ h2.section-title {
     color: #15365d;
     font-size: 4em; }
   .services .headline {
-    margin-bottom: 10px; }
+    margin-bottom: 20px; }
   .services .meta {
-    line-height: 1em;
+    line-height: 19px;
     color: #6c6d6f;
-    font-size: 16px; }
-    @media (min-height: 600px) {
-      .services .meta {
-        font-size: 18px; } }
+    font-size: 14px;
+    margin-bottom: 10px; }
   .services .service-item {
-    border-top: 1px solid #d0d2d3;
+    border-bottom: 1px solid #d0d2d3;
     text-align: center;
     width: 100%;
     display: block;
     padding-top: 15px;
     padding-bottom: 15px; }
-    @media (min-height: 600px) {
+    @media (min-width: 600px) {
       .services .service-item {
-        padding: 35px 15px;
-        display: inline-block; }
-        .services .service-item.p-left {
-          border-right: none;
-          border-bottom: 1px solid #d0d2d3; } }
-    @media (min-height: 600px) and (min-width: 600px) {
-      .services .service-item.p-left {
-        float: left;
-        border-right: 1px solid #d0d2d3;
-        border-bottom: none; } }
-    @media (min-height: 600px) {
-        .services .service-item.p-right {
-          border-left: none;
-          border-top: 1px solid #d0d2d3; } }
-    @media (min-height: 600px) and (min-width: 600px) {
-      .services .service-item.p-right {
-        float: right;
+        width: 33%;
+        display: inline-block;
+        border-bottom: none;
         border-left: 1px solid #d0d2d3;
-        border-top: none; } }
+        border-right: 1px solid #d0d2d3; }
+        .services .service-item.p-left {
+          float: left;
+          border: none; }
+        .services .service-item.p-right {
+          float: right;
+          border: none; } }
+    @media (min-width: 600px) {
+      .services .service-item .desc-container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 120px; } }
+    @media (min-width: 800px) {
+      .services .service-item .desc-container {
+        min-height: 90px; } }
 
 .quote {
   text-align: center;

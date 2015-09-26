@@ -35,6 +35,14 @@
         display: inline-block;
       }
     }
+    @media (min-width: $lg) {
+      width: 95%;
+      max-width: 850px;
+      .p-left,
+      .p-right {
+        @include padding-x(20px);
+      }
+    }
     .meta {
       font-size: 15px;
       line-height: 25px;
@@ -50,6 +58,9 @@
       @media (min-width: $md) {
         font-size: 17px;
         line-height: 26px;
+        &.new-line {
+          margin-top: 40px;
+        }
       }
     }
   }
@@ -69,6 +80,10 @@
       display: block;
       width: 90%;
       line-height: 36px;
+    }
+    @media (min-width: $lg) {
+      width: 95%;
+      max-width: 850px;
     }
   }
 }

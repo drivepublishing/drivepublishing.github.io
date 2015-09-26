@@ -30,16 +30,19 @@ body {
   display: none;
 }
 .curtain {
-    overflow: hidden;
-    position: absolute;
-    height: 100%;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 10;
-    background-color: $color-bg-0;
-    opacity: 0.3;
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: $color-bg-0;
+  opacity: 0.3;
   display: none;
+}
+p {
+  margin-bottom: auto;
 }
 .section-title {
   font-family: $primarysans;
