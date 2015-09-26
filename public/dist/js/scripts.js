@@ -9,18 +9,30 @@ DRV.Nav = {
     this.listeners();
   },
   listeners: function listeners() {
-    $('.burger-container').on('click', function () {
+    $('.burger-container').on('click', function (e) {
+      // DRV.Nav.animateNav(e);
       DRV.Nav.toggleLinks();
     });
 
-    $('.nav-link a').on('click', function () {
-      DRV.Nav.toggleLinks();
+    $('.nav-link a, .curtain').on('click', function () {
+      $('body').removeClass('on');
     });
   },
   toggleLinks: function toggleLinks() {
     var $body = $('body');
 
     $body.toggleClass('on');
+  },
+  animateNav: function animateNav(e) {
+    var $body = $('body');
+
+    if ($body.hasClass('on')) {
+      $('.nav-links').removeClass('slideInDown');
+      $('.nav-links').addClass('slideOutUp');
+    } else {
+      $('.nav-links').removeClass('slideOutUp');
+      $('.nav-links').addClass('slideInDown');
+    }
   }
 };
 

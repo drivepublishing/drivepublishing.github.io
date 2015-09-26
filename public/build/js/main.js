@@ -7,18 +7,31 @@ DRV.Nav = {
     this.listeners();
   },
   listeners() {
-    $('.burger-container').on('click', function() {
+    $('.burger-container').on('click', function(e) {
+      // DRV.Nav.animateNav(e);
       DRV.Nav.toggleLinks();
     });
 
-    $('.nav-link a').on('click', function() {
-      DRV.Nav.toggleLinks();
+    $('.nav-link a, .curtain').on('click', function() {
+      $('body').removeClass('on');
     });
   },
   toggleLinks() {
     let $body = $('body');
 
     $body.toggleClass('on');
+  },
+  animateNav(e) {
+    let $body = $('body');
+
+    if ($body.hasClass('on')) {
+      $('.nav-links').removeClass('slideInDown');
+      $('.nav-links').addClass('slideOutUp');
+    }
+    else {
+      $('.nav-links').removeClass('slideOutUp');
+      $('.nav-links').addClass('slideInDown');
+    }
   }
 };
 
@@ -70,7 +83,7 @@ DRV.Grid = {
       $cell.height(windowX / 4);
     }
     else if (windowX >= 1200) {
-      $cell.height(300)
+      $cell.height(300);
     }
 
   }

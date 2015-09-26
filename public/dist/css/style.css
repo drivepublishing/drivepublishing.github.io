@@ -11869,9 +11869,9 @@ h2.section-title {
       .drv-navbar .burger-container {
         display: none; } }
   .drv-navbar .nav-links {
-    float: right;
     display: none;
-    position: relative; }
+    position: relative;
+    float: right; }
     @media (min-width: 600px) {
       .drv-navbar .nav-links {
         display: inline-block; } }

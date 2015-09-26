@@ -17,9 +17,9 @@
     }
   }
   .nav-links {
-    float: right;
     display: none;
     position: relative;
+    float: right;
     @media (min-width: $sm) {
       display: inline-block;
     }
