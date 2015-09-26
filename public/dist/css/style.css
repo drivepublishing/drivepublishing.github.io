@@ -11586,6 +11586,10 @@ body {
   background-color: #ffffff; }
   body.on {
     overflow: hidden; }
+    body.on #nav-o {
+      display: none; }
+    body.on #nav-x {
+      display: block; }
     body.on .nav-links {
       width: 100%;
       display: block; }
@@ -11595,6 +11599,12 @@ body {
 #ll {
   position: relative;
   min-height: 100%; }
+
+#nav-o {
+  display: block; }
+
+#nav-x {
+  display: none; }
 
 .curtain {
   overflow: hidden;

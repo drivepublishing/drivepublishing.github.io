@@ -4,6 +4,12 @@ body {
   background-color: $color-bg-1;
   &.on {
     overflow: hidden;
+    #nav-o {
+      display: none;
+    }
+    #nav-x {
+      display: block;
+    }
     .nav-links {
       width: 100%;
       display: block;
@@ -16,6 +22,12 @@ body {
 #ll {
   position: relative;
   min-height: 100%;
+}
+#nav-o {
+  display: block;
+}
+#nav-x {
+  display: none;
 }
 .curtain {
     overflow: hidden;
