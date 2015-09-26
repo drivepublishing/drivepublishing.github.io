@@ -1,17 +1,21 @@
 .contact {
   background-color: $color-bg-3;
-  @include padding-y(15px);
   color: $color-tx-1;
   font-weight: 300;
   font-family: $primaryserif;
+  @include padding-y(15px);
+  @include clearfix();
   @media (min-width: $sm) {
     @include padding-x(50px);
   }
   .subhead {
     margin-bottom: 10px;
     font-size: 21px;
-    @media (min-width: $sm) {
+    @media (min-width: $xs) {
       font-size: 19px;
+    }
+    @media (min-width: $sm) {
+      font-size: 23px;
     }
   }
   .meta {
@@ -32,30 +36,30 @@
     width: 100%;
     display: block;
     float: none;
-    text-align: center;
     margin-bottom: 30px;
+    .meta {
+      font-size: 10px;
+      color: $color-tx-1;
+    }
   }
 
   .contact-items {
-    @media (min-width: $sm) {
+    @media (min-width: $xs) {
       width: auto;
       float: left;
       .contact-item {
         text-align: left;
       }
-      .subhead {
-        text-align: left;
-      }
     }
   }
   .location-container {
-    @media (min-width: $sm) {
+    @media (min-width: $xs) {
       width: auto;
       float: right;
-      .contact-item {
+      .subhead {
         text-align: right;
       }
-      .subhead {
+      .contact-item {
         text-align: right;
       }
     }

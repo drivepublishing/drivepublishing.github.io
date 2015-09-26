@@ -2,7 +2,11 @@
   background-color: $color-bg-2;
   background-image: url('../img/furley_bg.png');
   @include padding-x(0);
-  padding-bottom: 100px;
+  margin-bottom: -2px;
+  @media (min-width: $sm) {
+    margin-bottom: auto;
+    padding-bottom: 100px;
+  }
   .header-container {
     text-align: center;
     @include padding-y(30px);

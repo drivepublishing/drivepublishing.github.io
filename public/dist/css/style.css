@@ -11702,7 +11702,11 @@ h2.section-title {
   background-image: url("../img/furley_bg.png");
   padding-left: 0;
   padding-right: 0;
-  padding-bottom: 100px; }
+  margin-bottom: -2px; }
+  @media (min-width: 600px) {
+    .clients {
+      margin-bottom: auto;
+      padding-bottom: 100px; } }
   .clients .header-container {
     text-align: center;
     padding-top: 30px;
@@ -11782,11 +11786,17 @@ h2.section-title {
 
 .contact {
   background-color: #15365d;
-  padding-top: 15px;
-  padding-bottom: 15px;
   color: #ffffff;
   font-weight: 300;
-  font-family: Open Sans; }
+  font-family: Open Sans;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  .contact:before,
+  .contact:after {
+    content: " ";
+    display: table; }
+  .contact:after {
+    clear: both; }
   @media (min-width: 600px) {
     .contact {
       padding-left: 50px;
@@ -11794,9 +11804,12 @@ h2.section-title {
   .contact .subhead {
     margin-bottom: 10px;
     font-size: 21px; }
-    @media (min-width: 600px) {
+    @media (min-width: 400px) {
       .contact .subhead {
         font-size: 19px; } }
+    @media (min-width: 600px) {
+      .contact .subhead {
+        font-size: 23px; } }
   .contact .meta {
     margin-bottom: 0; }
   .contact .contact-item {
@@ -11811,28 +11824,31 @@ h2.section-title {
     width: 100%;
     display: block;
     float: none;
-    text-align: center;
     margin-bottom: 30px; }
-  @media (min-width: 600px) {
+    .contact .contact-items .meta,
+    .contact .location-container .meta {
+      font-size: 10px;
+      color: #ffffff; }
+  @media (min-width: 400px) {
     .contact .contact-items {
       width: auto;
       float: left; }
       .contact .contact-items .contact-item {
-        text-align: left; }
-      .contact .contact-items .subhead {
         text-align: left; } }
-  @media (min-width: 600px) {
+  @media (min-width: 400px) {
     .contact .location-container {
       width: auto;
       float: right; }
-      .contact .location-container .contact-item {
-        text-align: right; }
       .contact .location-container .subhead {
+        text-align: right; }
+      .contact .location-container .contact-item {
         text-align: right; } }
 
 .footer {
   background-color: #15365d;
-  color: #f8f8f8; }
+  color: #f8f8f8;
+  font-size: 10px;
+  padding-bottom: 15px; }
 
 .drv-navbar {
   background: #ffffff;
