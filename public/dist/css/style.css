@@ -9548,6 +9548,18 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -webkit-animation-name: zoomOutUp;
   animation-name: zoomOutUp; }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 1200px; }
+
 body {
   font-family: Raleway;
   color: #004883;
