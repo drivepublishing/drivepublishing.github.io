@@ -1,62 +1,54 @@
 .services {
-  background: $white;
-  color: $primarylight;
+  background-color: $color-bg-1;
+  color: $color-tx-2;
   text-align: center;
-  .services-border {
-    border-top: 1px solid $black20;
-    border-bottom: 1px solid $black20;
-  }
-  .services-container {
-    margin: 0;
-  }
+  border-bottom: 1px solid $black20;
+  @include padding-x(0);
+  @include clearfix();
   .fa {
-    color: $primarydark;
+    color: $color-tx-3;
     font-size: 4em;
   }
-  .service-items {
-    padding-left: 0;
-    .service-item {
-      text-align: center;
-      @media (min-height: $screen-xxs) {
-        padding: 15px;
-      }
-      @media (min-height: $sm) {
-        padding: 35px 15px;
-      }
-      .service-title {
-        padding-bottom: 10px;
-      }
-      .caption {
-        line-height: 1em;
-        color: $primarygreydark;
-        @media (min-height: $screen-xxs) {
-          font-size: 16px;
-        }
-        @media (min-height: $sm) {
-          font-size: 18px;
-        }
-      }
-      &.pull-left {
-        @media (min-width: $screen-xxs) {
-          border-right: none;
-          border-bottom: 1px solid $black20;
-        }
+  .headline {
+    margin-bottom: 10px;
+  }
+  .meta {
+    line-height: 1em;
+    color: $color-tx-grey-0;
+    font-size: 16px;
+    @media (min-height: $sm) {
+      font-size: 18px;
+    }
+  }
+  .service-item {
+    border-top: 1px solid $black20;
+    text-align: center;
+    width: 100%;
+    display: block;
+    @include padding-y(15px);
+    @media (min-height: $sm) {
+      padding: 35px 15px;
+      display: inline-block;
+      &.p-left {
+        border-right: none;
+        border-bottom: 1px solid $black20;
         @media (min-width: $sm) {
+          float: left;
           border-right: 1px solid $black20;
           border-bottom: none;
         }
       }
-      &.pull-right {
-        @media (min-width: $screen-xxs) {
-          border-left: none;
-          border-top: 1px solid $black20;
-        }
+      &.p-right {
+        border-left: none;
+        border-top: 1px solid $black20;
         @media (min-width: $sm) {
+          float: right;
           border-left: 1px solid $black20;
           border-top: none;
         }
       }
     }
   }
-
+  .title-container {
+  }
 }
