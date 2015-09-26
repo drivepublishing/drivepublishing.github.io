@@ -29,10 +29,6 @@ gulp.task('jshint:watch', function() {
   gulp.watch(paths.jshint.watch, ['lint']);
 });
 
-gulp.task('webpack:watch', function() {
-  gulp.watch(paths.webpack.watch, ['webpack:reload']);
-});
-
 //////////////////////
 // BROWSERSYNC
 //////////////////////

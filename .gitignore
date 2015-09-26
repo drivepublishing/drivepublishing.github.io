@@ -1,4 +1,3 @@
-media
-.sass-cache
-node_modules
 .DS_Store
+node_modules
+npm-debug.log

@@ -1,3 +1,9 @@
+'use strict';
+
+let gulp = require('gulp'),
+    gutil = require('gulp-util'),
+    $ = require('gulp-load-plugins')();
+
 module.exports = {
   browserSync: {
     server: {

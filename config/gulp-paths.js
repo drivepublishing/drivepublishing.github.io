@@ -6,7 +6,7 @@ module.exports = {
   },
   scss: {
     src: 'public/build/scss/*.scss',
-    watch: 'public/build/scss/**/*.scss'
+    watch: 'public/build/scss/**/*.scss',
     filename: 'style.css',
     min: 'style.min.css'
   },
