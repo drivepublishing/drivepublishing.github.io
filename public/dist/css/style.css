@@ -9726,14 +9726,19 @@ h2.section-title {
 
 .contact {
   background-color: #15365d;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   color: #ffffff;
-  font-weight: light;
+  font-weight: 300;
   font-family: Open Sans; }
   .contact .subhead {
-    padding-bottom: 10px;
-    font-size: 22px; }
+    margin-bottom: 10px;
+    font-size: 21px; }
+    @media (min-width: 600px) {
+      .contact .subhead {
+        font-size: 19px; } }
+  .contact .meta {
+    margin-bottom: 0; }
   .contact .contact-item {
     padding-bottom: 5px; }
     .contact .contact-item .lead {
@@ -9741,17 +9746,29 @@ h2.section-title {
     .contact .contact-item p a {
       line-height: 0.7em;
       color: #ffffff; }
-  @media (min-width: 320px) {
+  .contact .contact-items,
+  .contact .location-container {
+    width: 100%;
+    display: block;
+    float: none;
+    text-align: center;
+    margin-bottom: 30px; }
+  @media (min-width: 600px) {
     .contact .contact-items {
-      float: none;
-      text-align: center; }
+      width: auto;
+      float: left; }
       .contact .contact-items .contact-item {
-        text-align: center; } }
-  @media (min-width: 480px) {
-    .contact .contact-items {
-      float: right; }
-      .contact .contact-items .contact-item {
+        text-align: left; }
+      .contact .contact-items .subhead {
         text-align: left; } }
+  @media (min-width: 600px) {
+    .contact .location-container {
+      width: auto;
+      float: right; }
+      .contact .location-container .contact-item {
+        text-align: right; }
+      .contact .location-container .subhead {
+        text-align: right; } }
 
 .footer {
   background-color: #15365d;

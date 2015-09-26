@@ -1,41 +1,60 @@
 .contact {
-  background-color: $primarydark;
-  padding-top: 10px;
-  padding-bottom: 20px;
-  color: $white;
-  font-weight: light;
+  background-color: $color-bg-3;
+  @include padding-y(15px);
+  color: $color-tx-1;
+  font-weight: 300;
   font-family: $primaryserif;
-
   .subhead {
-    padding-bottom: 10px;
-    font-size: 22px;
+    margin-bottom: 10px;
+    font-size: 21px;
+    @media (min-width: $sm) {
+      font-size: 19px;
+    }
   }
-  .contact-item {  
+  .meta {
+    margin-bottom: 0;
+  }
+  .contact-item {
     padding-bottom: 5px;
     .lead {
       margin-bottom: 0;
     }
     p a {
       line-height: 0.7em;
-      color: $white;
+      color: $color-tx-1;
     }
   }
-  
+  .contact-items,
+  .location-container {
+    width: 100%;
+    display: block;
+    float: none;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
   .contact-items {
-    @media (min-width: $screen-xxs) {
-      float: none;
-      text-align: center;
-      .contact-item {
-        text-align: center;
-      }
-    }
-    @media (min-width: $screen-xs) {
-      float: right;
+    @media (min-width: $sm) {
+      width: auto;
+      float: left;
       .contact-item {
         text-align: left;
-      }      
+      }
+      .subhead {
+        text-align: left;
+      }
     }
   }
-
-
+  .location-container {
+    @media (min-width: $sm) {
+      width: auto;
+      float: right;
+      .contact-item {
+        text-align: right;
+      }
+      .subhead {
+        text-align: right;
+      }
+    }
+  }
 }
