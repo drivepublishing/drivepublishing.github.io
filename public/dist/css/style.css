@@ -11697,6 +11697,17 @@ h2.section-title {
         .hero .image-container .img-overlay {
           width: 35%; } }
 
+#partners.clients .client-item {
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-color: #ffffff; }
+  #partners.clients .client-item .client-info p {
+    font-size: 12px; }
+  #partners.clients .client-item .overlay {
+    opacity: 0.05; }
+
 .clients {
   background-color: #004883;
   background-image: url("../img/furley_bg.png");
@@ -11725,9 +11736,23 @@ h2.section-title {
   .clients #hidden-square {
     background-image: url("../img/drv-md.png");
     background-color: #15365d; }
+    .clients #hidden-square.drv-par {
+      display: none; }
   .clients #hidden-rectangle {
     background-image: url("../img/client-drive.png");
     display: none; }
+    @media (min-width: 400px) {
+      .clients #hidden-rectangle.drv-par {
+        margin-bottom: auto;
+        width: 100%;
+        display: inline-block;
+        margin-left: -2.25px;
+        margin-right: -2.25px;
+        margin-top: -2.5px;
+        margin-bottom: -2.5px; } }
+    @media (min-width: 600px) {
+      .clients #hidden-rectangle.drv-par {
+        width: 50%; } }
   .clients .client-item {
     background-size: cover;
     position: relative;

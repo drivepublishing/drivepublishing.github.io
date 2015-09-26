@@ -71,16 +71,16 @@ DRV.Grid = {
   },
   setDimensions: function setDimensions() {
     var windowX = $(window).width(),
-        $cell = $('.client-item');
+        $cells = $('.client-item');
 
     if (windowX < 400) {
-      $cell.height(windowX);
+      $cells.height(windowX);
     } else if (windowX >= 400 && windowX < 600) {
-      $cell.height(windowX / 2);
+      $cells.height(windowX / 2);
     } else if (windowX >= 600 && windowX < 1200) {
-      $cell.height(windowX / 4);
+      $cells.height(windowX / 4);
     } else if (windowX >= 1200) {
-      $cell.height(300);
+      $cells.height(300);
     }
   }
 };

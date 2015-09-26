@@ -1,3 +1,17 @@
+#partners.clients .client-item {
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-color: $color-bg-1;
+  .client-info p {
+    font-size: 12px;
+  }
+  .overlay {
+    opacity: 0.05;
+}
+}
+
 .clients {
   background-color: $color-bg-2;
   background-image: url('../img/furley_bg.png');
@@ -25,10 +39,25 @@
   #hidden-square {
     background-image: url('../img/drv-md.png');
     background-color: $color-bg-3;
+    &.drv-par {
+      display: none;
+    }
   }
   #hidden-rectangle {
     background-image: url('../img/client-drive.png');
     display: none;
+    &.drv-par {
+      @media (min-width: $xs) {
+        margin-bottom: auto;
+        width: 100%;
+        display: inline-block;
+        @include margin-x(-2.25px);
+        @include margin-y(-2.5px);
+      }
+      @media (min-width: $sm) {
+        width: 50%;
+      }
+    }
   }
   .client-item {
     background-size: cover;
