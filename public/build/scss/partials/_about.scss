@@ -47,6 +47,7 @@
       font-size: 15px;
       line-height: 25px;
       font-weight: 200;
+      margin-bottom: 20px;
       @media (min-width: $sm) {
         display: inline-block;
         vertical-align: top;
@@ -73,6 +74,7 @@
   .bio-lead {
     position: relative;
     font-size: 24px;
+    margin-bottom: 10px;
     @media (min-width: $sm) {
       @include margin-x(auto);
       float: none;

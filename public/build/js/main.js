@@ -10,6 +10,10 @@ DRV.Nav = {
     $('.burger-container').on('click', function() {
       DRV.Nav.toggleLinks();
     });
+
+    $('.nav-link a').on('click', function() {
+      DRV.Nav.toggleLinks();
+    });
   },
   toggleLinks() {
     let $body = $('body');
