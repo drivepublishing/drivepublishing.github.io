@@ -40,6 +40,9 @@
     background-image: url('../img/drv-md.png');
     background-color: $color-bg-3;
     display: none;
+    @media (min-width: $sm) {
+      display: inline-block;
+    }
     &.drv-par {
       display: none;
     }

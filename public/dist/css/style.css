@@ -11737,6 +11737,9 @@ h2.section-title {
     background-image: url("../img/drv-md.png");
     background-color: #15365d;
     display: none; }
+    @media (min-width: 600px) {
+      .clients #hidden-square {
+        display: inline-block; } }
     .clients #hidden-square.drv-par {
       display: none; }
   .clients #hidden-rectangle {
