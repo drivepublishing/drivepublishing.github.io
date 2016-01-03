@@ -11824,7 +11824,7 @@ h2.section-title {
     margin-bottom: 30px; }
     @media (min-width: 600px) {
       .partners .section-header {
-        margin-bottom: 0; } }
+        margin-bottom: 30px; } }
   .partners .header-container {
     text-transform: uppercase;
     text-align: center;
