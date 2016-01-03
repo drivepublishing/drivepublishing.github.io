@@ -1,0 +1,88 @@
+.partners {
+  background-color: $color-bg-2;
+  background-image: url('../img/furley_bg.png');
+  @include padding-x(0);
+  padding-top: 10px;
+  padding-bottom: 30px;
+  .header-container {
+    text-transform: uppercase;
+    text-align: center;
+    @include padding-x(15px);
+    @media (min-width: $sm) {
+      text-align: left;
+    }
+  }
+}
+
+.partners-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: $color-bg-1;
+  box-shadow: 10px 9px 27px -13px rgba(0, 0, 0, 0.3);
+  .partner-item {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    text-align: center;
+    width: 50%;
+    height: 200px;
+    transition: all 0.3s ease;
+    @media (min-width: 600px) {
+      width: 25%;
+    }
+    @media (min-width: 1200px) {
+      width: 16.666666666%
+    }
+
+    &:hover {
+      .partner-overlay {
+        display: block;
+        height: 100%;
+        background: $color-accent-2;
+        z-index: 7;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 0.8;
+      }
+      .partner-name {
+        display: block;
+        position: absolute;
+        bottom: 40%;
+        right: 0;
+        font-size: 18px;
+        left: 0;
+        vertical-align: center;
+        z-index: 8;
+        color: #ffffff;
+        @include font-smoothing;
+      }
+    }
+    .partner-name,
+    .partner-overlay {
+      display: none;
+      @include transition(0.3s);
+    }
+    img {
+      margin: auto;
+      padding: 20px;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+    }
+  }
+
+}

@@ -11809,6 +11809,88 @@ h2.section-title {
         .clients .client-item p {
           font-size: 17px; } }
 
+.partners {
+  background-color: #004883;
+  background-image: url("../img/furley_bg.png");
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 10px;
+  padding-bottom: 30px; }
+  .partners .header-container {
+    text-transform: uppercase;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 600px) {
+      .partners .header-container {
+        text-align: left; } }
+
+.partners-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -ms-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  box-shadow: 10px 9px 27px -13px rgba(0, 0, 0, 0.3); }
+  .partners-list .partner-item {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    text-align: center;
+    width: 50%;
+    height: 200px;
+    transition: all 0.3s ease; }
+    @media (min-width: 600px) {
+      .partners-list .partner-item {
+        width: 25%; } }
+    @media (min-width: 1200px) {
+      .partners-list .partner-item {
+        width: 16.666666666%; } }
+    .partners-list .partner-item:hover .partner-overlay {
+      display: block;
+      height: 100%;
+      background: #004883;
+      z-index: 7;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      opacity: 0.8; }
+    .partners-list .partner-item:hover .partner-name {
+      display: block;
+      position: absolute;
+      bottom: 40%;
+      right: 0;
+      font-size: 18px;
+      left: 0;
+      vertical-align: center;
+      z-index: 8;
+      color: #ffffff;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
+    .partners-list .partner-item .partner-name,
+    .partners-list .partner-item .partner-overlay {
+      display: none;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
+    .partners-list .partner-item img {
+      margin: auto;
+      padding: 20px;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute; }
+
 .contact {
   background-color: #15365d;
   color: #ffffff;
