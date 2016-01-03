@@ -11735,7 +11735,8 @@ h2.section-title {
     text-align: center; }
   .clients #hidden-square {
     background-image: url("../img/drv-md.png");
-    background-color: #15365d; }
+    background-color: #15365d;
+    display: none; }
     .clients #hidden-square.drv-par {
       display: none; }
   .clients #hidden-rectangle {
@@ -11816,6 +11817,11 @@ h2.section-title {
   padding-right: 0;
   padding-top: 10px;
   padding-bottom: 30px; }
+  .partners .section-header {
+    margin-bottom: 30px; }
+    @media (min-width: 600px) {
+      .partners .section-header {
+        margin-bottom: 0; } }
   .partners .header-container {
     text-transform: uppercase;
     text-align: center;
@@ -11841,6 +11847,7 @@ h2.section-title {
   background-color: #ffffff;
   box-shadow: 10px 9px 27px -13px rgba(0, 0, 0, 0.3); }
   .partners-list .partner-item {
+    overflow: hidden;
     display: inline-block;
     position: relative;
     vertical-align: top;
@@ -11891,13 +11898,14 @@ h2.section-title {
       bottom: 0;
       position: absolute; }
 
+#contact {
+  background-color: #15365d; }
+
 .contact {
-  background-color: #15365d;
   color: #ffffff;
   font-weight: 300;
   font-family: Open Sans;
-  padding-top: 15px;
-  padding-bottom: 15px; }
+  padding: 20px 30px 10px; }
   .contact:before,
   .contact:after {
     content: " ";
@@ -11908,48 +11916,63 @@ h2.section-title {
     .contact {
       padding-left: 50px;
       padding-right: 50px; } }
-  .contact .subhead {
-    margin-bottom: 10px;
-    font-size: 21px; }
-    @media (min-width: 400px) {
-      .contact .subhead {
-        font-size: 19px; } }
-    @media (min-width: 600px) {
-      .contact .subhead {
-        font-size: 23px; } }
-  .contact .meta {
-    margin-bottom: 0; }
+  @media (min-width: 600px) {
+    .contact {
+      margin: 0 auto;
+      max-width: 600px; } }
+  .contact .contact-address {
+    float: right;
+    width: 50%;
+    text-align: right;
+    font-size: 12px; }
+  .contact .contact-address__title {
+    padding-bottom: 10px;
+    font-size: 14px; }
+  .contact .contact-address__image {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    position: relative;
+    display: inline-block; }
+  .contact .contact-links {
+    float: left;
+    width: 50%;
+    font-size: 12px; }
+  .contact .contact-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap; }
   .contact .contact-item {
-    margin-bottom: 5px; }
-    .contact .contact-item .lead {
-      margin-bottom: 0; }
-    .contact .contact-item p a {
-      line-height: 0.7em;
-      color: #ffffff; }
-  .contact .contact-items,
-  .contact .location-container {
-    width: 100%;
-    display: block;
-    float: none;
-    margin-bottom: 30px; }
-    .contact .contact-items .meta,
-    .contact .location-container .meta {
-      font-size: 10px;
-      color: #ffffff; }
-  @media (min-width: 400px) {
-    .contact .contact-items {
-      width: auto;
-      float: left; }
-      .contact .contact-items .contact-item {
-        text-align: left; } }
-  @media (min-width: 400px) {
-    .contact .location-container {
-      width: auto;
-      float: right; }
-      .contact .location-container .subhead {
-        text-align: right; }
-      .contact .location-container .contact-item {
-        text-align: right; } }
+    width: 100%; }
+    @media (min-width: 600px) {
+      .contact .contact-item {
+        width: 33.333333333%; } }
+    .contact .contact-item .contact-item__icon {
+      padding-bottom: 10px;
+      font-size: 32px; }
+      @media (min-width: 600px) {
+        .contact .contact-item .contact-item__icon {
+          text-align: center;
+          font-size: 35px; } }
+    .contact .contact-item .contact-item__title {
+      text-align: left;
+      font-size: 12px; }
+      @media (min-width: 600px) {
+        .contact .contact-item .contact-item__title {
+          font-size: 14px;
+          text-align: center; } }
+    .contact .contact-item a {
+      color: #ffffff;
+      text-decoration: none; }
 
 .footer {
   background-color: #15365d;

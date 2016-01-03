@@ -1,67 +1,79 @@
-.contact {
+#contact {
   background-color: $color-bg-3;
+}
+
+.contact {
   color: $color-tx-1;
   font-weight: 300;
   font-family: $primaryserif;
-  @include padding-y(15px);
+  padding: 20px 30px 10px;
   @include clearfix();
   @media (min-width: $sm) {
     @include padding-x(50px);
   }
-  .subhead {
-    margin-bottom: 10px;
-    font-size: 21px;
-    @media (min-width: $xs) {
-      font-size: 19px;
-    }
-    @media (min-width: $sm) {
-      font-size: 23px;
-    }
-  }
-  .meta {
-    margin-bottom: 0;
-  }
-  .contact-item {
-    margin-bottom: 5px;
-    .lead {
-      margin-bottom: 0;
-    }
-    p a {
-      line-height: 0.7em;
-      color: $color-tx-1;
-    }
-  }
-  .contact-items,
-  .location-container {
-    width: 100%;
-    display: block;
-    float: none;
-    margin-bottom: 30px;
-    .meta {
-      font-size: 10px;
-      color: $color-tx-1;
-    }
+  @media(min-width: 600px) {
+    margin: 0 auto;
+    max-width: 600px;
   }
 
+  .contact-address {
+    float: right;
+    width: 50%;
+    text-align: right;
+    font-size: 12px;
+  }
+
+  .contact-address__title {
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .contact-address__image {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+  }
+
+  .contact-links {
+    float: left;
+    width: 50%;
+    font-size: 12px;
+  }
+
+
+
   .contact-items {
-    @media (min-width: $xs) {
-      width: auto;
-      float: left;
-      .contact-item {
-        text-align: left;
+    @include flex;
+  }
+
+  .contact-item {
+    width: 100%;
+    @media(min-width: 600px) {
+      width: 33.333333333%;
+    }
+    .contact-item__icon {
+      padding-bottom: 10px;
+      font-size: 32px;
+      @media(min-width: 600px) {
+        text-align: center;
+        font-size: 35px;
       }
     }
-  }
-  .location-container {
-    @media (min-width: $xs) {
-      width: auto;
-      float: right;
-      .subhead {
-        text-align: right;
+
+    .contact-item__title {
+      text-align: left;
+      font-size: 12px;
+      @media(min-width: 600px) {
+        font-size: 14px;
+        text-align: center;
       }
-      .contact-item {
-        text-align: right;
-      }
+
+    }
+    a {
+      color: $color-tx-1;
+      text-decoration: none;
     }
   }
 }
