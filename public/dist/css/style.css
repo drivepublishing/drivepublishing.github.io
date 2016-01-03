@@ -11998,6 +11998,10 @@ h2.section-title {
     float: right;
     display: inline-block;
     cursor: pointer; }
+    .drv-navbar .burger-container span {
+      height: 50px;
+      width: 50px;
+      line-height: 50px; }
     @media (min-width: 600px) {
       .drv-navbar .burger-container {
         display: none; } }
@@ -12019,17 +12023,52 @@ h2.section-title {
         padding-top: auto;
         padding-bottom: auto;
         display: inline-block;
-        font-size: 20px; }
+        font-size: 20px;
+        transition: 0.3s; }
+        .drv-navbar .nav-link:hover {
+          opacity: 0.7; }
         .drv-navbar .nav-link a {
           text-decoration: none;
+          color: #346FA4;
           -webkit-transition: ease 0.3s all;
           -o-transition: ease 0.3s all;
           transition: ease 0.3s all; }
           .drv-navbar .nav-link a:hover {
-            color: #231f20; } }
-  .drv-navbar .logo-container {
+            color: #346FA4; } }
+  .drv-navbar .nav-icons {
     float: left;
-    width: auto; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 175px; }
+  .drv-navbar .nav-icon {
+    text-align: center;
+    font-size: 24px;
+    width: 33.333333333%;
+    transition: 0.3s; }
+    .drv-navbar .nav-icon span,
+    .drv-navbar .nav-icon img {
+      height: 50px;
+      width: 50px; }
+    .drv-navbar .nav-icon span {
+      height: 50px;
+      width: 50px;
+      line-height: 50px;
+      border: 2px solid #346FA4;
+      border-radius: 50%;
+      color: #346FA4; }
+    .drv-navbar .nav-icon:hover {
+      opacity: 0.7;
+      transform: scale(1.05); }
   .drv-navbar .nav-logo {
     width: 40px; }
 

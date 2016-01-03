@@ -12,6 +12,11 @@
     float: right;
     display: inline-block;
     cursor: pointer;
+    span {
+      height: 50px;
+      width: 50px;
+      line-height: 50px;
+    }
     @media (min-width: $sm) {
       display: none;
     }
@@ -33,18 +38,47 @@
       @include padding-y(auto);
       display: inline-block;
       font-size: 20px;
+      transition: 0.3s;
+      &:hover {
+        opacity: 0.7;
+      }
       a {
         text-decoration: none;
+        color: $color-tx-nav;
         @include transition(ease 0.3s all);
         &:hover {
-          color: $color-tx-0;
+          color: $color-tx-nav;
         }
       }
     }
   }
-  .logo-container {
+  .nav-icons {
     float: left;
-    width: auto;
+    @include flex;
+    width: 175px;
+  }
+  .nav-icon {
+    text-align: center;
+    font-size: 24px;
+    width: 33.333333333%;
+    transition: 0.3s;
+    span,
+    img {
+      height: 50px;
+      width: 50px;
+    }
+    span {
+      height: 50px;
+      width: 50px;
+      line-height: 50px;
+      border: 2px solid $color-tx-nav;
+      border-radius: 50%;
+      color: $color-tx-nav;
+    }
+    &:hover {
+      opacity: 0.7;
+      transform: scale(1.05);
+    }
   }
   .nav-logo {
     width: 40px;
