@@ -1,91 +1,104 @@
 .about {
+  position: relative;
+  margin: 0 auto;
+  padding: 30px 0 50px;
   color: $color-tx-2;
   background-image: url('../img/drv-op-10.png');
-  padding-bottom: 50px;
   background-size: 150%;
   background-position-x: -5%;
   background-position-y: 43%;
   background-repeat: no-repeat;
-  padding-top: 15px;
+
   @media (min-width: $xs) {
     background-size: 75%;
     background-position-x: 110%;
   }
-  .header-container {
-    margin-bottom: 20px;
-  }
-  .bio-container {
-    @include clearfix();
-  }
-  .bio-extended {
-    max-width: 800px;
-    @include margin-x(auto);
-    @media (min-width: $sm) {
-      @include margin-x(auto);
-      width: 90%;
-      .p-left,
-      .p-right {
-        @include padding-x(10px);
-        width: 50%;
-      }
-      .p-left {
-        float: left;
-      }
-      .p-right {
-        display: inline-block;
-      }
-    }
-    @media (min-width: $lg) {
-      width: 95%;
-      max-width: 850px;
-      .p-left,
-      .p-right {
-        @include padding-x(20px);
-      }
-    }
-    .meta {
-      font-size: 15px;
-      line-height: 25px;
-      font-weight: 200;
-      margin-bottom: 20px;
-      @media (min-width: $sm) {
-        display: inline-block;
-        vertical-align: top;
-        &.new-line {
-          margin-top: 15px;
-          display: block;
-        }
-      }
-      @media (min-width: $md) {
-        font-size: 17px;
-        line-height: 26px;
-        &.new-line {
-          margin-top: 40px;
-        }
-      }
-    }
-  }
-  .section-header {
+
+  .about-header {
     font-size: 36px;
     font-family: $font-serif;
     font-weight: 300;
     text-transform: uppercase;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    @media (min-width: $lg) {
+      width: 1100px;
+    }
   }
-  .bio-lead {
+
+  .about-headline {
     position: relative;
     font-size: 24px;
-    margin-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+
     @media (min-width: $sm) {
-      @include margin-x(auto);
-      float: none;
-      margin-bottom: 20px;
+      margin: 0 auto;
       display: block;
-      width: 90%;
       line-height: 36px;
     }
+
     @media (min-width: $lg) {
-      width: 95%;
+      width: 1000px;
+    }
+  }
+
+  .about-bio {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 200;
+    @include clearfix;
+    padding-left: 25px;
+    padding-right: 25px;
+    @media (min-width: $lg) {
       max-width: 850px;
+    }
+  }
+
+  .about-bio__paragraph {
+    padding-bottom: 25px;
+    margin: 0 auto;
+
+    @media (min-width: $sm) {
+      width: 90%;
+      font-size: 17px;
+      line-height: 26px;
+    }
+
+    &:first-child {
+      @media (min-width: $sm) {
+        margin: 0 auto;
+        float: left;
+        width: 45%;
+      }
+    }
+    &:nth-child(2) {
+      @media (min-width: $sm) {
+        margin: 0 auto;
+        float: right;
+        width: 45%;
+      }
+      @media (min-width: $md) {
+        padding-bottom: 45px;
+      }
+    }
+
+  }
+
+  .about-bio__sig {
+    margin: 0 auto;
+
+    @media (min-width: $sm) {
+      width: 90%;
+      display: block;
+      float: right;
+      width: 45%;
     }
   }
 }
