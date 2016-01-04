@@ -2,6 +2,7 @@
   position: relative;
   height: 290px;
   width: 100%;
+  margin: 0 auto;
   background-size: 175%;
   background-position-y: 35%;
   background-position-x: 0%;
@@ -9,6 +10,9 @@
   visibility: hidden;
   overflow: hidden;
   @include box-shadow(1px -21px 41px 6px rgba(0, 0, 0, 0.75));
+
+  margin: 0 auto;
+  text-align: center;
   @media (min-width: $xs) {
     height: 320px;
     background-size: 150%;
@@ -35,34 +39,28 @@
   @media (min-width: 1100px) {
     background-size: 100%;
   }
-
-  .image-container {
-    display: block;
-    height: 100%;
-    left: 0;
-    right: 0;
-    top: 35px;
-    opacity: 0.8;
-    position: absolute;
-    z-index: 1;
-    margin: 0 auto;
-    text-align: center;
-    @media (min-width: 1100px) {
-      top: 90px;
-      margin-left: 20%;
-      text-align: left;
-    }
-  }
 }
 
 #landing-logo {
   @include img-scale;
+  position: absolute;
+  left: 20px;
+  top: 35px;
   visibility: hidden;
-  width: 55%;
-  @media (min-width: 900px) {
+  width: 200px;
+  opacity: 0.8;
+  z-index: 1;
+  @media (min-width: $sm) {
+    width: 300px
+  }
+  @media (min-width: $md) {
     width: 40%;
   }
-  @media (min-width: 1100px) {
+  @media (min-width: $lg) {
     width: 35%;
+    right: 0;
+    left: 0;
+    top: 90px;
+    margin-left: 20%;
   }
 }

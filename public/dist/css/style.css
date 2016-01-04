@@ -11974,6 +11974,7 @@ h2.section-title {
   position: relative;
   height: 290px;
   width: 100%;
+  margin: 0 auto;
   background-size: 175%;
   background-position-y: 35%;
   background-position-x: 0%;
@@ -11981,7 +11982,9 @@ h2.section-title {
   visibility: hidden;
   overflow: hidden;
   -webkit-box-shadow: 1px -21px 41px 6px rgba(0, 0, 0, 0.75);
-  box-shadow: 1px -21px 41px 6px rgba(0, 0, 0, 0.75); }
+  box-shadow: 1px -21px 41px 6px rgba(0, 0, 0, 0.75);
+  margin: 0 auto;
+  text-align: center; }
   @media (min-width: 400px) {
     #site-landing {
       height: 320px;
@@ -12008,35 +12011,31 @@ h2.section-title {
   @media (min-width: 1100px) {
     #site-landing {
       background-size: 100%; } }
-  #site-landing .image-container {
-    display: block;
-    height: 100%;
-    left: 0;
-    right: 0;
-    top: 35px;
-    opacity: 0.8;
-    position: absolute;
-    z-index: 1;
-    margin: 0 auto;
-    text-align: center; }
-    @media (min-width: 1100px) {
-      #site-landing .image-container {
-        top: 90px;
-        margin-left: 20%;
-        text-align: left; } }
 
 #landing-logo {
   width: 100%;
   height: auto;
   display: block;
+  position: absolute;
+  left: 20px;
+  top: 35px;
   visibility: hidden;
-  width: 55%; }
-  @media (min-width: 900px) {
+  width: 200px;
+  opacity: 0.8;
+  z-index: 1; }
+  @media (min-width: 600px) {
+    #landing-logo {
+      width: 300px; } }
+  @media (min-width: 800px) {
     #landing-logo {
       width: 40%; } }
-  @media (min-width: 1100px) {
+  @media (min-width: 1000px) {
     #landing-logo {
-      width: 35%; } }
+      width: 35%;
+      right: 0;
+      left: 0;
+      top: 90px;
+      margin-left: 20%; } }
 
 .clients {
   position: relative;
