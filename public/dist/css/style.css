@@ -12230,11 +12230,14 @@ h2.section-title {
       bottom: 0;
       position: absolute; }
 
-.solutions .section-header {
+.solutions img {
+  width: 100%;
+  height: auto;
+  display: block;
   animation-delay: 0.5s;
   animation-duration: 3s; }
   @media (min-width: 600px) {
-    .solutions .section-header {
+    .solutions img {
       width: 40%; } }
 
 #contact {
@@ -12505,7 +12508,7 @@ h2.section-title {
   opacity: 0;
   transition: 0.2s; }
 
-.about, .solutions {
+.excerpt {
   position: relative;
   margin: 0 auto;
   padding: 30px 0 50px;
@@ -12516,10 +12519,10 @@ h2.section-title {
   background-position-y: 43%;
   background-repeat: no-repeat; }
   @media (min-width: 400px) {
-    .about, .solutions {
+    .excerpt {
       background-size: 75%;
       background-position-x: 110%; } }
-  .about .about-header, .solutions .about-header {
+  .excerpt .excerpt-header {
     font-size: 36px;
     font-family: Raleway;
     font-weight: 300;
@@ -12529,23 +12532,23 @@ h2.section-title {
     margin: 0 auto;
     margin-bottom: 20px; }
     @media (min-width: 1000px) {
-      .about .about-header, .solutions .about-header {
+      .excerpt .excerpt-header {
         width: 1100px; } }
-  .about .about-headline, .solutions .about-headline {
+  .excerpt .excerpt-headline {
     position: relative;
     font-size: 24px;
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 25px; }
     @media (min-width: 600px) {
-      .about .about-headline, .solutions .about-headline {
+      .excerpt .excerpt-headline {
         margin: 0 auto;
         display: block;
         line-height: 36px; } }
     @media (min-width: 1000px) {
-      .about .about-headline, .solutions .about-headline {
+      .excerpt .excerpt-headline {
         width: 1000px; } }
-  .about .about-bio, .solutions .about-bio {
+  .excerpt .excerpt-summary {
     max-width: 800px;
     margin: 0 auto 20px;
     font-size: 15px;
@@ -12553,41 +12556,40 @@ h2.section-title {
     font-weight: 200;
     padding-left: 25px;
     padding-right: 25px; }
-    .about .about-bio:before,
-    .solutions .about-bio:before,
-    .about .about-bio:after, .solutions .about-bio:after {
+    .excerpt .excerpt-summary:before,
+    .excerpt .excerpt-summary:after {
       content: " ";
       display: table; }
-    .about .about-bio:after, .solutions .about-bio:after {
+    .excerpt .excerpt-summary:after {
       clear: both; }
     @media (min-width: 1000px) {
-      .about .about-bio, .solutions .about-bio {
+      .excerpt .excerpt-summary {
         max-width: 850px; } }
-  .about .about-bio__paragraph, .solutions .about-bio__paragraph {
+  .excerpt .excerpt-summary__paragraph {
     padding-bottom: 25px;
     margin: 0 auto; }
     @media (min-width: 600px) {
-      .about .about-bio__paragraph, .solutions .about-bio__paragraph {
+      .excerpt .excerpt-summary__paragraph {
         width: 90%;
         font-size: 17px;
         line-height: 26px; } }
     @media (min-width: 600px) {
-      .about .about-bio__paragraph:first-child, .solutions .about-bio__paragraph:first-child {
+      .excerpt .excerpt-summary__paragraph:first-child {
         margin: 0 auto;
         float: left;
         width: 45%; } }
     @media (min-width: 600px) {
-      .about .about-bio__paragraph:nth-child(2), .solutions .about-bio__paragraph:nth-child(2) {
+      .excerpt .excerpt-summary__paragraph:nth-child(2) {
         margin: 0 auto;
         float: right;
         width: 45%; } }
     @media (min-width: 800px) {
-      .about .about-bio__paragraph:nth-child(2), .solutions .about-bio__paragraph:nth-child(2) {
+      .excerpt .excerpt-summary__paragraph:nth-child(2) {
         padding-bottom: 45px; } }
-  .about .about-bio__sig, .solutions .about-bio__sig {
+  .excerpt .excerpt-summary__sig {
     margin: 0 auto; }
     @media (min-width: 600px) {
-      .about .about-bio__sig, .solutions .about-bio__sig {
+      .excerpt .excerpt-summary__sig {
         width: 90%;
         display: block;
         float: right;

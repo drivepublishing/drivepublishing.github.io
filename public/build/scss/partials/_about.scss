@@ -1,4 +1,4 @@
-.about {
+.excerpt {
   position: relative;
   margin: 0 auto;
   padding: 30px 0 50px;
@@ -14,7 +14,7 @@
     background-position-x: 110%;
   }
 
-  .about-header {
+  .excerpt-header {
     font-size: 36px;
     font-family: $font-serif;
     font-weight: 300;
@@ -29,7 +29,7 @@
     }
   }
 
-  .about-headline {
+  .excerpt-headline {
     position: relative;
     font-size: 24px;
     padding-left: 25px;
@@ -47,7 +47,7 @@
     }
   }
 
-  .about-bio {
+  .excerpt-summary {
     max-width: 800px;
     margin: 0 auto 20px;
     font-size: 15px;
@@ -61,7 +61,7 @@
     }
   }
 
-  .about-bio__paragraph {
+  .excerpt-summary__paragraph {
     padding-bottom: 25px;
     margin: 0 auto;
 
@@ -91,7 +91,7 @@
 
   }
 
-  .about-bio__sig {
+  .excerpt-summary__sig {
     margin: 0 auto;
 
     @media (min-width: $sm) {

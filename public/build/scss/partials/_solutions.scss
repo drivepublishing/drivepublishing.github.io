@@ -1,6 +1,6 @@
 .solutions {
-  @extend .about;
-  .section-header {
+  img {
+    @include img-scale;
     animation-delay: 0.5s;
     animation-duration: 3s;
     @media (min-width: $sm) {
