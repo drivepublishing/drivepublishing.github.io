@@ -1,4 +1,4 @@
-.hero {
+#site-landing {
   position: relative;
   height: 290px;
   width: 100%;
@@ -45,22 +45,24 @@
     opacity: 0.8;
     position: absolute;
     z-index: 1;
-    @include margin-x(auto);
+    margin: 0 auto;
     text-align: center;
     @media (min-width: 1100px) {
       top: 90px;
       margin-left: 20%;
       text-align: left;
     }
-    .img-overlay {
-      display: none;
-      width: 55%;
-      @media (min-width: 900px) {
-        width: 40%;
-      }
-      @media (min-width: 1100px) {
-        width: 35%;
-      }
-    }
+  }
+}
+
+#landing-logo {
+  @include img-scale;
+  visibility: hidden;
+  width: 55%;
+  @media (min-width: 900px) {
+    width: 40%;
+  }
+  @media (min-width: 1100px) {
+    width: 35%;
   }
 }

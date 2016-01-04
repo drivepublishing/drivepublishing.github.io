@@ -50,7 +50,7 @@
 }
 
 .opened {
-
+  overflow: hidden;
   .burger span {
     &.fa-bars {
       display: none;

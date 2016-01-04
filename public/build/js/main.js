@@ -1,12 +1,12 @@
 'use-strict';
-let DRV = window.DRV || {};
+const DRV = window.DRV || {};
 
-DRV.Nav = {
-  $body: $('body'),
+DRV.Menu = {
+  body: document.getElementsByTagName('body')[0],
   openClass: 'opened',
   init() {
     const $openTrigger = $('.burger .fa-bars');
-    const $closeTrigger = $('.burger .fa-times, .opened .site-menu a, .opened .curtain');
+    const $closeTrigger = $('.burger .fa-times, .menu-item a, .curtain');
 
     $openTrigger.on('click', (e) => {
       e.preventDefault();
@@ -14,7 +14,6 @@ DRV.Nav = {
     });
 
     $closeTrigger.on('click', (e) => {
-      e.preventDefault();
       this.setNavClose();
     });
 
@@ -23,10 +22,10 @@ DRV.Nav = {
     });
   },
   setNavOpen() {
-    this.$body.addClass(this.openClass);
+    this.body.className = this.openClass;
   },
   setNavClose() {
-    this.$body.removeClass(this.openClass);
+    this.body.className = '';
   },
   onResizeSetNavClose() {
     if ($(window).width() > 800 && this.isOpen()) {
@@ -34,69 +33,91 @@ DRV.Nav = {
     }
   },
   isOpen() {
-    return this.$body.hasClass(this.openClass);
+    return this.body.classList.contains(this.openClass);
   },
 };
 
-DRV.Hero = {
+DRV.HomeLanding = {
+  heroReady: false,
+  logoReady: false,
   init() {
-    this.loadImage();
+    if (window.location.pathname !== '/') { return; }
+
+    this.hero = document.getElementById('site-landing');
+    this.logo = document.getElementById('landing-logo');
+
+    return this.loadImages();
   },
-  loadImage() {
-    let $hero = $('.hero'),
-        src = 'public/dist/img/hollywood.jpg',
-        img = new Image(),
-        callback = function() {
-          DRV.Hero.triggerAnimation();
-        };
+  loadImages() {
+    const heroSrc = 'public/dist/img/hollywood.jpg';
+    const logoSrc = 'public/dist/img/drive-800-307.png';
+    const heroLoader = new Image();
 
-    img.addEventListener('load', callback);
-    img.src = src;
-    $hero.css({'background-image': `url('${src}')`});
+    heroLoader.addEventListener('load', () => this.onLoaded(this.hero));
+    this.logo.addEventListener('load', () => this.onLoaded(this.logo));
+    heroLoader.src = heroSrc;
+    this.logo.src = logoSrc;
+    this.hero.style.backgroundImage = `url(${heroSrc})`;
   },
-  triggerAnimation() {
-  let $image = $('.img-overlay'),
-      $hero = $('.hero');
+  onLoaded(element) {
+    if (element === this.logo) {
+      this.logoReady = true;
+    } else if (element === this.hero) {
+      this.heroReady = true;
+    }
 
+    if (this.logoReady && this.heroReady) {
+      return this.render();
+    }
 
-    $hero.css({'visibility': 'visible'});
-    $hero.addClass('fadeIn');
-    $image.css({'display': 'inline-block'});
+  },
+  render() {
+    this.logo.style.visibility = 'visible';
+    this.hero.style.visibility = 'visible';
+    this.logo.className = 'animated fadeInUp';
+    this.hero.className = 'animated fadeIn';
   }
 };
 
-DRV.Grid = {
+DRV.ClientsList = {
   init() {
     this.setDimensions();
-  },
-  onResize() {
-    this.setDimensions();
+
+    $(window).on('resize', () => {
+      this.setDimensions();
+    });
   },
   setDimensions() {
-    let windowX = $(window).width(),
-        $cells = $('.client-item');
+    const mobile = 400;
+    const tablet = 600;
+    const desktop = 1200;
+    const width = $(window).width();
+    const $items = $('.client-item');
 
-    if (windowX < 400) {
-      $cells.height(windowX);
+    let height;
+    switch (true) {
+      case (width < mobile):
+        height = width;
+        break;
+      case (width >= mobile && width < tablet):
+        height = width / 2;
+        break;
+      case (width >= tablet && width < desktop):
+        height = width / 4;
+        break;
+      case (width >= desktop):
+        height = 300;
+        break;
     }
-    else if (windowX >= 400 && windowX < 600) {
-      $cells.height(windowX / 2);
-    }
-    else if (windowX >= 600 && windowX < 1200) {
-      $cells.height(windowX / 4);
-    }
-    else if (windowX >= 1200) {
-      $cells.height(300);
-    }
+
+    return $items.height(height);
   }
 };
 
-$(document).on('ready', function() {
-  DRV.Nav.init();
-  DRV.Hero.init();
-  DRV.Grid.init();
-});
+$(document).on('ready', () => {
+  const {ClientsList, Menu, HomeLanding} = DRV;
 
-$(window).resize(function() {
-  DRV.Grid.init();
+  HomeLanding.init();
+  ClientsList.init();
+  Menu.init();
 });

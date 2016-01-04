@@ -11970,7 +11970,7 @@ p {
 h2.section-title {
   font-size: 38px; }
 
-.hero {
+#site-landing {
   position: relative;
   height: 290px;
   width: 100%;
@@ -11983,32 +11983,32 @@ h2.section-title {
   -webkit-box-shadow: 1px -21px 41px 6px rgba(0, 0, 0, 0.75);
   box-shadow: 1px -21px 41px 6px rgba(0, 0, 0, 0.75); }
   @media (min-width: 400px) {
-    .hero {
+    #site-landing {
       height: 320px;
       background-size: 150%;
       background-position-y: 35%;
       background-position-x: 0%; } }
   @media (min-width: 600px) {
-    .hero {
+    #site-landing {
       height: 400px;
       background-size: 125%;
       background-position-y: 20%;
       background-position-x: 0%; } }
   @media (min-width: 800px) {
-    .hero {
+    #site-landing {
       height: 600px;
       background-size: 125%;
       background-position-y: 35%;
       background-position-x: 0%; } }
   @media (min-width: 1000px) {
-    .hero {
+    #site-landing {
       background-size: 125%;
       background-position-y: 25%;
       background-position-x: 0%; } }
   @media (min-width: 1100px) {
-    .hero {
+    #site-landing {
       background-size: 100%; } }
-  .hero .image-container {
+  #site-landing .image-container {
     display: block;
     height: 100%;
     left: 0;
@@ -12017,41 +12017,38 @@ h2.section-title {
     opacity: 0.8;
     position: absolute;
     z-index: 1;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     text-align: center; }
     @media (min-width: 1100px) {
-      .hero .image-container {
+      #site-landing .image-container {
         top: 90px;
         margin-left: 20%;
         text-align: left; } }
-    .hero .image-container .img-overlay {
-      display: none;
-      width: 55%; }
-      @media (min-width: 900px) {
-        .hero .image-container .img-overlay {
-          width: 40%; } }
-      @media (min-width: 1100px) {
-        .hero .image-container .img-overlay {
-          width: 35%; } }
 
-#partners.clients .client-item {
-  background-position-x: 50%;
-  background-position-y: 50%;
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-color: #ffffff; }
-  #partners.clients .client-item .client-info p {
-    font-size: 12px; }
-  #partners.clients .client-item .overlay {
-    opacity: 0.05; }
+#landing-logo {
+  width: 100%;
+  height: auto;
+  display: block;
+  visibility: hidden;
+  width: 55%; }
+  @media (min-width: 900px) {
+    #landing-logo {
+      width: 40%; } }
+  @media (min-width: 1100px) {
+    #landing-logo {
+      width: 35%; } }
 
 .clients {
-  background-color: #004883;
-  background-image: url("../img/furley_bg.png");
-  padding-left: 0;
-  padding-right: 0;
-  margin-bottom: -2px; }
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url("../img/furley_bg.png"); }
+  .clients:before,
+  .clients:after {
+    content: " ";
+    display: table; }
+  .clients:after {
+    clear: both; }
   @media (min-width: 600px) {
     .clients {
       padding-bottom: 50px; } }
@@ -12072,53 +12069,44 @@ h2.section-title {
     text-transform: uppercase;
     margin-top: 20px;
     margin-bottom: 20px; }
-  .clients .clients-container {
+  .clients .clients-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
     text-align: center;
     box-shadow: 10px 15px 57px -13px rgba(0, 0, 0, 0.3); }
-  .clients #hidden-square {
-    background-image: url("../img/drv-md.png");
-    background-color: #15365d;
+  .clients .client-item:last-child {
     display: none; }
     @media (min-width: 600px) {
-      .clients #hidden-square {
-        display: inline-block; } }
-    .clients #hidden-square.drv-par {
-      display: none; }
-  .clients #hidden-rectangle {
-    background-image: url("../img/client-drive.png");
-    display: none; }
-    @media (min-width: 400px) {
-      .clients #hidden-rectangle.drv-par {
-        margin-bottom: auto;
-        width: 100%;
-        display: inline-block;
-        margin-left: -2.25px;
-        margin-right: -2.25px;
-        margin-top: -2.5px;
-        margin-bottom: -2.5px; } }
-    @media (min-width: 600px) {
-      .clients #hidden-rectangle.drv-par {
-        width: 50%; } }
+      .clients .client-item:last-child {
+        background-color: #15365d;
+        display: block; } }
   .clients .client-item {
-    background-size: cover;
     position: relative;
-    margin-bottom: -5px;
-    display: inline-block;
+    overflow: hidden;
     width: 100%; }
     @media (min-width: 400px) {
       .clients .client-item {
-        margin-bottom: auto;
-        width: 50%;
-        margin-left: -2.25px;
-        margin-right: -2.25px;
-        margin-top: -2.5px;
-        margin-bottom: -2.5px; } }
+        width: 50%; } }
     @media (min-width: 600px) {
       .clients .client-item {
         width: 25%; }
-        .clients .client-item:hover .client-info {
+        .clients .client-item:hover .client-item__info {
           display: block; } }
-    .clients .client-item .overlay {
+    .clients .client-item img {
+      width: 100%;
+      height: auto;
+      display: block; }
+    .clients .client-item .client-item__overlay {
       position: absolute;
       top: 0;
       right: 0;
@@ -12126,7 +12114,7 @@ h2.section-title {
       height: 100%;
       background-color: #231f20;
       opacity: 0.2; }
-    .clients .client-item .client-info {
+    .clients .client-item .client-item__info {
       background: #004883;
       color: #ffffff;
       display: block;
@@ -12137,22 +12125,19 @@ h2.section-title {
       text-align: center;
       z-index: 1;
       height: 25%;
-      opacity: 0.8; }
-      @media (min-width: 600px) {
-        .clients .client-item .client-info {
-          height: 30%;
-          display: none; } }
-      @media (min-width: 800px) {
-        .clients .client-item .client-info {
-          height: 25%; } }
-    .clients .client-item p {
+      opacity: 0.8;
       font-size: 24px;
       margin-top: 20px; }
       @media (min-width: 400px) {
-        .clients .client-item p {
+        .clients .client-item .client-item__info {
           font-size: 15px; } }
+      @media (min-width: 600px) {
+        .clients .client-item .client-item__info {
+          height: 30%;
+          display: none; } }
       @media (min-width: 800px) {
-        .clients .client-item p {
+        .clients .client-item .client-item__info {
+          height: 25%;
           font-size: 17px; } }
 
 .partners {
@@ -12392,24 +12377,22 @@ h2.section-title {
     .burger span.fa-times {
       display: none; }
 
-.opened .burger span.fa-bars {
-  display: none; }
-
-.opened .burger span.fa-times {
-  display: block; }
-
-.opened .site-nav {
-  box-shadow: none; }
-
-.opened .site-menu {
-  top: 70px;
-  transition: 0.3s;
-  -webkit-box-shadow: 0px 19px 21px -7px rgba(0, 0, 0, 0.28);
-  box-shadow: 0px 19px 21px -7px rgba(0, 0, 0, 0.28); }
-
-.opened .curtain {
-  height: 100%;
-  opacity: 0.4; }
+.opened {
+  overflow: hidden; }
+  .opened .burger span.fa-bars {
+    display: none; }
+  .opened .burger span.fa-times {
+    display: block; }
+  .opened .site-nav {
+    box-shadow: none; }
+  .opened .site-menu {
+    top: 70px;
+    transition: 0.3s;
+    -webkit-box-shadow: 0px 19px 21px -7px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px 19px 21px -7px rgba(0, 0, 0, 0.28); }
+  .opened .curtain {
+    height: 100%;
+    opacity: 0.4; }
 
 .site-menu {
   right: 0;

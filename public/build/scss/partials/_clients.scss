@@ -1,22 +1,9 @@
-#partners.clients .client-item {
-  background-position-x: 50%;
-  background-position-y: 50%;
-  background-size: 80%;
-  background-repeat: no-repeat;
-  background-color: $color-bg-1;
-  .client-info p {
-    font-size: 12px;
-  }
-  .overlay {
-    opacity: 0.05;
-  }
-}
-
 .clients {
-  background-color: $color-bg-2;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  @include clearfix;
   background-image: url('../img/furley_bg.png');
-  @include padding-x(0);
-  margin-bottom: -2px;
   @media (min-width: $sm) {
     padding-bottom: 50px;
   }
@@ -34,58 +21,39 @@
     font-weight: 200;
     font-size: 36px;
     text-transform: uppercase;
-    @include margin-y(20px);
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-  .clients-container {
+  .clients-list {
+    @include flex;
     text-align: center;
     box-shadow: 10px 15px 57px -13px rgba(0, 0, 0, 0.3);
   }
-  #hidden-square {
-    background-image: url('../img/drv-md.png');
-    background-color: $color-bg-3;
+  .client-item:last-child {
     display: none;
-    @media (min-width: $sm) {
-      display: inline-block;
+    @media(min-width: $sm) {
+      background-color: $color-bg-3;
+      display: block;
     }
-    &.drv-par {
-      display: none;
-    }
-  }
-  #hidden-rectangle {
-    background-image: url('../img/client-drive.png');
-    display: none;
-    &.drv-par {
-      @media (min-width: $xs) {
-        margin-bottom: auto;
-        width: 100%;
-        display: inline-block;
-        @include margin-x(-2.25px);
-        @include margin-y(-2.5px);
-      }
-      @media (min-width: $sm) {
-        width: 50%;
-      }
-    }
+
   }
   .client-item {
-    background-size: cover;
     position: relative;
-    margin-bottom: -5px;
-    display: inline-block;
+    overflow: hidden;
     width: 100%;
     @media (min-width: $xs) {
-      margin-bottom: auto;
       width: 50%;
-      @include margin-x(-2.25px);
-      @include margin-y(-2.5px);
     }
     @media(min-width: $sm) {
       width: 25%;
-      &:hover .client-info {
+      &:hover .client-item__info {
         display: block;
       }
     }
-    .overlay {
+    img {
+      @include img-scale;
+    }
+    .client-item__overlay {
       position: absolute;
       top: 0;
       right: 0;
@@ -94,7 +62,7 @@
       background-color: $color-bg-0;
       opacity: 0.2;
     }
-    .client-info {
+    .client-item__info {
       background: $color-tx-2;
       color: $color-tx-1;
       display: block;
@@ -106,21 +74,17 @@
       z-index: 1;
       height: 25%;
       opacity: 0.8;
+      font-size: 24px;
+      margin-top: 20px;
+      @media (min-width: $xs) {
+        font-size: 15px;
+      }
       @media (min-width: $sm) {
         height: 30%;
         display: none;
       }
       @media (min-width: $md) {
         height: 25%;
-      }
-    }
-    p {
-      font-size: 24px;
-      margin-top: 20px;
-      @media (min-width: $xs) {
-        font-size: 15px;
-      }
-      @media (min-width: $md) {
         font-size: 17px;
       }
     }
