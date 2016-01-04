@@ -12446,7 +12446,7 @@ h2.section-title {
       float: right;
       z-index: 300; } }
 
-.nav-link {
+.menu-item {
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -12455,19 +12455,19 @@ h2.section-title {
   text-align: right;
   text-transform: uppercase; }
   @media (min-width: 800px) {
-    .nav-link {
+    .menu-item {
       display: inline-block;
       font-size: 20px;
       width: auto;
       transition: 0.3s;
       margin-left: 25px; }
-      .nav-link:hover {
+      .menu-item:hover {
         opacity: 0.7; }
-      .nav-link a {
+      .menu-item a {
         text-decoration: none;
         color: #346FA4;
         transition: ease 0.3s all; }
-        .nav-link a:hover {
+        .menu-item a:hover {
           color: #346FA4; } }
 
 .nav-icons {
