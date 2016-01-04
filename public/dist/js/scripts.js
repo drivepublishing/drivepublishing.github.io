@@ -48,17 +48,11 @@ DRV.HomeLanding = {
   isMounted: false,
   heroSrc: 'public/dist/img/hollywood.jpg',
   logoSrc: 'public/dist/img/drive-800-307.png',
-  spinSrc: 'public/dist/img/drv-md.png',
   preloader: new Image(),
   init: function init() {
     if (window.location.pathname !== '/') {
       return;
     }
-
-    this.hero = document.getElementById('landing-hero');
-    this.logo = document.getElementById('landing-logo');
-    this.spin = document.getElementById('landing-spinner');
-
     this.showSpinner();
     this.loadAsync();
     this.timeOutFallback();
@@ -66,7 +60,7 @@ DRV.HomeLanding = {
   showSpinner: function showSpinner() {
     var _this2 = this;
 
-    this.spin.src = this.spinSrc;
+    this.spin = document.getElementById('landing-spinner');
     this.spin.style.visibility = 'visible';
     this.spin.className = 'animated flipInX';
     setTimeout(function () {
@@ -76,6 +70,8 @@ DRV.HomeLanding = {
   loadAsync: function loadAsync() {
     var _this3 = this;
 
+    this.hero = document.getElementById('landing-hero');
+    this.logo = document.getElementById('landing-logo');
     this.preloader.src = this.heroSrc;
     this.preloader.addEventListener('load', function () {
       return _this3.onLoaded(_this3.hero);
