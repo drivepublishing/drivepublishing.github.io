@@ -12375,7 +12375,7 @@ h2.section-title {
   cursor: pointer;
   z-index: 200;
   height: 100%; }
-  @media (min-width: 900px) {
+  @media (min-width: 800px) {
     .burger {
       display: none; } }
   .burger span {
@@ -12422,7 +12422,7 @@ h2.section-title {
   position: fixed;
   transition: 0.4s;
   z-index: 100; }
-  @media (min-width: 900px) {
+  @media (min-width: 800px) {
     .site-menu {
       -webkit-box-shadow: 0px 19px 21px -7px rgba(0, 0, 0, 0.01);
       box-shadow: 0px 19px 21px -7px rgba(0, 0, 0, 0.01);
@@ -12442,7 +12442,7 @@ h2.section-title {
       padding-top: 10px;
       transition: inherit;
       top: auto;
-      width: 620px;
+      width: 520px;
       float: right;
       z-index: 300; } }
 
@@ -12454,7 +12454,7 @@ h2.section-title {
   line-height: 25px;
   text-align: right;
   text-transform: uppercase; }
-  @media (min-width: 900px) {
+  @media (min-width: 800px) {
     .nav-link {
       display: inline-block;
       font-size: 20px;
@@ -12497,6 +12497,7 @@ h2.section-title {
   transition: 0.3s; }
   .nav-icon span,
   .nav-icon img {
+    margin-left: 10px;
     height: 50px;
     width: 50px; }
   .nav-icon span {

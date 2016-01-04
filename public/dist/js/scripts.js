@@ -33,7 +33,7 @@ DRV.Nav = {
     this.$body.removeClass(this.openClass);
   },
   onResizeSetNavClose: function onResizeSetNavClose() {
-    if ($(window).width() > 900 && this.isOpen()) {
+    if ($(window).width() > 800 && this.isOpen()) {
       return this.setNavClose();
     }
   },
