@@ -49,6 +49,9 @@
       &:hover .client-item__info {
         display: block;
       }
+      &:hover .client-item__overlay {
+        opacity: 0.6;
+      }
     }
     img {
       @include img-scale;
@@ -76,16 +79,20 @@
       opacity: 0.8;
       font-size: 24px;
       margin-top: 20px;
+      line-height: 85px;
       @media (min-width: $xs) {
         font-size: 15px;
+        line-height: 65px;
       }
       @media (min-width: $sm) {
         height: 30%;
         display: none;
+        line-height: 55px;
       }
       @media (min-width: $md) {
         height: 25%;
         font-size: 17px;
+        line-height: 65px;
       }
     }
   }
