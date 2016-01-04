@@ -11976,7 +11976,7 @@ h2.section-title {
   height: 290px;
   width: 100%;
   margin: 0 auto; }
-  @media (min-width: 400px) {
+  @media (min-width: 415px) {
     .site-landing {
       height: 320px; } }
   @media (min-width: 600px) {
@@ -12001,7 +12001,7 @@ h2.section-title {
   box-shadow: 1px -21px 41px 6px rgba(0, 0, 0, 0.75);
   margin: 0 auto;
   text-align: center; }
-  @media (min-width: 400px) {
+  @media (min-width: 415px) {
     #landing-hero {
       height: 320px;
       background-size: 150%;
@@ -12061,12 +12061,15 @@ h2.section-title {
   position: absolute;
   height: 200px;
   width: 200px;
-  top: 35%;
+  top: 20%;
   right: 0;
   left: 0;
   margin: 0 auto;
   visibility: hidden;
   animation-duration: 1.5s; }
+  @media (min-width: 415px) {
+    #landing-spinner {
+      top: 35%; } }
 
 .clients {
   position: relative;
@@ -12123,7 +12126,7 @@ h2.section-title {
     position: relative;
     overflow: hidden;
     width: 100%; }
-    @media (min-width: 400px) {
+    @media (min-width: 415px) {
       .clients .client-item {
         width: 50%; } }
     @media (min-width: 600px) {
@@ -12160,7 +12163,7 @@ h2.section-title {
       font-size: 24px;
       margin-top: 20px;
       line-height: 85px; }
-      @media (min-width: 400px) {
+      @media (min-width: 415px) {
         .clients .client-item .client-item__info {
           font-size: 15px;
           line-height: 65px; } }
@@ -12551,7 +12554,7 @@ h2.section-title {
   background-position-x: -5%;
   background-position-y: 43%;
   background-repeat: no-repeat; }
-  @media (min-width: 400px) {
+  @media (min-width: 415px) {
     .excerpt {
       background-size: 75%;
       background-position-x: 110%; } }
