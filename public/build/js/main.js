@@ -1,38 +1,41 @@
 'use-strict';
-
 let DRV = window.DRV || {};
 
 DRV.Nav = {
+  $body: $('body'),
+  openClass: 'opened',
   init() {
-    this.listeners();
-  },
-  listeners() {
-    $('.burger-container').on('click', function(e) {
-      // DRV.Nav.animateNav(e);
-      DRV.Nav.toggleLinks();
+    const $openTrigger = $('.burger .fa-bars');
+    const $closeTrigger = $('.burger .fa-times, .opened .site-menu a, .opened .curtain');
+
+    $openTrigger.on('click', (e) => {
+      e.preventDefault();
+      this.setNavOpen();
     });
 
-    $('.nav-link a, .curtain').on('click', function() {
-      $('body').removeClass('on');
+    $closeTrigger.on('click', (e) => {
+      e.preventDefault();
+      this.setNavClose();
+    });
+
+    $(window).on('resize', () => {
+      this.onResizeSetNavClose();
     });
   },
-  toggleLinks() {
-    let $body = $('body');
-
-    $body.toggleClass('on');
+  setNavOpen() {
+    this.$body.addClass(this.openClass);
   },
-  animateNav(e) {
-    let $body = $('body');
-
-    if ($body.hasClass('on')) {
-      $('.nav-links').removeClass('slideInDown');
-      $('.nav-links').addClass('slideOutUp');
+  setNavClose() {
+    this.$body.removeClass(this.openClass);
+  },
+  onResizeSetNavClose() {
+    if ($(window).width() > 900 && this.isOpen()) {
+      return this.setNavClose();
     }
-    else {
-      $('.nav-links').removeClass('slideOutUp');
-      $('.nav-links').addClass('slideInDown');
-    }
-  }
+  },
+  isOpen() {
+    return this.$body.hasClass(this.openClass);
+  },
 };
 
 DRV.Hero = {

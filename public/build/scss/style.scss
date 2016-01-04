@@ -1,4 +1,5 @@
 @import "base/reset";
+@import "base/variables";
 
 @import "vendor/bootstrap/variables";
 @import "vendor/bootstrap/mixins";
@@ -7,13 +8,15 @@
 @import "vendor/font-awesome/font-awesome";
 @import "vendor/animate";
 
-@import "base/variables";
+@import "base/base";
+@import "base/common";
 @import "base/mixins";
 @import "base/grid";
 @import "partials/base";
 @import "partials/header";
 @import "partials/clients";
 @import "partials/partners";
+@import "partials/solutions";
 @import "partials/contact";
 @import "partials/footer";
 @import "partials/navbar";

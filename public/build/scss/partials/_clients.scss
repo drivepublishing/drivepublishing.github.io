@@ -17,6 +17,9 @@
   background-image: url('../img/furley_bg.png');
   @include padding-x(0);
   margin-bottom: -2px;
+  @media (min-width: $sm) {
+    padding-bottom: 50px;
+  }
   .header-container {
     text-align: center;
     @include padding-x(15px);
@@ -35,6 +38,7 @@
   }
   .clients-container {
     text-align: center;
+    box-shadow: 10px 15px 57px -13px rgba(0, 0, 0, 0.3);
   }
   #hidden-square {
     background-image: url('../img/drv-md.png');

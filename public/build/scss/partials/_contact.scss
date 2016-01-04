@@ -59,6 +59,10 @@
       @media(min-width: 600px) {
         text-align: center;
         font-size: 35px;
+        transition: 0.3s;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
 

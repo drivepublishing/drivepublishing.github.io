@@ -1,38 +1,44 @@
 'use strict';
 
 'use-strict';
-
 var DRV = window.DRV || {};
 
 DRV.Nav = {
+  $body: $('body'),
+  openClass: 'opened',
   init: function init() {
-    this.listeners();
-  },
-  listeners: function listeners() {
-    $('.burger-container').on('click', function (e) {
-      // DRV.Nav.animateNav(e);
-      DRV.Nav.toggleLinks();
+    var _this = this;
+
+    var $openTrigger = $('.burger .fa-bars');
+    var $closeTrigger = $('.burger .fa-times, .opened .site-menu a, .opened .curtain');
+
+    $openTrigger.on('click', function (e) {
+      e.preventDefault();
+      _this.setNavOpen();
     });
 
-    $('.nav-link a, .curtain').on('click', function () {
-      $('body').removeClass('on');
+    $closeTrigger.on('click', function (e) {
+      e.preventDefault();
+      _this.setNavClose();
+    });
+
+    $(window).on('resize', function () {
+      _this.onResizeSetNavClose();
     });
   },
-  toggleLinks: function toggleLinks() {
-    var $body = $('body');
-
-    $body.toggleClass('on');
+  setNavOpen: function setNavOpen() {
+    this.$body.addClass(this.openClass);
   },
-  animateNav: function animateNav(e) {
-    var $body = $('body');
-
-    if ($body.hasClass('on')) {
-      $('.nav-links').removeClass('slideInDown');
-      $('.nav-links').addClass('slideOutUp');
-    } else {
-      $('.nav-links').removeClass('slideOutUp');
-      $('.nav-links').addClass('slideInDown');
+  setNavClose: function setNavClose() {
+    this.$body.removeClass(this.openClass);
+  },
+  onResizeSetNavClose: function onResizeSetNavClose() {
+    if ($(window).width() > 900 && this.isOpen()) {
+      return this.setNavClose();
     }
+  },
+  isOpen: function isOpen() {
+    return this.$body.hasClass(this.openClass);
   }
 };
 

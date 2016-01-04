@@ -1,0 +1,11 @@
+.solutions {
+  @extend .about;
+  .section-header {
+    animation-delay: 0.5s;
+    animation-duration: 3s;
+    @media (min-width: $sm) {
+      width: 40%;
+    }
+
+  }
+}

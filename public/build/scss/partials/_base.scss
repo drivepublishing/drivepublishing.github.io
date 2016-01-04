@@ -1,46 +1,11 @@
 body {
-  font-family: $font-serif;
   color: $color-tx-2;
-  background-color: $color-bg-1;
-  &.on {
-    overflow: hidden;
-    #nav-o {
-      display: none;
-    }
-    #nav-x {
-      display: block;
-    }
-    .nav-links {
-      width: 100%;
-      display: block;
-    }
-    .curtain {
-      display: block;
-    }
-  }
 }
 #ll {
   position: relative;
   min-height: 100%;
 }
-#nav-o {
-  display: block;
-}
-#nav-x {
-  display: none;
-}
-.curtain {
-  overflow: hidden;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 10;
-  background-color: $color-bg-0;
-  opacity: 0.4;
-  display: none;
-}
+
 p {
   margin-bottom: auto;
 }
