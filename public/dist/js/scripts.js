@@ -130,7 +130,7 @@ DRV.ClientsList = {
     });
   },
   setDimensions: function setDimensions() {
-    var mobile = 400;
+    var mobile = 415;
     var tablet = 600;
     var desktop = 1200;
     var width = $(window).width();
