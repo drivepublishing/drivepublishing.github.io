@@ -12116,12 +12116,6 @@ h2.section-title {
     flex-wrap: wrap;
     text-align: center;
     box-shadow: 10px 15px 57px -13px rgba(0, 0, 0, 0.3); }
-  .clients .client-item:last-child {
-    display: none; }
-    @media (min-width: 600px) {
-      .clients .client-item:last-child {
-        background-color: #15365d;
-        display: block; } }
   .clients .client-item {
     position: relative;
     overflow: hidden;
