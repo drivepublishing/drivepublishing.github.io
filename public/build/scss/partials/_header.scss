@@ -1,4 +1,19 @@
-#site-landing {
+.site-landing {
+  position: relative;
+  height: 290px;
+  width: 100%;
+  margin: 0 auto;
+  @media (min-width: $xs) {
+    height: 320px;
+  }
+  @media (min-width: $sm) {
+    height: 400px;
+  }
+  @media (min-width: $md) {
+    height: 600px;
+  }
+}
+#landing-hero {
   position: relative;
   height: 290px;
   width: 100%;
@@ -7,8 +22,8 @@
   background-position-y: 35%;
   background-position-x: 0%;
   background-repeat: no-repeat;
-  visibility: hidden;
   overflow: hidden;
+  visibility: hidden;
   @include box-shadow(1px -21px 41px 6px rgba(0, 0, 0, 0.75));
 
   margin: 0 auto;
@@ -62,5 +77,25 @@
     left: 0;
     top: 90px;
     margin-left: 20%;
+  }
+}
+
+#landing-logo,
+#landing-hero {
+  animation-delay: 0.5s;
+}
+
+#landing-spinner {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 20%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  visibility: hidden;
+  animation-duration: 1.5s;
+  @media (min-width: $xs) {
+    top: 35%;
   }
 }

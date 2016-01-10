@@ -11970,7 +11970,22 @@ p {
 h2.section-title {
   font-size: 38px; }
 
-#site-landing {
+.site-landing {
+  position: relative;
+  height: 290px;
+  width: 100%;
+  margin: 0 auto; }
+  @media (min-width: 415px) {
+    .site-landing {
+      height: 320px; } }
+  @media (min-width: 600px) {
+    .site-landing {
+      height: 400px; } }
+  @media (min-width: 800px) {
+    .site-landing {
+      height: 600px; } }
+
+#landing-hero {
   position: relative;
   height: 290px;
   width: 100%;
@@ -11979,37 +11994,37 @@ h2.section-title {
   background-position-y: 35%;
   background-position-x: 0%;
   background-repeat: no-repeat;
-  visibility: hidden;
   overflow: hidden;
+  visibility: hidden;
   -webkit-box-shadow: 1px -21px 41px 6px rgba(0, 0, 0, 0.75);
   box-shadow: 1px -21px 41px 6px rgba(0, 0, 0, 0.75);
   margin: 0 auto;
   text-align: center; }
-  @media (min-width: 400px) {
-    #site-landing {
+  @media (min-width: 415px) {
+    #landing-hero {
       height: 320px;
       background-size: 150%;
       background-position-y: 35%;
       background-position-x: 0%; } }
   @media (min-width: 600px) {
-    #site-landing {
+    #landing-hero {
       height: 400px;
       background-size: 125%;
       background-position-y: 20%;
       background-position-x: 0%; } }
   @media (min-width: 800px) {
-    #site-landing {
+    #landing-hero {
       height: 600px;
       background-size: 125%;
       background-position-y: 35%;
       background-position-x: 0%; } }
   @media (min-width: 1000px) {
-    #site-landing {
+    #landing-hero {
       background-size: 125%;
       background-position-y: 25%;
       background-position-x: 0%; } }
   @media (min-width: 1100px) {
-    #site-landing {
+    #landing-hero {
       background-size: 100%; } }
 
 #landing-logo {
@@ -12036,6 +12051,24 @@ h2.section-title {
       left: 0;
       top: 90px;
       margin-left: 20%; } }
+
+#landing-logo,
+#landing-hero {
+  animation-delay: 0.5s; }
+
+#landing-spinner {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 20%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  visibility: hidden;
+  animation-duration: 1.5s; }
+  @media (min-width: 415px) {
+    #landing-spinner {
+      top: 35%; } }
 
 .clients {
   position: relative;
@@ -12083,16 +12116,22 @@ h2.section-title {
     flex-wrap: wrap;
     text-align: center;
     box-shadow: 10px 15px 57px -13px rgba(0, 0, 0, 0.3); }
+  .clients .client-item:last-child {
+    display: none; }
+    @media (min-width: 600px) {
+      .clients .client-item:last-child {
+        background-color: #15365d;
+        display: block; } }
   .clients .client-item {
     position: relative;
     overflow: hidden;
     width: 100%; }
-    @media (min-width: 400px) {
+    @media (min-width: 415px) {
       .clients .client-item {
         width: 50%; } }
     @media (min-width: 600px) {
       .clients .client-item {
-        width: 25%; }
+        width: 20%; }
         .clients .client-item:hover .client-item__info {
           display: block; }
         .clients .client-item:hover .client-item__overlay {
@@ -12124,7 +12163,7 @@ h2.section-title {
       font-size: 24px;
       margin-top: 20px;
       line-height: 85px; }
-      @media (min-width: 400px) {
+      @media (min-width: 415px) {
         .clients .client-item .client-item__info {
           font-size: 15px;
           line-height: 65px; } }
@@ -12518,7 +12557,7 @@ h2.section-title {
   background-position-x: -5%;
   background-position-y: 43%;
   background-repeat: no-repeat; }
-  @media (min-width: 400px) {
+  @media (min-width: 415px) {
     .excerpt {
       background-size: 75%;
       background-position-x: 110%; } }

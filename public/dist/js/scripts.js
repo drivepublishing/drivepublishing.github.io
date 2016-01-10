@@ -42,66 +42,95 @@ DRV.Menu = {
 };
 
 DRV.HomeLanding = {
-  heroReady: false,
-  logoReady: false,
+  spinDone: false,
+  heroDone: false,
+  logoDone: false,
+  isMounted: false,
+  heroSrc: 'public/dist/img/hollywood.jpg',
+  logoSrc: 'public/dist/img/drive-800-307.png',
+  preloader: new Image(),
   init: function init() {
     if (window.location.pathname !== '/') {
       return;
     }
-
-    this.hero = document.getElementById('site-landing');
-    this.logo = document.getElementById('landing-logo');
-
-    return this.loadImages();
+    this.showSpinner();
+    this.loadAsync();
+    this.timeOutFallback();
   },
-  loadImages: function loadImages() {
+  showSpinner: function showSpinner() {
     var _this2 = this;
 
-    var heroSrc = 'public/dist/img/hollywood.jpg';
-    var logoSrc = 'public/dist/img/drive-800-307.png';
-    var heroLoader = new Image();
+    this.spin = document.getElementById('landing-spinner');
+    this.spin.style.visibility = 'visible';
+    this.spin.className = 'animated flipInX';
+    setTimeout(function () {
+      return _this2.onLoaded(_this2.spin);
+    }, 1500);
+  },
+  loadAsync: function loadAsync() {
+    var _this3 = this;
 
-    heroLoader.addEventListener('load', function () {
-      return _this2.onLoaded(_this2.hero);
+    this.hero = document.getElementById('landing-hero');
+    this.logo = document.getElementById('landing-logo');
+    this.preloader.src = this.heroSrc;
+    this.preloader.addEventListener('load', function () {
+      return _this3.onLoaded(_this3.hero);
     });
     this.logo.addEventListener('load', function () {
-      return _this2.onLoaded(_this2.logo);
+      return _this3.onLoaded(_this3.logo);
     });
-    heroLoader.src = heroSrc;
-    this.logo.src = logoSrc;
-    this.hero.style.backgroundImage = 'url(' + heroSrc + ')';
+    this.logo.src = this.logoSrc;
+    this.hero.style.backgroundImage = 'url(' + this.heroSrc + ')';
   },
-  onLoaded: function onLoaded(element) {
-    if (element === this.logo) {
-      this.logoReady = true;
-    } else if (element === this.hero) {
-      this.heroReady = true;
+  onLoaded: function onLoaded(el) {
+    switch (el) {
+      case this.spin:
+        this.spinDone = true;
+        break;
+      case this.logo:
+        this.logoDone = true;
+        break;
+      case this.hero:
+        this.heroDone = true;
+        break;
     }
 
-    if (this.logoReady && this.heroReady) {
+    if (this.logoDone && this.heroDone && this.spinDone) {
       return this.render();
     }
   },
+  timeOutFallback: function timeOutFallback() {
+    var _this4 = this;
+
+    if (!this.isMounted) {
+      setTimeout(function () {
+        return _this4.render;
+      }, 5000);
+    }
+  },
   render: function render() {
+    this.spin.className = '';
+    this.spin.className = 'animated fadeOut';
     this.logo.style.visibility = 'visible';
     this.hero.style.visibility = 'visible';
     this.logo.className = 'animated fadeInUp';
     this.hero.className = 'animated fadeIn';
+    this.isMounted = true;
   }
 };
 
 DRV.ClientsList = {
   init: function init() {
-    var _this3 = this;
+    var _this5 = this;
 
     this.setDimensions();
 
     $(window).on('resize', function () {
-      _this3.setDimensions();
+      _this5.setDimensions();
     });
   },
   setDimensions: function setDimensions() {
-    var mobile = 400;
+    var mobile = 415;
     var tablet = 600;
     var desktop = 1200;
     var width = $(window).width();
@@ -116,10 +145,10 @@ DRV.ClientsList = {
         height = width / 2;
         break;
       case width >= tablet && width < desktop:
-        height = width / 4;
+        height = width / 5;
         break;
       case width >= desktop:
-        height = 300;
+        height = 240;
         break;
     }
 
