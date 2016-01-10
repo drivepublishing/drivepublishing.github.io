@@ -49,6 +49,8 @@
     }
     @media(min-width: $sm) {
       width: 20%;
+    }
+    @media(min-width: $md) {
       &:hover .client-item__info {
         display: block;
       }
@@ -90,12 +92,12 @@
       @media (min-width: $sm) {
         height: 30%;
         display: none;
-        line-height: 55px;
+        line-height: 45px;
       }
       @media (min-width: $md) {
         height: 25%;
         font-size: 17px;
-        line-height: 65px;
+        line-height: 50px;
       }
     }
   }

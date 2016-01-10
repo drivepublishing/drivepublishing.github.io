@@ -12131,11 +12131,12 @@ h2.section-title {
         width: 50%; } }
     @media (min-width: 600px) {
       .clients .client-item {
-        width: 20%; }
-        .clients .client-item:hover .client-item__info {
-          display: block; }
-        .clients .client-item:hover .client-item__overlay {
-          opacity: 0.6; } }
+        width: 20%; } }
+    @media (min-width: 800px) {
+      .clients .client-item:hover .client-item__info {
+        display: block; }
+      .clients .client-item:hover .client-item__overlay {
+        opacity: 0.6; } }
     .clients .client-item img {
       width: 100%;
       height: auto;
@@ -12171,12 +12172,12 @@ h2.section-title {
         .clients .client-item .client-item__info {
           height: 30%;
           display: none;
-          line-height: 55px; } }
+          line-height: 45px; } }
       @media (min-width: 800px) {
         .clients .client-item .client-item__info {
           height: 25%;
           font-size: 17px;
-          line-height: 65px; } }
+          line-height: 50px; } }
 
 .partners {
   background-color: #004883;
