@@ -24,7 +24,7 @@
   padding-top: 10px;
   font-size: 2em;
   cursor: pointer;
-  z-index: 200;
+  z-index: 190;
   height: 100%;
   @media (min-width: 800px) {
     display: none;
@@ -159,9 +159,12 @@
     border-radius: 50%;
     color: $color-tx-nav;
   }
+
   &:hover {
-    opacity: 0.7;
-    transform: scale(1.05);
+    @media (min-width: 800px) {
+      opacity: 0.7;
+      transform: scale(1.05);
+    }
   }
 }
 
