@@ -7430,7 +7430,7 @@ fieldset[disabled] .btn-danger.active {
 
 .fa {
   display: inline-block;
-  font: normal normal normal 14px / 1 FontAwesome;
+  font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -12464,7 +12464,7 @@ h2.section-title {
       padding-top: 10px;
       transition: inherit;
       top: auto;
-      width: 520px;
+      width: 580px;
       float: right;
       z-index: 300; } }
 
