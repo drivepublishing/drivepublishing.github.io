@@ -137,7 +137,7 @@ DRV.ClientsList = {
 
 $(document).on('ready', () => {
   const {ClientsList, Menu, HomeLanding} = DRV;
-
+  $('.cr').text(`Copyright ${new Date().getFullYear()} © Drive Music Publishing | All Rights Reserved`)
   HomeLanding.init();
   ClientsList.init();
   Menu.init();

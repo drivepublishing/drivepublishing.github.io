@@ -161,6 +161,7 @@ $(document).on('ready', function () {
   var Menu = DRV.Menu;
   var HomeLanding = DRV.HomeLanding;
 
+  $('.cr').text('Copyright ' + new Date().getFullYear() + ' © Drive Music Publishing | All Rights Reserved');
   HomeLanding.init();
   ClientsList.init();
   Menu.init();
