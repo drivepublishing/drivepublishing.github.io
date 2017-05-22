@@ -1,42 +1,39 @@
-'use strict';
-
 'use-strict';
-var DRV = window.DRV || {};
+
+const DRV = window.DRV || {};
 
 DRV.Menu = {
   body: document.getElementsByTagName('body')[0],
   openClass: 'opened',
-  init: function init() {
-    var _this = this;
+  init() {
+    const $openTrigger = $('.burger .fa-bars');
+    const $closeTrigger = $('.burger .fa-times, .menu-item a, .curtain');
 
-    var $openTrigger = $('.burger .fa-bars');
-    var $closeTrigger = $('.burger .fa-times, .menu-item a, .curtain');
-
-    $openTrigger.on('click', function (e) {
+    $openTrigger.on('click', e => {
       e.preventDefault();
-      _this.setNavOpen();
+      this.setNavOpen();
     });
 
-    $closeTrigger.on('click', function (e) {
-      _this.setNavClose();
+    $closeTrigger.on('click', e => {
+      this.setNavClose();
     });
 
-    $(window).on('resize', function () {
-      _this.onResizeSetNavClose();
+    $(window).on('resize', () => {
+      this.onResizeSetNavClose();
     });
   },
-  setNavOpen: function setNavOpen() {
+  setNavOpen() {
     this.body.className = this.openClass;
   },
-  setNavClose: function setNavClose() {
+  setNavClose() {
     this.body.className = '';
   },
-  onResizeSetNavClose: function onResizeSetNavClose() {
+  onResizeSetNavClose() {
     if ($(window).width() > 800 && this.isOpen()) {
       return this.setNavClose();
     }
   },
-  isOpen: function isOpen() {
+  isOpen() {
     return this.body.classList.contains(this.openClass);
   }
 };
@@ -49,7 +46,7 @@ DRV.HomeLanding = {
   heroSrc: 'public/dist/img/hollywood.jpg',
   logoSrc: 'public/dist/img/drive-800-307.png',
   preloader: new Image(),
-  init: function init() {
+  init() {
     if (window.location.pathname !== '/') {
       return;
     }
@@ -57,32 +54,22 @@ DRV.HomeLanding = {
     this.loadAsync();
     this.timeOutFallback();
   },
-  showSpinner: function showSpinner() {
-    var _this2 = this;
-
+  showSpinner() {
     this.spin = document.getElementById('landing-spinner');
     this.spin.style.visibility = 'visible';
     this.spin.className = 'animated flipInX';
-    setTimeout(function () {
-      return _this2.onLoaded(_this2.spin);
-    }, 1500);
+    setTimeout(() => this.onLoaded(this.spin), 1500);
   },
-  loadAsync: function loadAsync() {
-    var _this3 = this;
-
+  loadAsync() {
     this.hero = document.getElementById('landing-hero');
     this.logo = document.getElementById('landing-logo');
     this.preloader.src = this.heroSrc;
-    this.preloader.addEventListener('load', function () {
-      return _this3.onLoaded(_this3.hero);
-    });
-    this.logo.addEventListener('load', function () {
-      return _this3.onLoaded(_this3.logo);
-    });
+    this.preloader.addEventListener('load', () => this.onLoaded(this.hero));
+    this.logo.addEventListener('load', () => this.onLoaded(this.logo));
     this.logo.src = this.logoSrc;
-    this.hero.style.backgroundImage = 'url(' + this.heroSrc + ')';
+    this.hero.style.backgroundImage = `url(${this.heroSrc})`;
   },
-  onLoaded: function onLoaded(el) {
+  onLoaded(el) {
     switch (el) {
       case this.spin:
         this.spinDone = true;
@@ -99,16 +86,12 @@ DRV.HomeLanding = {
       return this.render();
     }
   },
-  timeOutFallback: function timeOutFallback() {
-    var _this4 = this;
-
+  timeOutFallback() {
     if (!this.isMounted) {
-      setTimeout(function () {
-        return _this4.render;
-      }, 5000);
+      setTimeout(() => this.render, 5000);
     }
   },
-  render: function render() {
+  render() {
     this.spin.className = '';
     this.spin.className = 'animated fadeOut';
     this.logo.style.visibility = 'visible';
@@ -120,23 +103,21 @@ DRV.HomeLanding = {
 };
 
 DRV.ClientsList = {
-  init: function init() {
-    var _this5 = this;
-
+  init() {
     this.setDimensions();
 
-    $(window).on('resize', function () {
-      _this5.setDimensions();
+    $(window).on('resize', () => {
+      this.setDimensions();
     });
   },
-  setDimensions: function setDimensions() {
-    var mobile = 415;
-    var tablet = 600;
-    var desktop = 1200;
-    var width = $(window).width();
-    var $items = $('.client-item');
+  setDimensions() {
+    const mobile = 415;
+    const tablet = 600;
+    const desktop = 1200;
+    const width = $(window).width();
+    const $items = $('.client-item');
 
-    var height = undefined;
+    let height;
     switch (true) {
       case width < mobile:
         height = width;
@@ -156,12 +137,9 @@ DRV.ClientsList = {
   }
 };
 
-$(document).on('ready', function () {
-  var ClientsList = DRV.ClientsList;
-  var Menu = DRV.Menu;
-  var HomeLanding = DRV.HomeLanding;
-
-  $('.cr').text('Copyright ' + new Date().getFullYear() + ' © Drive Music Publishing | All Rights Reserved');
+$(document).on('ready', () => {
+  const { ClientsList, Menu, HomeLanding } = DRV;
+  $('.cr').text(`Copyright ${new Date().getFullYear()} © Drive Music Publishing | All Rights Reserved`);
   HomeLanding.init();
   ClientsList.init();
   Menu.init();
