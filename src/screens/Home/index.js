@@ -1,10 +1,13 @@
 import React, { Component } from 'react'
+import Writers from './Writers.js';
 import loadingLogo from '../../static/images/drv-md.png';
 import overlayLogo from '../../static/images/drive-800-307.png';
 import backdrop from '../../static/images/hollywood.jpg';
 import copyright from './copyright-icon.svg';
 import play from './play-icon.svg';
 import redeem from './redeem-icon.svg';
+
+
 
 export class Home extends Component {
   state = {
@@ -101,6 +104,9 @@ export class Home extends Component {
             </div>
           </div>
         </div>
+
+          <Writers />
+
       </div>
     );
   }
