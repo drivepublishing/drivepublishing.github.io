@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../static/images/drv-transparent.png';
+import mail from './mail-icon.svg';
 
 export class Footer extends Component {
 
@@ -12,15 +13,15 @@ export class Footer extends Component {
               <ul className="contact-items">
                 <li className="contact-item">
                   <div className="contact-item__title">Ana Ruiz</div>
-                  <div className="contact-item__icon"><a href="mailto:aruiz@drivepublishing.com"><span className="fa fa-envelope"></span></a></div>
+                  <div className="contact-item__icon"><a href="mailto:aruiz@drivepublishing.com"><img style={{width: '35px'}} src={mail} alt="Email" /></a></div>
                 </li>
                 <li className="contact-item">
                   <div className="contact-item__title">Joe Rausch</div>
-                  <div className="contact-item__icon"><a href="mailto:jrausch@drivepublishing.com"><span className="fa fa-envelope"></span></a></div>
+                  <div className="contact-item__icon"><a href="mailto:jrausch@drivepublishing.com"><img style={{width: '35px'}} src={mail} alt="Email" /></a></div>
                 </li>
                 <li className="contact-item">
                   <div className="contact-item__title">General</div>
-                  <div className="contact-item__icon"><a href="mailto:info@drivepublishing.com"><span className="fa fa-envelope"></span></a></div>
+                  <div className="contact-item__icon"><a href="mailto:info@drivepublishing.com"><img style={{width: '35px'}} src={mail} alt="Email" /></a></div>
                 </li>
               </ul>
             </div>

@@ -53,9 +53,9 @@ export class Header extends Component {
           </div>
         </nav>
         <ul className="site-menu">
-          <li className="menu-item"><a href="#writers">Writers</a></li>
+          <li className="menu-item"><Link to="/#writers">Writers</Link></li>
           <li className="menu-item"><Link to="partners">Partners</Link></li>
-          <li className="menu-item"><a href="#about">About</a></li>
+          <li className="menu-item"><Link to="/#about">About</Link></li>
           <li className="menu-item"><Link to="solutions">Solutions</Link></li>
           <li className="menu-item"><Link to="latin">Latin</Link></li>
         </ul>
