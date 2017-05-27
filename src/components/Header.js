@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../static/images/drv-blue-310x310.png';
 import { Linkedin, Twitter } from '../common/Icons.js';
 
@@ -22,7 +23,7 @@ export class Header extends Component {
   onNavbarVisibilityChange = () => {
     const { visible } = this.state;
     document.body.className = visible ? '' : 'opened';
-    this.setState({visible: !visible})
+    this.setState({visible: !visible});
   }
 
   render() {
@@ -53,10 +54,10 @@ export class Header extends Component {
         </nav>
         <ul className="site-menu">
           <li className="menu-item"><a href="#writers">Writers</a></li>
-          <li className="menu-item"><a href="/partners.html">Partners</a></li>
+          <li className="menu-item"><Link to="partners">Partners</Link></li>
           <li className="menu-item"><a href="#about">About</a></li>
-          <li className="menu-item"><a href="/solutions.html">Solutions</a></li>
-          <li className="menu-item"><a href="/latin.html">Latin</a></li>
+          <li className="menu-item"><Link to="solutions">Solutions</Link></li>
+          <li className="menu-item"><Link to="latin">Latin</Link></li>
         </ul>
       </header>
     );
@@ -95,7 +96,7 @@ const styles = {
     bottom: 0,
     width: '50px',
     height: '50px',
-    padding: '25px',
+    padding: '30px',
     cursor: 'pointer',
   },
   icon: {
