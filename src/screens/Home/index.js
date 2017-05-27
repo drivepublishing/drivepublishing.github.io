@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import loadingLogo from '../../static/images/drv-md.png';
 import overlayLogo from '../../static/images/drive-800-307.png';
 import backdrop from '../../static/images/hollywood.jpg';
+import copyright from './copyright-icon.svg';
+import play from './play-icon.svg';
+import redeem from './redeem-icon.svg';
 
 export class Home extends Component {
   state = {
@@ -61,10 +64,52 @@ export class Home extends Component {
             <div className="excerpt-summary__sig">And, we’re easy to talk to…</div>
           </div>
         </div>
-
+        <div className="drv-container services" id="services">
+          <div className="inner">
+            <div className="service-item p-left">
+              <div className="title-container">
+                <img style={styles.icon} src={copyright} alt="Administration" />
+                <h3 className="headline">Administration</h3>
+              </div>
+              <div className="desc-container">
+                <p className="meta">Manage Compositions</p>
+                <p className="meta">Copyrights and Registrations</p>
+                <p className="meta">Licensing</p>
+              </div>
+            </div>
+            <div className="service-item">
+              <div className="title-container">
+                <img style={styles.icon} src={play} alt="Creative" />
+                <h3 className="headline">Creative</h3>
+              </div>
+              <div className="desc-container">
+                <p className="meta">Song Placements in All Media</p>
+                <p className="meta">New Income Streams</p>
+                <p className="meta">Covers, and Special projects</p>
+              </div>
+            </div>
+            <div className="service-item p-right">
+              <div className="title-container">
+                <img style={styles.icon} src={redeem} alt="Royalties" />
+                <h3 className="headline">Royalties</h3>
+              </div>
+              <div className="desc-container">
+                <p className="meta">Worldwide Royalty Collection</p>
+                <p className="meta">Income Tracking and Processing</p>
+                <p className="meta">Quarterly Accounting</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    )
+    );
   }
 }
 
-export default Home
+const styles = {
+  icon: {
+    width: '48px',
+  },
+};
+
+export default Home;
