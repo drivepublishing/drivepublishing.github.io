@@ -52,6 +52,16 @@ export class Home extends Component {
               alt="Sunset Blvd. Los Angeles" />
           </div>
         </div>
+        <div className="excerpt" id="about">
+          <div className="excerpt-header">About <span className="sub">us</span></div>
+          <div className="excerpt-headline">DRV is more than an independent music publishing company.</div>
+          <div className="excerpt-summary">
+            <div className="excerpt-summary__paragraph">From legacy catalogs to new songwriters, we partner with you to understand your needs and customize a plan for growth.  Led by Ana Ruiz and Joe Rausch, DRV is fueled by the need to provide the best opportunities worldwide, and get the most out of your catalog.</div>
+            <div className="excerpt-summary__paragraph">We are proud members of the National Music Publishers Association (NMPA), Association of Independent Music Publishers (AIMP), California Copyright Conference (CCC), and National Academy of Recording Arts and Sciences (NARAS).</div>
+            <div className="excerpt-summary__sig">And, we’re easy to talk to…</div>
+          </div>
+        </div>
+
       </div>
     )
   }
