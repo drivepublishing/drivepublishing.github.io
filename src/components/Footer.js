@@ -37,7 +37,7 @@ export class Footer extends Component {
         <div className="drv-container footer">
           <div className="row">
             <div className="col-lg-12 col-xs-12 text-center">
-              <p className="cr"></p>
+              <p className="cr">{`Copyright ${new Date().getFullYear()} © Drive Music Publishing | All Rights Reserved`}</p>
             </div>
           </div>
         </div>
