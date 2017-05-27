@@ -1,41 +1,18 @@
 {
   "name": "drive",
-  "version": "1.0.0",
-  "description": "Drive Music Publishing",
-  "main": "gulpfile.js",
-  "scripts": {
-    "start": "gulp"
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/evturn/drive.git"
-  },
-  "author": "Evan Turner",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/evturn/drive/issues"
-  },
-  "homepage": "https://github.com/evturn/drive#readme",
   "devDependencies": {
-    "babel-eslint": "^6.1.2",
-    "browser-sync": "^2.14.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-babel": "^6.1.2",
-    "gulp-concat": "^2.6.0",
-    "gulp-cssmin": "^0.1.7",
-    "gulp-eslint": "^3.0.1",
-    "gulp-filesize": "0.0.6",
-    "gulp-imagemin": "^3.0.2",
-    "gulp-load-plugins": "^1.2.4",
-    "gulp-notify": "^2.2.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^2.0.0",
-    "gulp-util": "^3.0.7",
-    "gulp-watch": "^4.3.9",
-    "node-sass": "^3.8.0"
+    "react-scripts": "1.0.7"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
