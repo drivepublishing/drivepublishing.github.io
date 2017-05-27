@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import logo from './latin.png';
+import logo from '../../static/images/latin.png';
 
 export class Latin extends Component {
 
