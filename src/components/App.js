@@ -7,13 +7,13 @@ import { Home, Latin, Partners, Solutions } from '../screens';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename="/">
         <div>
           <Header />
           <Route exact path="/" component={Home} />
-          <Route exact path="/latin" component={Latin} />
-          <Route exact path="/partners" component={Partners} />
-          <Route exact path="/solutions" component={Solutions} />
+          <Route path="/latin" component={Latin} />
+          <Route path="/partners" component={Partners} />
+          <Route path="/solutions" component={Solutions} />
           <Footer />
         </div>
       </Router>

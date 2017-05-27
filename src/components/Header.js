@@ -32,9 +32,9 @@ export class Header extends Component {
         <nav className="site-nav">
           <ul className="nav-icons">
             <li className="nav-icon">
-              <a href="/#">
+              <Link to="/">
                 <img style={styles.icon} src={logo} alt="Drive" />
-              </a>
+              </Link>
             </li>
             <li className="nav-icon">
               <a href="https://twitter.com/DriveMusicPub" target="_blank" rel="noopener noreferrer">
@@ -53,9 +53,9 @@ export class Header extends Component {
           </div>
         </nav>
         <ul className="site-menu">
-          <li className="menu-item"><Link to="/#writers">Writers</Link></li>
+          <li className="menu-item"><Link to={{pathname: '/', hash: '#writers'}}>Writers</Link></li>
           <li className="menu-item"><Link to="partners">Partners</Link></li>
-          <li className="menu-item"><Link to="/#about">About</Link></li>
+          <li className="menu-item"><Link to={{pathname: '/', hash: '#about'}}>About</Link></li>
           <li className="menu-item"><Link to="solutions">Solutions</Link></li>
           <li className="menu-item"><Link to="latin">Latin</Link></li>
         </ul>
