@@ -1,11 +1,7 @@
 import React, { Component } from 'react'
 import logo from './latin.png';
-import backgroundLogo from '../../static/images/drv-transparent.png';
 
 export class Latin extends Component {
-  constructor(props) {
-    super(props)
-  }
 
   render() {
     return (
