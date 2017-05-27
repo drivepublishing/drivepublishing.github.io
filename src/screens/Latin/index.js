@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import logo from '../../static/images/latin.png';
 
 export class Latin extends Component {
@@ -19,4 +19,4 @@ export class Latin extends Component {
   }
 }
 
-export default Latin
+export default Latin;
