@@ -7,7 +7,7 @@ export class Solutions extends Component {
     return (
       <div
         className="excerpt solutions"
-        style={{backgroundImage: `url(${PUBLIC_PATH})/images/furley_bg.png`}}>
+        style={{backgroundImage: `url(${PUBLIC_PATH}/images/furley_bg.png)`}}>
         <div className="excerpt-header">
           <img
             className="animated fadeIn"

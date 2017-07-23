@@ -36,7 +36,7 @@ export class Partners extends Component {
       <div id="ll">
         <div
           className="drv-container partners"
-          style={{backgroundImage: `url(${PUBLIC_PATH})/images/furley_bg.png`}}>
+          style={{backgroundImage: `url(${PUBLIC_PATH}/images/furley_bg.png)`}}>
           <div className="inner">
             <div className="header-container">
               <h2 className="section-header">Partners</h2>

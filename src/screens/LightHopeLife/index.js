@@ -7,12 +7,16 @@ export class LightHopeLife extends Component {
     return (
       <div
         className="excerpt solutions"
-        style={{backgroundImage: `url(${PUBLIC_PATH})/images/furley_bg.png`}}>
+        style={{backgroundImage: `url(${PUBLIC_PATH}/images/furley_bg.png)`}}>
         <div className="excerpt-header">
-          <img
-            className="animated fadeIn"
-            src={`${PUBLIC_PATH}/images/light-hope-life.png`}
-            alt="LightHopeLife" />
+          <a
+            href="http://www.lighthopelife.org/donate.html"
+            target="_blank">
+            <img
+              className="animated fadeIn"
+              src={`${PUBLIC_PATH}/images/light-hope-life.png`}
+              alt="LightHopeLife" />
+          </a>
         </div>
         <div className="excerpt-summary">
           <div className="excerpt-summary__paragraph">As mental illness and suicide are among the last remaining subjects that are shrouded in secrecy and silence in our society, LightHopeLife Inc., a 501(c)(3) nonprofit foundation, was created by Drive's legal counsel to raise critically needed funds for those organizations that are dedicated to research, outreach, education, volunteering and the numerous other aspects of mental health awareness and suicide prevention, but perhaps more importantly, it was created to educate people as to how to talk to people who might be in despair.</div>

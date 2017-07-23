@@ -25,6 +25,13 @@ export class Header extends Component {
     this.setState({visible: !visible});
   }
 
+  collapseOpenNav = () => {
+    const { visible } = this.state;
+    if (visible) {
+      this.onNavbarVisibilityChange();
+    }
+  }
+
   render() {
     return (
       <header className="site-header">
@@ -34,7 +41,7 @@ export class Header extends Component {
               <Link to="/">
                 <img
                   style={styles.icon}
-                  src={`${'public'}/images/drv-blue-310x310.png`}
+                  src={`public/images/drv-blue-310x310.png`}
                   alt="Drive" />
               </Link>
             </li>
@@ -55,12 +62,10 @@ export class Header extends Component {
           </div>
         </nav>
         <ul className="site-menu">
-          <li className="menu-item"><Link to={{pathname: '/', hash: '#writers'}}>Writers</Link></li>
-          <li className="menu-item"><Link to="partners">Partners</Link></li>
-          <li className="menu-item"><Link to="solutions">Solutions</Link></li>
-          <li className="menu-item"><Link to="latin">Latin</Link></li>
-          <li className="menu-item"><Link to="lighthopelife">LightHopeLife</Link></li>
-
+          <li className="menu-item"><Link to="partners" onClick={this.collapseOpenNav}>Partners</Link></li>
+          <li className="menu-item"><Link to="solutions" onClick={this.collapseOpenNav}>Solutions</Link></li>
+          <li className="menu-item"><Link to="latin" onClick={this.collapseOpenNav}>Latin</Link></li>
+          <li className="menu-item"><Link to="lighthopelife" onClick={this.collapseOpenNav}>LightHopeLife</Link></li>
         </ul>
       </header>
     );

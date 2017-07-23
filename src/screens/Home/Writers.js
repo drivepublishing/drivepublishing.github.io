@@ -17,7 +17,7 @@ const WriterItem = ({ image, link, name, style }) => {
 export class Writers extends Component {
   static defaultProps = {
     writers: [
-      {name: 'Jackson Browne',           image: `${PUBLIC_PATH}/images/client-joel-rafael.png`,  link: 'http://www.jacksonbrowne.com'},
+      {name: 'Jackson Browne',           image: `${PUBLIC_PATH}/images/client-jb.jpg`,  link: 'http://www.jacksonbrowne.com'},
       {name: 'The Black Tibetans',       image: `${PUBLIC_PATH}/images/client-black-tibetans.png`,  link: 'http://www.theblacktibetans.com'},
       {name: 'The Marshall Tucker Band', image: `${PUBLIC_PATH}/images/client-marshall-tucker.png`,  link: 'http://marshalltucker.com'},
       {name: 'Joel Rafael',              image: `${PUBLIC_PATH}/images/client-joel-rafael.png`,  link: 'http://joelrafael.com'},
@@ -57,7 +57,7 @@ export class Writers extends Component {
       <div
         className="clients"
         id="writers"
-        style={{backgroundImage: `url(${PUBLIC_PATH})/images/furley_bg.png`}}>
+        style={{backgroundImage: `url(${PUBLIC_PATH}/images/furley_bg.png)`}}>
         <div className="inner">
           <div className="header-container">
             <h2 className="section-header">Writers</h2>
