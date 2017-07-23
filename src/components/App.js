@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
-import { Home, Latin, Partners, Solutions } from '../screens';
+import { Home, Latin, LightHopeLife, Partners, Solutions } from '../screens';
 
 class App extends Component {
   render() {
@@ -14,6 +14,7 @@ class App extends Component {
           <Route path="/latin" component={Latin} />
           <Route path="/partners" component={Partners} />
           <Route path="/solutions" component={Solutions} />
+          <Route path="/lighthopelife" component={LightHopeLife} />
           <Footer />
         </div>
       </Router>

@@ -55,9 +55,10 @@ export class Header extends Component {
         <ul className="site-menu">
           <li className="menu-item"><Link to={{pathname: '/', hash: '#writers'}}>Writers</Link></li>
           <li className="menu-item"><Link to="partners">Partners</Link></li>
-          <li className="menu-item"><Link to={{pathname: '/', hash: '#about'}}>About</Link></li>
           <li className="menu-item"><Link to="solutions">Solutions</Link></li>
           <li className="menu-item"><Link to="latin">Latin</Link></li>
+          <li className="menu-item"><Link to="lighthopelife">LightHopeLife</Link></li>
+
         </ul>
       </header>
     );

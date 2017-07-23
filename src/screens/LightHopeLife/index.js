@@ -1,0 +1,18 @@
+import React, { Component } from 'react';
+import logo from '../../static/images/light-hope-life.png';
+
+export class LightHopeLife extends Component {
+  render() {
+    return (
+      <div className="excerpt solutions">
+        <div className="excerpt-header"><img className="animated fadeIn" src={logo} alt="LightHopeLife" /></div>
+        <div className="excerpt-summary">
+          <div className="excerpt-summary__paragraph">As mental illness and suicide are among the last remaining subjects that are shrouded in secrecy and silence in our society, LightHopeLife Inc., a 501(c)(3) nonprofit foundation, was created by Drive's legal counsel to raise critically needed funds for those organizations that are dedicated to research, outreach, education, volunteering and the numerous other aspects of mental health awareness and suicide prevention, but perhaps more importantly, it was created to educate people as to how to talk to people who might be in despair.</div>
+          <div className="excerpt-summary__paragraph">The deafening silence with which depression and other mental illnesses are largely met in most corners of society perpetuates the very isolation and alienation that compounds the problem and keeps those who are suffering—those who are most in need—from seeking and receiving the help that is so critically needed.  Further complicating this epidemic is the fact that few people are equipped with something meaningful to say when concerned about someone's mental health or when concerned that someone may be suicidal.</div>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default LightHopeLife
