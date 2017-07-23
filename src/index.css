@@ -501,8 +501,7 @@ h2.section-title {
 .clients {
   position: relative;
   width: 100%;
-  margin: 0 auto;
-  background-image: url("./static/images/furley_bg.png"); }
+  margin: 0 auto; }
   .clients:before, .clients:after {
     content: " ";
     display: table; }
@@ -608,7 +607,6 @@ h2.section-title {
 
 .partners {
   background-color: #004883;
-  background-image: url("./static/images/furley_bg.png");
   padding-left: 0;
   padding-right: 0;
   padding-top: 10px;
@@ -978,7 +976,6 @@ h2.section-title {
   margin: 0 auto;
   padding: 30px 0 50px;
   color: #004883;
-  background-image: url("./static/images/drv-op-10.png");
   background-size: 150%;
   background-position-x: -5%;
   background-position-y: 43%;

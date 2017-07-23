@@ -1,14 +1,7 @@
 import React, { Component } from 'react'
 import Writers from './Writers.js';
-import loadingLogo from '../../static/images/drv-md.png';
-import overlayLogo from '../../static/images/drive-800-307.png';
-import backdrop from '../../static/images/hollywood.jpg';
-import copyright from './copyright-icon.svg';
-import play from './play-icon.svg';
-import redeem from './redeem-icon.svg';
 
-
-
+const PUBLIC_PATH = 'public';
 export class Home extends Component {
   state = {
     spinnerClass: '',
@@ -44,16 +37,16 @@ export class Home extends Component {
           <img
             className={this.state.spinnerClass}
             style={this.state.spinnerStyle}
-            id="landing-spinner" src={loadingLogo}
+            id="landing-spinner" src={`${PUBLIC_PATH}/images/drv-md.png`}
             alt="Drive logo" />
           <div
             id="landing-hero"
             className={this.state.backdropClass}
-            style={{...this.state.backdropStyle, backgroundImage: `url(${backdrop})`}}>
+            style={{...this.state.backdropStyle, backgroundImage: `url(${PUBLIC_PATH}/images/hollywood.jpg)`}}>
             <img
               id="landing-logo"
               className={this.state.overlayClass}
-              src={overlayLogo}
+              src={`${PUBLIC_PATH}/images/drive-800-307.png`}
               style={this.state.overlayStyle}
               alt="Sunset Blvd. Los Angeles" />
           </div>
@@ -71,7 +64,7 @@ export class Home extends Component {
           <div className="inner">
             <div className="service-item p-left">
               <div className="title-container">
-                <img style={styles.icon} src={copyright} alt="Administration" />
+                <img style={styles.icon} src={`${PUBLIC_PATH}/images/copyright-icon.svg`} alt="Administration" />
                 <h3 className="headline">Administration</h3>
               </div>
               <div className="desc-container">
@@ -82,7 +75,7 @@ export class Home extends Component {
             </div>
             <div className="service-item">
               <div className="title-container">
-                <img style={styles.icon} src={play} alt="Creative" />
+                <img style={styles.icon} src={`${PUBLIC_PATH}/images/play-icon.svg`} alt="Creative" />
                 <h3 className="headline">Creative</h3>
               </div>
               <div className="desc-container">
@@ -93,7 +86,7 @@ export class Home extends Component {
             </div>
             <div className="service-item p-right">
               <div className="title-container">
-                <img style={styles.icon} src={redeem} alt="Royalties" />
+                <img style={styles.icon} src={`${PUBLIC_PATH}/images/redeem-icon.svg`} alt="Royalties" />
                 <h3 className="headline">Royalties</h3>
               </div>
               <div className="desc-container">

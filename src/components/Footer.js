@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import logo from '../static/images/drv-transparent.png';
-import mail from './mail-icon.svg';
+
+const PUBLIC_PATH = 'public';
 
 export class Footer extends Component {
-
   render() {
     return (
       <div>
@@ -13,15 +12,36 @@ export class Footer extends Component {
               <ul className="contact-items">
                 <li className="contact-item">
                   <div className="contact-item__title">Ana Ruiz</div>
-                  <div className="contact-item__icon"><a href="mailto:aruiz@drivepublishing.com"><img style={{width: '35px'}} src={mail} alt="Email" /></a></div>
+                  <div className="contact-item__icon">
+                    <a href="mailto:aruiz@drivepublishing.com">
+                      <img
+                        style={{width: '35px'}}
+                        src={`${PUBLIC_PATH}/images/mail-icon.svg`}
+                        alt="Email" />
+                    </a>
+                  </div>
                 </li>
                 <li className="contact-item">
                   <div className="contact-item__title">Joe Rausch</div>
-                  <div className="contact-item__icon"><a href="mailto:jrausch@drivepublishing.com"><img style={{width: '35px'}} src={mail} alt="Email" /></a></div>
+                  <div className="contact-item__icon">
+                    <a href="mailto:jrausch@drivepublishing.com">
+                      <img
+                        style={{width: '35px'}}
+                        src={`${PUBLIC_PATH}/images/mail-icon.svg`}
+                        alt="Email" />
+                    </a>
+                  </div>
                 </li>
                 <li className="contact-item">
                   <div className="contact-item__title">General</div>
-                  <div className="contact-item__icon"><a href="mailto:info@drivepublishing.com"><img style={{width: '35px'}} src={mail} alt="Email" /></a></div>
+                  <div className="contact-item__icon">
+                    <a href="mailto:info@drivepublishing.com">
+                      <img
+                        style={{width: '35px'}}
+                        src={`${PUBLIC_PATH}/images/mail-icon.svg`}
+                        alt="Email" />
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -30,7 +50,12 @@ export class Footer extends Component {
               <div className="contact-address__item">Drive Music Publishing</div>
               <div className="contact-address__item">12650 Riverside Drive, Ste. 200</div>
               <div className="contact-address__item">Studio City, California 91607</div>
-              <div className="contact-address__image"><img src={logo} className="img-scale" alt="Drive logo" /></div>
+              <div className="contact-address__image">
+                <img
+                  src={`${PUBLIC_PATH}/images/drv-transparent.png`}
+                  className="img-scale"
+                  alt="Drive logo" />
+              </div>
             </div>
           </div>
         </div>

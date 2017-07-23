@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../static/images/drv-blue-310x310.png';
 import { Linkedin, Twitter } from '../common/Icons.js';
 
 export class Header extends Component {
@@ -33,7 +32,10 @@ export class Header extends Component {
           <ul className="nav-icons">
             <li className="nav-icon">
               <Link to="/">
-                <img style={styles.icon} src={logo} alt="Drive" />
+                <img
+                  style={styles.icon}
+                  src={`${'public'}/images/drv-blue-310x310.png`}
+                  alt="Drive" />
               </Link>
             </li>
             <li className="nav-icon">
