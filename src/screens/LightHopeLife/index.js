@@ -7,7 +7,7 @@ export class LightHopeLife extends Component {
     return (
       <div
         className="excerpt solutions"
-        style={{backgroundImage: `url(${PUBLIC_PATH}/images/furley_bg.png)`}}>
+        style={{backgroundImage: `url(${PUBLIC_PATH}/images/drv-op-10.png)`}}>
         <div className="excerpt-header">
           <a
             href="http://www.lighthopelife.org/donate.html"
