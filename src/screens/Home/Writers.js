@@ -18,12 +18,12 @@ export class Writers extends Component {
   static defaultProps = {
     writers: [
       {name: 'Jackson Browne',           image: `${PUBLIC_PATH}/images/client-jb.jpg`,  link: 'http://www.jacksonbrowne.com'},
-      {name: 'The Black Tibetans',       image: `${PUBLIC_PATH}/images/client-black-tibetans.png`,  link: 'http://www.theblacktibetans.com'},
+      {name: 'The Black Tibetans',       image: `${PUBLIC_PATH}/images/client-black-tibetans.png`},
       {name: 'The Marshall Tucker Band', image: `${PUBLIC_PATH}/images/client-marshall-tucker.png`,  link: 'http://marshalltucker.com'},
       {name: 'Joel Rafael',              image: `${PUBLIC_PATH}/images/client-joel-rafael.png`,  link: 'http://joelrafael.com'},
       {name: 'Bellflower',               image: `${PUBLIC_PATH}/images/client-bellflower.png`,  link: 'http://www.bellflowerduo.com'},
-      {name: 'Jesse Michaels',           image: `${PUBLIC_PATH}/images/client-jesse-michaels.png`,  link: 'http://jessemichaels.com'},
-      {name: 'Dean Micetich',            image: `${PUBLIC_PATH}/images/client-dean-micetich.png`,  link: 'http://www.theblacktibetans.com'},
+      {name: 'Jesse Michaels',           image: `${PUBLIC_PATH}/images/client-jesse-michaels.png`},
+      {name: 'Dean Micetich',            image: `${PUBLIC_PATH}/images/client-dean-micetich.png`},
       {name: 'John Trudell',             image: `${PUBLIC_PATH}/images/client-john-trudell.jpg`,  link: 'http://www.johntrudell.com'},
       {name: 'Lance Canales',            image: `${PUBLIC_PATH}/images/client-lance-canales.jpg`,  link: 'http://www.lancecanalesandtheflood.com'},
       {name: 'Blue October',             image: `${PUBLIC_PATH}/images/client-blue-october.png`, link: 'http://blueoctober.com'},

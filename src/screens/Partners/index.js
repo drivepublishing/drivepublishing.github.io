@@ -16,18 +16,16 @@ const PartnerItem = ({ name, image, link, }) => {
 export class Partners extends Component {
   static defaultProps = {
     partners: [
-      {name: 'Because Editions',               image: `${PUBLIC_PATH}/images/par-because.jpg`,  link: 'http://www.becausegroup.tv'},
       {name: 'Carlin Music',                   image: `${PUBLIC_PATH}/images/par-carlin.jpg`,  link: 'http://www.carlinmusic.com'},
       {name: 'Casablanca Media Publishing',    image: `${PUBLIC_PATH}/images/par-casablanca.gif`,  link: 'http://www.casablancamediapublishing.com'},
-      {name: 'Ediciones Musicales Clipper\'s', image: `${PUBLIC_PATH}/images/par-clippers.jpg`,  link: 'http://www.edicionesmusicalesclippers.org'},
       {name: 'CTM Publishing',                 image: `${PUBLIC_PATH}/images/par-ctm.png`,  link: 'http://ctm.nl/publishing'},
       {name: 'David Gresham Music',            image: `${PUBLIC_PATH}/images/par-dgr.jpg`,  link: 'http://www.greshamrecords.co.za'},
-      {name: 'Edizioni Curci Publishing',      image: `${PUBLIC_PATH}/images/par-edizioni-curci.jpg`,  link: 'http://www.edizionicurci.it'},
       {name: 'Native Tongue Music Publishing', image: `${PUBLIC_PATH}/images/par-native-tongue.jpg`,  link: 'http://www.nativetongue.com.au'},
       {name: 'Nichion',                        image: `${PUBLIC_PATH}/images/par-nichion.png`,  link: 'https://www.nichion.co.jp'},
       {name: 'PFive Entertainment',            image: `${PUBLIC_PATH}/images/par-pfive.png`, link: 'http://pfivemexico.mx'},
       {name: 'Som Livre',                      image: `${PUBLIC_PATH}/images/par-som-livre.jpg`, link: 'https://www.somlivre.com'},
       {name: 'Counterpoint Systems',           image: `${PUBLIC_PATH}/images/par-counterpoint.jpg`, link: 'https://www.vistex.com/product-suites/counterpoint-suite'},
+      {name: 'peermusic',                      image: `${PUBLIC_PATH}/images/peermusic.png`, link: 'http://www.peermusic.com'},
     ],
   }
 
