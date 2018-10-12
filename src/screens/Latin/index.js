@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
 
-const PUBLIC_PATH = 'public';
-
 export class Latin extends Component {
   render() {
     return (
       <div>
         <div
           className="excerpt solutions"
-          style={{backgroundImage: `url(${PUBLIC_PATH}/images/drv-op-10.png)`}}>
+          style={{backgroundImage: 'url(images/drv-op-10.png)'}}>
           <div className="excerpt-header">
             <img
               className="animated fadeIn"
-              src={`${PUBLIC_PATH}/images/latin.png`}
+              src="images/latin.png"
               alt="Drive Latin" />
           </div>
           <div className="excerpt-headline">Cada día es más importante proteger los derechos de expresión de compositores y la música.</div>

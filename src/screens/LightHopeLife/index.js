@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 
-const PUBLIC_PATH = 'public';
-
 export class LightHopeLife extends Component {
   render() {
     return (
       <div
         className="excerpt solutions"
-        style={{backgroundImage: `url(${PUBLIC_PATH}/images/drv-op-10.png)`}}>
+        style={{backgroundImage: 'url(images/drv-op-10.png)'}}>
         <div className="excerpt-header">
           <a
             href="http://www.lighthopelife.org/index.html"
@@ -15,7 +13,7 @@ export class LightHopeLife extends Component {
             rel="noopener noreferrer">
             <img
               className="animated fadeIn"
-              src={`${PUBLIC_PATH}/images/light-hope-life.png`}
+              src="images/light-hope-life.png"
               alt="LightHopeLife" />
           </a>
         </div>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 
-const PUBLIC_PATH = 'public';
 const PartnerItem = ({ name, image, link, }) => {
   return (
     <li className="partner-item">
@@ -16,16 +15,16 @@ const PartnerItem = ({ name, image, link, }) => {
 export class Partners extends Component {
   static defaultProps = {
     partners: [
-      {name: 'Carlin Music',                   image: `${PUBLIC_PATH}/images/par-carlin.jpg`,  link: 'http://www.carlinmusic.com'},
-      {name: 'Casablanca Media Publishing',    image: `${PUBLIC_PATH}/images/par-casablanca.gif`,  link: 'http://www.casablancamediapublishing.com'},
-      {name: 'CTM Publishing',                 image: `${PUBLIC_PATH}/images/par-ctm.png`,  link: 'http://ctm.nl/publishing'},
-      {name: 'David Gresham Music',            image: `${PUBLIC_PATH}/images/par-dgr.jpg`,  link: 'http://www.greshamrecords.co.za'},
-      {name: 'Native Tongue Music Publishing', image: `${PUBLIC_PATH}/images/par-native-tongue.jpg`,  link: 'http://www.nativetongue.com.au'},
-      {name: 'Nichion',                        image: `${PUBLIC_PATH}/images/par-nichion.png`,  link: 'https://www.nichion.co.jp'},
-      {name: 'PFive Entertainment',            image: `${PUBLIC_PATH}/images/par-pfive.png`, link: 'http://pfivemexico.mx'},
-      {name: 'Som Livre',                      image: `${PUBLIC_PATH}/images/par-som-livre.jpg`, link: 'https://www.somlivre.com'},
-      {name: 'Counterpoint Systems',           image: `${PUBLIC_PATH}/images/par-counterpoint.jpg`, link: 'https://www.vistex.com/product-suites/counterpoint-suite'},
-      {name: 'peermusic',                      image: `${PUBLIC_PATH}/images/peermusic.png`, link: 'http://www.peermusic.com'},
+      {name: 'Carlin Music',                   image: 'images/par-carlin.jpg',  link: 'http://www.carlinmusic.com'},
+      {name: 'Casablanca Media Publishing',    image: 'images/par-casablanca.gif',  link: 'http://www.casablancamediapublishing.com'},
+      {name: 'CTM Publishing',                 image: 'images/par-ctm.png',  link: 'http://ctm.nl/publishing'},
+      {name: 'David Gresham Music',            image: 'images/par-dgr.jpg',  link: 'http://www.greshamrecords.co.za'},
+      {name: 'Native Tongue Music Publishing', image: 'images/par-native-tongue.jpg',  link: 'http://www.nativetongue.com.au'},
+      {name: 'Nichion',                        image: 'images/par-nichion.png',  link: 'https://www.nichion.co.jp'},
+      {name: 'PFive Entertainment',            image: 'images/par-pfive.png', link: 'http://pfivemexico.mx'},
+      {name: 'Som Livre',                      image: 'images/par-som-livre.jpg', link: 'https://www.somlivre.com'},
+      {name: 'Counterpoint Systems',           image: 'images/par-counterpoint.jpg', link: 'https://www.vistex.com/product-suites/counterpoint-suite'},
+      {name: 'peermusic',                      image: 'images/peermusic.png', link: 'http://www.peermusic.com'},
     ],
   }
 
@@ -34,7 +33,7 @@ export class Partners extends Component {
       <div id="ll">
         <div
           className="drv-container partners"
-          style={{backgroundImage: `url(${PUBLIC_PATH}/images/furley_bg.png)`}}>
+          style={{backgroundImage: 'url(images/furley_bg.png)'}}>
           <div className="inner">
             <div className="header-container">
               <h2 className="section-header">Partners</h2>

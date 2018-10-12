@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-const PUBLIC_PATH = 'public';
-
 export class Footer extends Component {
   render() {
     return (
@@ -16,7 +14,7 @@ export class Footer extends Component {
                     <a href="mailto:aruiz@drivepublishing.com">
                       <img
                         style={{width: '35px'}}
-                        src={`${PUBLIC_PATH}/images/mail-icon.svg`}
+                        src="images/mail-icon.svg"
                         alt="Email" />
                     </a>
                   </div>
@@ -27,7 +25,7 @@ export class Footer extends Component {
                     <a href="mailto:jrausch@drivepublishing.com">
                       <img
                         style={{width: '35px'}}
-                        src={`${PUBLIC_PATH}/images/mail-icon.svg`}
+                        src="images/mail-icon.svg"
                         alt="Email" />
                     </a>
                   </div>
@@ -38,7 +36,7 @@ export class Footer extends Component {
                     <a href="mailto:info@drivepublishing.com">
                       <img
                         style={{width: '35px'}}
-                        src={`${PUBLIC_PATH}/images/mail-icon.svg`}
+                        src="images/mail-icon.svg"
                         alt="Email" />
                     </a>
                   </div>
@@ -52,7 +50,7 @@ export class Footer extends Component {
               <div className="contact-address__item">Studio City, California 91607</div>
               <div className="contact-address__image">
                 <img
-                  src={`${PUBLIC_PATH}/images/drv-transparent.png`}
+                  src="images/drv-transparent.png"
                   className="img-scale"
                   alt="Drive logo" />
               </div>

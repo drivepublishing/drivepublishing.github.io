@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
 
-const PUBLIC_PATH = 'public';
-
 export class Solutions extends Component {
   render() {
     return (
       <div
         className="excerpt solutions"
-        style={{backgroundImage: `url(${PUBLIC_PATH}/images/drv-op-10.png)`}}>
+        style={{backgroundImage: 'url(images/drv-op-10.png)'}}>
         <div className="excerpt-header">
           <img
             className="animated fadeIn"
-            src={`${PUBLIC_PATH}/images/solutions.png`}
+            src="images/solutions.png"
             alt="Solutions" />
         </div>
         <div className="excerpt-headline">A consulting division providing support and insight for various aspects of the music industry.</div>

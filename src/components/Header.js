@@ -41,7 +41,7 @@ export class Header extends Component {
               <Link to="/">
                 <img
                   style={styles.icon}
-                  src={`public/images/drv-blue-310x310.png`}
+                  src="images/drv-blue-310x310.png"
                   alt="Drive" />
               </Link>
             </li>
