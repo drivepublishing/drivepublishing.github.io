@@ -20,17 +20,6 @@ export class Footer extends Component {
                   </div>
                 </li>
                 <li className="contact-item">
-                  <div className="contact-item__title">Joe Rausch</div>
-                  <div className="contact-item__icon">
-                    <a href="mailto:jrausch@drivepublishing.com">
-                      <img
-                        style={{width: '35px'}}
-                        src="images/mail-icon.svg"
-                        alt="Email" />
-                    </a>
-                  </div>
-                </li>
-                <li className="contact-item">
                   <div className="contact-item__title">General</div>
                   <div className="contact-item__icon">
                     <a href="mailto:info@drivepublishing.com">
@@ -46,7 +35,7 @@ export class Footer extends Component {
             <div className="contact-address">
               <div className="contact-address__title">Office Location</div>
               <div className="contact-address__item">Drive Music Publishing</div>
-              <div className="contact-address__item">12650 Riverside Drive, Ste. 200</div>
+              <div className="contact-address__item">12711 Ventura Blvd. #210</div>
               <div className="contact-address__item">Studio City, California 91607</div>
               <div className="contact-address__image">
                 <img
