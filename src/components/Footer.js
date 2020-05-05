@@ -36,7 +36,7 @@ export class Footer extends Component {
               <div className="contact-address__title">Office Location</div>
               <div className="contact-address__item">Drive Music Publishing</div>
               <div className="contact-address__item">12711 Ventura Blvd. #210</div>
-              <div className="contact-address__item">Studio City, California 91607</div>
+              <div className="contact-address__item">Studio City, California  91607</div>
               <div className="contact-address__image">
                 <img
                   src="images/drv-transparent.png"
